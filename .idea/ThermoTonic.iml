@@ -57,9 +57,7 @@
           <root url="file://$MODULE_DIR$/vendor/behat/gherkin" />
           <root url="file://$MODULE_DIR$/vendor/composer" />
           <root url="file://$MODULE_DIR$/vendor/doctrine/instantiator" />
-          <root url="file://$MODULE_DIR$/vendor/henrikbjorn/phpspec-code-coverage" />
           <root url="file://$MODULE_DIR$/vendor/michelf/php-markdown" />
-          <root url="file://$MODULE_DIR$/vendor/peej/phpdoctor" />
           <root url="file://$MODULE_DIR$/vendor/phpdocumentor/reflection-docblock" />
           <root url="file://$MODULE_DIR$/vendor/phpspec/php-diff" />
           <root url="file://$MODULE_DIR$/vendor/phpspec/phpspec" />
@@ -89,9 +87,7 @@
           <root url="file://$MODULE_DIR$/vendor/behat/gherkin" />
           <root url="file://$MODULE_DIR$/vendor/composer" />
           <root url="file://$MODULE_DIR$/vendor/doctrine/instantiator" />
-          <root url="file://$MODULE_DIR$/vendor/henrikbjorn/phpspec-code-coverage" />
           <root url="file://$MODULE_DIR$/vendor/michelf/php-markdown" />
-          <root url="file://$MODULE_DIR$/vendor/peej/phpdoctor" />
           <root url="file://$MODULE_DIR$/vendor/phpdocumentor/reflection-docblock" />
           <root url="file://$MODULE_DIR$/vendor/phpspec/php-diff" />
           <root url="file://$MODULE_DIR$/vendor/phpspec/phpspec" />
