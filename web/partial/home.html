@@ -1,50 +1,62 @@
-<!DOCTYPE html>
-<html ng-app="thermoApp">
-<head>
-	<link href="../vendor/metro/css/metro.css" rel="stylesheet">
-    <script src="../vendor/jquery/jquery-2.1.4.min.js"></script>
-	<script src="../vendor/angular/angular.min.js"></script>
-	<script src="../vendor/angular/angular-resource.min.js"></script>
-	<script src="../vendor/angular/angular-route.min.js"></script>
-	<script src="../vendor/angular/d3.v3.min.js"></script>
-	<script src="../vendor/angular/ng-radial-gauge-dir.js"></script>
-	<script src="../vendor/metro/js/metro.js"></script>
-	<script src="../script/app/app.js"></script>
-	<script src="../script/app/homeController.js"></script>
-	<script src="../script/app/setupController.js"></script>
+<div align="center"><h3>Thermo Controller - Stato Attuale</h3></div>
 
-	<title>Thermo controller</title>
-</head>
-<body data-ng-controller="homeController">
-	<div align="center"> <h3>Thermo Controller - Actual Status</h3> </div>
-	
-	<div class="grid">
-		<div class="row cells6">
-			<div class="cell">
+<div class="grid">
+	<div class="row cells6">
+		<div class="cell">
+		</div>
+		<div class="cell">
+			<div align="center">External Temperature</div>
+			<div ng-radial-gauge ranges="ranges" value="extvalue" value-unit="unit" precision="precision"
+				 lower-limit="lowerLimit" upper-limit="upperLimit"></div>
+			<div align="center">
+				<input type="number" name="external" id="external" data-ng-model="extvalue" min="0.0" max="50.0"
+					   step="0.1">
 			</div>
-			<div class="cell">       
-				<div align="center">External Temperature</div>
-				<div ng-radial-gauge ranges="ranges" value="extvalue" value-unit="unit" precision="precision" lower-limit="lowerLimit" upper-limit="upperLimit"></div>
-				<div align="center"> 
-					<input type="number" name="external" id="external" data-ng-model="extvalue" min="0.0" max="50.0" step="0.1">
-				</div>
-	
-			</div>
-			<div class="cell">
-			</div>
-			<div class="cell">       
-				<div align="center">Internal Temperature</div>
-				<div ng-radial-gauge ranges="ranges" value="intvalue" value-unit="unit" precision="precision" lower-limit="lowerLimit" upper-limit="upperLimit"></div>
-				<div align="center">
-					<input type="number" name="internal" id="internal" data-ng-model="intvalue" min="0.0" max="50.0" step="0.1">
-				</div>
-			</div>
-			<div class="cell">
-				<div align="center" style="margin-top:30%">Status</div>
-				<img src="../images/LedGreenOff.png" data-ng-show="intvalue > 25" style="width:25%; margin-left:40%; margin-top:5%" />       
-				<img src="../images/LedGreenOn.png" data-ng-show="intvalue <= 25" style="width:25%; margin-left:40%; margin-top:5%" />      
-				
+
+		</div>
+		<div class="cell">
+		</div>
+		<div class="cell">
+			<div align="center">Internal Temperature</div>
+			<div ng-radial-gauge ranges="ranges" value="intvalue" value-unit="unit" precision="precision"
+				 lower-limit="lowerLimit" upper-limit="upperLimit"></div>
+			<div align="center">
+				<input type="number" name="internal" id="internal" data-ng-model="intvalue" min="0.0" max="50.0"
+					   step="0.1">
 			</div>
 		</div>
+		<div class="cell">
+			<div align="center" style="margin-top:30%">Status</div>
+			<img src="../images/LedGreenOff.png" data-ng-show="intvalue > 25"
+				 style="width:25%; margin-left:40%; margin-top:5%"/>
+			<img src="../images/LedGreenOn.png" data-ng-show="intvalue <= 25"
+				 style="width:25%; margin-left:40%; margin-top:5%"/>
+
+		</div>
 	</div>
-</body>
+	<div style="margin-top: 50px" align="center"><h4>Grafico Temperature Rilevate</h4></div>
+	<div class="row cells6">
+		<div class="cell">
+		</div>
+		<div class="cell">
+			<div style="margin-left:10px">Seleziona Periodo</div>
+			<select name="Periodo" align="center">
+				<option value="Oggi" selected>Oggi</option>
+				<option value="Ieri">Ieri</option>
+				<option value="UltimaSettimana">Ultima Settimana</option>
+				<option value="UltimoMese">Ultimo Mese</option>
+			</select>
+		</div>
+	</div>
+	<div class="row cells6">
+		<div class="cell">
+		</div>
+
+		<div class="cell colspan4">
+			<canvas id="line" class="chart chart-line" chart-data="data"
+					chart-labels="labels" chart-legend="true" chart-series="series"
+					chart-click="onClick">
+			</canvas>
+		</div>
+	</div>
+</div>

@@ -36,6 +36,8 @@ class Hello extends Resource
     {
 
        $ret =array('temp'=>intval($id)+1);
+        if ($ret ['temp'] > 50)
+            $ret ['temp'] = 0;
         return new Response(200, json_encode($ret));
     }
 
