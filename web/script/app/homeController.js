@@ -46,4 +46,36 @@ appRoot.controller('homeController', function ($scope, $interval, Temperature) {
         [65, 59, 80, 81, 56, 55, 40],
         [28, 48, 40, 19, 86, 27, 90]
     ];
+    $scope.selezione = "Oggi";
+
+
+    $scope.$watch('selezione', function (newValue) {
+        switch (newValue) {
+            case "Oggi":
+                $scope.data = [
+                    [65, 59, 80, 81, 56, 55, 40],
+                    [28, 48, 40, 19, 86, 27, 90]
+                ];
+                break;
+            case "Ieri":
+                $scope.data = [
+                    [28, 48, 40, 19, 86, 27, 90],
+                    [65, 59, 80, 81, 56, 55, 40]
+                ];
+                break;
+            case "UltimaSettimana":
+                $scope.data = [
+                    [28, 48, 80, 81, 56, 27, 90],
+                    [65, 59, 84, 19, 86, 55, 40]
+                ];
+                break;
+            case "UltimoMese":
+                $scope.data = [
+                    [65, 59, 80, 81, 56, 27, 90],
+                    [28, 48, 84, 19, 86, 55, 40]
+                ];
+                break;
+
+        }
+    })
 });

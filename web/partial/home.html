@@ -40,7 +40,7 @@
 		</div>
 		<div class="cell">
 			<div style="margin-left:10px">Seleziona Periodo</div>
-			<select name="Periodo" align="center">
+			<select name="Periodo" align="center" ng-model="selezione" ng-change="chsel()">
 				<option value="Oggi" selected>Oggi</option>
 				<option value="Ieri">Ieri</option>
 				<option value="UltimaSettimana">Ultima Settimana</option>
