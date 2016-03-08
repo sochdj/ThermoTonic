@@ -6,10 +6,12 @@
 		</div>
 		<div class="cell">
 			<div align="center">External Temperature</div>
-			<div ng-radial-gauge ranges="ranges" value="extvalue" value-unit="unit" precision="precision"
+			<div ng-radial-gauge ranges="ranges" value="latestTemperature.tempExt1" value-unit="unit"
+				 precision="precision"
 				 lower-limit="lowerLimit" upper-limit="upperLimit"></div>
 			<div align="center">
-				<input type="number" name="external" id="external" data-ng-model="extvalue" min="0.0" max="50.0"
+				<input type="number" name="external" id="external" data-ng-model="latestTemperature.tempExt1" min="0.0"
+					   max="50.0"
 					   step="0.1">
 			</div>
 
@@ -18,10 +20,12 @@
 		</div>
 		<div class="cell">
 			<div align="center">Internal Temperature</div>
-			<div ng-radial-gauge ranges="ranges" value="intvalue" value-unit="unit" precision="precision"
+			<div ng-radial-gauge ranges="ranges" value="latestTemperature.tempInt" value-unit="unit"
+				 precision="precision"
 				 lower-limit="lowerLimit" upper-limit="upperLimit"></div>
 			<div align="center">
-				<input type="number" name="internal" id="internal" data-ng-model="intvalue" min="0.0" max="50.0"
+				<input type="number" name="internal" id="internal" data-ng-model="latestTemperature.tempInt" min="0.0"
+					   max="50.0"
 					   step="0.1">
 			</div>
 		</div>
