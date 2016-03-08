@@ -38,7 +38,9 @@ class Temperature extends Resource
         $db = new Database(DB_SERVER, DB_USER, DB_PASS, DB_DATABASE);
         $db->connect();
         if (isset($_GET['start']) && $_GET['stop']) {
-            $ret = array("ciao" => "vau");
+            $sql = "SELECT * FROM Temperature where DateTime BETWEEN '" . $_GET['start'] . "' and '" . $_GET['stop'] . "'";
+            $rows = $db->fetch_all_array($sql);
+            $ret = array("ciao" => $rows);
 
         } else {
 

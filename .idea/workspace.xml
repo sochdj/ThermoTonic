@@ -33,19 +33,22 @@
       <file leaf-file-name="Temperature.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Thermo/Temperature.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5202312">
-              <caret line="39" column="48" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
+            <state vertical-scroll-proportion="0.15992293">
+              <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
               <folding>
                 <element signature="e#26#39#0#PHP" expanded="true" />
-                <marker date="1457477046664" expanded="true" signature="1121:1134" placeholder="SELECT * FRO... " />
-                <marker date="1457477046664" expanded="true" signature="1121:1135" placeholder="SELECT * FRO... " />
-                <marker date="1457477046664" expanded="true" signature="1121:1189" placeholder="SELECT * FRO... Temperature" />
-                <marker date="1457477046664" expanded="true" signature="1157:1188" placeholder="SELECT max(i... Temperature" />
-                <marker date="1457477046664" expanded="true" signature="2056:2104" placeholder="SELECT * FRO... Temperature" />
-                <marker date="1457477046664" expanded="true" signature="2056:2105" placeholder="SELECT * FRO... Temperature" />
-                <marker date="1457477046664" expanded="true" signature="2056:2123" placeholder="SELECT * FRO... Temperature" />
-                <marker date="1457477046664" expanded="true" signature="2056:2124" placeholder="SELECT * FRO... Temperature" />
-                <marker date="1457477046664" expanded="true" signature="2056:2134" placeholder="SELECT * FRO... Temperature" />
+                <marker date="1457477413096" expanded="true" signature="1068:1147" placeholder="SELECT * FRO... Temperature" />
+                <marker date="1457477413096" expanded="true" signature="1068:1167" placeholder="SELECT * FRO... Temperature" />
+                <marker date="1457477413096" expanded="true" signature="1068:1168" placeholder="SELECT * FRO... Temperature" />
+                <marker date="1457477413096" expanded="true" signature="1300:1313" placeholder="SELECT * FRO... " />
+                <marker date="1457477413096" expanded="true" signature="1300:1314" placeholder="SELECT * FRO... " />
+                <marker date="1457477413096" expanded="true" signature="1300:1368" placeholder="SELECT * FRO... Temperature" />
+                <marker date="1457477413096" expanded="true" signature="1336:1367" placeholder="SELECT max(i... Temperature" />
+                <marker date="1457477413096" expanded="true" signature="2237:2285" placeholder="SELECT * FRO... Temperature" />
+                <marker date="1457477413096" expanded="true" signature="2237:2286" placeholder="SELECT * FRO... Temperature" />
+                <marker date="1457477413096" expanded="true" signature="2237:2308" placeholder="SELECT * FRO... Temperature" />
+                <marker date="1457477413096" expanded="true" signature="2237:2309" placeholder="SELECT * FRO... Temperature" />
+                <marker date="1457477413096" expanded="true" signature="2237:2321" placeholder="SELECT * FRO... Temperature" />
               </folding>
             </state>
           </provider>
@@ -473,7 +476,13 @@
       <option name="project" value="LOCAL" />
       <updated>1457475275918</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Aggiunta connessione SQL">
+      <created>1457477050429</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1457477050429</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -522,11 +531,11 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/src/Thermo/Temperature.php</url>
-          <line>73</line>
+          <line>76</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="24" />
+      <option name="time" value="27" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -832,16 +841,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/share/phpmyadmin/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23121387">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <marker date="1439050958000" expanded="true" signature="3953:3980" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/script/service/apiService.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -912,21 +911,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///usr/share/phpmyadmin/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24470136">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <marker date="1439050958000" expanded="true" signature="3953:3980" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Thermo/Temperature.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5202312">
-          <caret line="39" column="48" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
+        <state vertical-scroll-proportion="0.15992293">
+          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
           <folding>
             <element signature="e#26#39#0#PHP" expanded="true" />
-            <marker date="1457477046664" expanded="true" signature="1121:1134" placeholder="SELECT * FRO... " />
-            <marker date="1457477046664" expanded="true" signature="1121:1135" placeholder="SELECT * FRO... " />
-            <marker date="1457477046664" expanded="true" signature="1121:1189" placeholder="SELECT * FRO... Temperature" />
-            <marker date="1457477046664" expanded="true" signature="1157:1188" placeholder="SELECT max(i... Temperature" />
-            <marker date="1457477046664" expanded="true" signature="2056:2104" placeholder="SELECT * FRO... Temperature" />
-            <marker date="1457477046664" expanded="true" signature="2056:2105" placeholder="SELECT * FRO... Temperature" />
-            <marker date="1457477046664" expanded="true" signature="2056:2123" placeholder="SELECT * FRO... Temperature" />
-            <marker date="1457477046664" expanded="true" signature="2056:2124" placeholder="SELECT * FRO... Temperature" />
-            <marker date="1457477046664" expanded="true" signature="2056:2134" placeholder="SELECT * FRO... Temperature" />
+            <marker date="1457477413096" expanded="true" signature="1068:1147" placeholder="SELECT * FRO... Temperature" />
+            <marker date="1457477413096" expanded="true" signature="1068:1167" placeholder="SELECT * FRO... Temperature" />
+            <marker date="1457477413096" expanded="true" signature="1068:1168" placeholder="SELECT * FRO... Temperature" />
+            <marker date="1457477413096" expanded="true" signature="1300:1313" placeholder="SELECT * FRO... " />
+            <marker date="1457477413096" expanded="true" signature="1300:1314" placeholder="SELECT * FRO... " />
+            <marker date="1457477413096" expanded="true" signature="1300:1368" placeholder="SELECT * FRO... Temperature" />
+            <marker date="1457477413096" expanded="true" signature="1336:1367" placeholder="SELECT max(i... Temperature" />
+            <marker date="1457477413096" expanded="true" signature="2237:2285" placeholder="SELECT * FRO... Temperature" />
+            <marker date="1457477413096" expanded="true" signature="2237:2286" placeholder="SELECT * FRO... Temperature" />
+            <marker date="1457477413096" expanded="true" signature="2237:2308" placeholder="SELECT * FRO... Temperature" />
+            <marker date="1457477413096" expanded="true" signature="2237:2309" placeholder="SELECT * FRO... Temperature" />
+            <marker date="1457477413096" expanded="true" signature="2237:2321" placeholder="SELECT * FRO... Temperature" />
           </folding>
         </state>
       </provider>
