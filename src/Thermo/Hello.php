@@ -34,8 +34,10 @@ class Hello extends Resource
      */
     public function sayHello($id)
     {
-
-       $ret =array('temp'=>intval($id)+1);
+        $conn = mysqli_connect('localhost', 'Thermo', 'Thermo', 'Thermo');
+        //if(mysqli_connect_errno())
+        //die(mysqli_connect_error());
+        $ret = array('temp' => intval($id) + 1);
         if ($ret ['temp'] > 50)
             $ret ['temp'] = 0;
         return new Response(200, json_encode($ret));
