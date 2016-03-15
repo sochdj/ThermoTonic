@@ -44,5 +44,10 @@ class Hello extends Resource
     }
 
 
+//$DB = new DBPDO();
+//$temperature = $DB->fetch("SELECT * FROM Temperature");
 
+//$ret =array('temp'=>$temperature);
+
+//return new Response(200, json_encode($ret));
 }

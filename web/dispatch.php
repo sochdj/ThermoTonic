@@ -1,5 +1,8 @@
 <?php
+//require("/../src/Tonic/config.inc.php");
 
+// pull in the file with the database class
+//require("/../src/Tonic/Database.class.php");
 // load autoloader (delete as appropriate)
 if (@include(__DIR__.'/../src/Tonic/Autoloader.php')) { // use Tonic autoloader
     #new Tonic\Autoloader('myNamespace'); // add another namespace
