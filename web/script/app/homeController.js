@@ -1,7 +1,7 @@
 appRoot.controller('homeController', ['$scope', '$interval', 'apiService',
     function ($scope, $interval, apiService) {
         $scope.latestTemperature = {
-            date: "",
+            dateTime: "",
             tempInt: 0,
             tempExt1: 0,
             tempExt2: 0,
@@ -51,11 +51,11 @@ appRoot.controller('homeController', ['$scope', '$interval', 'apiService',
             }
         ];
 
-        $scope.labels = ["January", "February", "March", "April", "May", "June", "July"];
-        $scope.series = ['Series A', 'Series B'];
+        $scope.labels = [];
+        $scope.series = ['Internal', 'External'];
         $scope.data = [
-            [65, 59, 80, 81, 56, 55, 40],
-            [28, 48, 40, 19, 86, 27, 90]
+            [],
+            []
         ];
         $scope.selezione = "Oggi";
 
@@ -63,28 +63,99 @@ appRoot.controller('homeController', ['$scope', '$interval', 'apiService',
         $scope.$watch('selezione', function (newValue) {
             switch (newValue) {
                 case "Oggi":
-                    $scope.data = [
-                        [65, 59, 80, 81, 56, 55, 40],
-                        [28, 48, 40, 19, 86, 27, 90]
-                    ];
+                    $scope.labels.length = 0;
+                    $scope.data[0].length = 0;
+                    $scope.data[1].length = 0;
+                    var today = new Date();
+
+                    var start = toMysqlFormat(today.getFullYear(), today.getMonth() + 1, today.getDate(), 00, 00, 00);
+                    var stop = toMysqlFormat(today.getFullYear(), today.getMonth() + 1, today.getDate(), 23, 59, 59);
+                    apiService.getRangeTemperatures(start, stop).then(function (data) {
+
+                        angular.forEach(data.temperatures, function (temp) {
+                            $scope.labels.push("");
+                            //$scope.labels.push(temp.dateTime);
+                            $scope.data[0].push(temp.tempInt);
+                            $scope.data[1].push(temp.tempExt1);
+                        })
+
+                    }, function (reasons) {
+
+                    });
+
                     break;
                 case "Ieri":
-                    $scope.data = [
-                        [28, 48, 40, 19, 86, 27, 90],
-                        [65, 59, 80, 81, 56, 55, 40]
-                    ];
+                    $scope.labels.length = 0;
+                    $scope.data[0].length = 0;
+                    $scope.data[1].length = 0;
+                    var yesterday = new Date();
+
+                    yesterday.setDate(yesterday.getDate() - 1);
+
+                    var start = toMysqlFormat(yesterday.getFullYear(), yesterday.getMonth() + 1, yesterday.getDate(), 00, 00, 00);
+                    var stop = toMysqlFormat(yesterday.getFullYear(), yesterday.getMonth() + 1, yesterday.getDate(), 23, 59, 59);
+                    apiService.getRangeTemperatures(start, stop).then(function (data) {
+
+                        angular.forEach(data.temperatures, function (temp) {
+                            $scope.labels.push("");
+                            //$scope.labels.push(temp.dateTime);
+                            $scope.data[0].push(temp.tempInt);
+                            $scope.data[1].push(temp.tempExt1);
+                        })
+
+                    }, function (reasons) {
+
+                    });
                     break;
                 case "UltimaSettimana":
-                    $scope.data = [
-                        [28, 48, 80, 81, 56, 27, 90],
-                        [65, 59, 84, 19, 86, 55, 40]
-                    ];
+                    $scope.labels.length = 0;
+                    $scope.data[0].length = 0;
+                    $scope.data[1].length = 0;
+                    var today = new Date();
+                    var yesterday = new Date();
+
+                    yesterday.setDate(yesterday.getDate() - 7);
+
+                    var start = toMysqlFormat(yesterday.getFullYear(), yesterday.getMonth() + 1, yesterday.getDate(), 00, 00, 00);
+                    var stop = toMysqlFormat(today.getFullYear(), today.getMonth() + 1, today.getDate(), 23, 59, 59);
+                    apiService.getRangeTemperatures(start, stop).then(function (data) {
+
+                        angular.forEach(data.temperatures, function (temp) {
+                            $scope.labels.push("");
+                            //$scope.labels.push(temp.dateTime);
+                            $scope.data[0].push(temp.tempInt);
+                            $scope.data[1].push(temp.tempExt1);
+                        })
+
+                    }, function (reasons) {
+
+                    });
                     break;
                 case "UltimoMese":
-                    $scope.data = [
-                        [65, 59, 80, 81, 56, 27, 90],
-                        [28, 48, 84, 19, 86, 55, 40]
-                    ];
+                    $scope.labels.length = 0;
+                    $scope.data[0].length = 0;
+                    $scope.data[1].length = 0;
+
+
+                    var today = new Date();
+                    var lastMonth = new Date();
+
+                    lastMonth.setMonth(lastMonth.getMonth() - 1);
+
+                    var start = toMysqlFormat(lastMonth.getFullYear(), lastMonth.getMonth() + 1, lastMonth.getDate(), 00, 00, 00);
+                    var stop = toMysqlFormat(today.getFullYear(), today.getMonth() + 1, today.getDate(), 23, 59, 59);
+                    apiService.getRangeTemperatures(start, stop).then(function (data) {
+
+                        angular.forEach(data.temperatures, function (temp) {
+                            $scope.labels.push("");
+                            //$scope.labels.push(temp.dateTime);
+                            $scope.data[0].push(temp.tempInt);
+                            $scope.data[1].push(temp.tempExt1);
+                        })
+
+                    }, function (reasons) {
+
+                    });
                     break;
 
             }
