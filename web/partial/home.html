@@ -1,44 +1,41 @@
 <div align="center"><h3>Thermo Controller - Stato Attuale</h3></div>
 
 <div class="grid">
-	<div class="row cells6">
+	<div class="row cells11">
 		<div class="cell">
 		</div>
-		<div class="cell">
-			<div align="center">External Temperature</div>
-			<div ng-radial-gauge ranges="ranges" value="latestTemperature.tempExt1" value-unit="unit"
-				 precision="precision"
-				 lower-limit="lowerLimit" upper-limit="upperLimit"></div>
-			<div align="center">
-				<input type="text" name="external" id="external" data-ng-model="latestTemperature.tempExt1" min="0.0"
-					   max="50.0"
-					   step="0.1">
-			</div>
-
-		</div>
-		<div class="cell">
-		</div>
-		<div class="cell">
-			<div align="center">Internal Temperature</div>
+		<div class="cell colspan3">
+			<div align="center">Temperatura Interna</div>
 			<div ng-radial-gauge ranges="ranges" value="latestTemperature.tempInt" value-unit="unit"
 				 precision="precision"
 				 lower-limit="lowerLimit" upper-limit="upperLimit"></div>
 			<div align="center">
-				<input type="text" name="internal" id="internal" data-ng-model="latestTemperature.tempInt" min="0.0"
-					   max="50.0"
-					   step="0.1">
+				<label id="internal">{{latestTemperature.tempInt}}</label>
 			</div>
 		</div>
-		<div class="cell">
-			<div align="center" style="margin-top:30%">Status</div>
-			<img src="../images/LedGreenOff.png" data-ng-show="intvalue > 25"
-				 style="width:25%; margin-left:40%; margin-top:5%"/>
-			<img src="../images/LedGreenOn.png" data-ng-show="intvalue <= 25"
-				 style="width:25%; margin-left:40%; margin-top:5%"/>
+		<div class="cell colspan3">
+			<div class="cell">
+				<div align="center" style="margin-top:10%">Stato Riscaldamento</div>
+				<img src="../images/LedGreenOff.png" data-ng-show="intvalue > 25"
+					 style="width:25%; margin-left:35%; margin-top:5%"/>
+				<img src="../images/LedGreenOn.png" data-ng-show="intvalue <= 25"
+					 style="width:25%; margin-left:35%; margin-top:5%"/>
+				<div align="center" style="margin-top:10%">Fascia Oraria</div>
+				<div style="margin-top:5%"><h1 class="align-center">1</h1></div>
 
+			</div>
+		</div>
+		<div class="cell colspan3">
+			<div align="center">Temperatura Esterna</div>
+			<div ng-radial-gauge ranges="ranges" value="latestTemperature.tempExt1" value-unit="unit"
+				 precision="precision"
+				 lower-limit="lowerLimit" upper-limit="upperLimit"></div>
+			<div align="center">
+				<label id="external">{{latestTemperature.tempExt1}}</label>
+			</div>
 		</div>
 	</div>
-	<div style="margin-top: 50px" align="center"><h4>Grafico Temperature Rilevate</h4></div>
+	<div style="margin-top: 10px" align="center"><h4>Grafico Temperature Rilevate</h4></div>
 	<div class="row cells6">
 		<div class="cell">
 		</div>
@@ -52,11 +49,11 @@
 			</select>
 		</div>
 	</div>
-	<div class="row cells6">
+	<div class="row cells7">
 		<div class="cell">
 		</div>
 
-		<div class="cell colspan4">
+		<div class="cell colspan5">
 			<canvas id="line" class="chart chart-line" chart-data="data"
 					chart-labels="labels" chart-legend="true" chart-series="series" chart-colours="['red','blue']">
 			</canvas>
