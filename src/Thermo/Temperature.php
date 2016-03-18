@@ -39,21 +39,22 @@ class Temperature extends Resource
         $db->connect();
         if (isset($_GET['start']) && $_GET['stop']) {
             $sql = "SELECT * FROM Temperature where DateTime BETWEEN '" . $_GET['start'] . "' and '" . $_GET['stop'] . "'";
+            //$sql = "SELECT * FROM Temperature where DateTime BETWEEN '2016-03-12T00:00:00' and '2016-03-12T23:59:59'";
             $rows = $db->fetch_all_array($sql);
-            $ret = array("ciao" => $rows);
+
+            for ($i = 0; $i < count($rows); $i++) {
+
+            }
+
+            $ret = array("temperatures" => $rows);
 
         } else {
 
-            $sql = "SELECT * FROM Temperature where id=(SELECT max(id) from Temperature)";
+            $sql = "SELECT * FROM CurrentTemp";
 
             $rows = $db->fetch_all_array($sql);
 
-            $temp = array('date' => $rows[0]['DateTime'],
-                'tempInt' => doubleval($rows[0]['TempInt']),
-                'tempExt1' => doubleval($rows[0]['TempExt1']),
-                'tempExt2' => doubleval($rows[0]['TempExt2']),
-                'tempExt3' => doubleval($rows[0]['TempExt3']));
-            $ret = array('latestTemperature' => $temp);
+            $ret = array('latestTemperature' => $rows[0]);
 
 
         }

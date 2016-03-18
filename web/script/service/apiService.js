@@ -19,8 +19,23 @@ appRoot.factory('apiService', ['$http', '$q',
             return p.promise;
         }
 
+        var getRangeTemperatures = function (start, stop) {
+            var p = $q.defer();
+            $http.get('/temperature?start=' + start + '&stop=' + stop).then(
+                function (response) {
+
+                    p.resolve(response.data);
+                },
+                function (reason) {
+                    p.reject(reason);
+                }
+            );
+            return p.promise;
+        }
+
 
         return {
-            getLatestTemperatures: getLatestTemperatures
+            getLatestTemperatures: getLatestTemperatures,
+            getRangeTemperatures: getRangeTemperatures
         }
     }]);
