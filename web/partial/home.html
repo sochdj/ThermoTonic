@@ -16,12 +16,12 @@
 		<div class="cell colspan3">
 			<div class="cell">
 				<div align="center" style="margin-top:10%">Stato Riscaldamento</div>
-				<img src="../images/LedGreenOff.png" data-ng-show="intvalue > 25"
+				<img src="../images/LedGreenOff.png" data-ng-show="latestTemperature.riscON == 0"
 					 style="width:25%; margin-left:35%; margin-top:5%"/>
-				<img src="../images/LedGreenOn.png" data-ng-show="intvalue <= 25"
+				<img src="../images/LedGreenOn.png" data-ng-show="latestTemperature.riscON == 1"
 					 style="width:25%; margin-left:35%; margin-top:5%"/>
 				<div align="center" style="margin-top:10%">Fascia Oraria</div>
-				<div style="margin-top:5%"><h1 class="align-center">1</h1></div>
+				<div style="margin-top:5%"><h1 class="align-center">{{latestTemperature.timeSlot}}</h1></div>
 
 			</div>
 		</div>

@@ -44,7 +44,7 @@ class Temperature extends Resource
 
         } else {
 
-            $sql = "SELECT * FROM Temperature where id=(SELECT max(id) from Temperature)";
+            $sql = "SELECT * FROM CurrentTemp where id=1";
 
             $rows = $db->fetch_all_array($sql);
 
