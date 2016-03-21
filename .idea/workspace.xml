@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cbcc08c1-045e-47fb-a9d4-f24bc74def7e" name="Default" comment="Aggiunta connessione SQL">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/partial/home.html" afterPath="$PROJECT_DIR$/web/partial/home.html" />
     </list>
     <ignored path="ThermoTonic.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,15 +41,10 @@
             <state vertical-scroll-proportion="0.0">
               <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding>
-                <marker date="1458299227942" expanded="true" signature="30:109" placeholder="..." />
-                <marker date="1458299227942" expanded="true" signature="122:334" placeholder=" The obligitory Hello World example ..." />
-                <marker date="1458299227942" expanded="true" signature="381:853" placeholder=" Use this method to handle GET HTTP requests. ..." />
-                <marker date="1458299227942" expanded="true" signature="893:1584" placeholder="{...}" />
+                <element signature="e#26#39#0#PHP" expanded="true" />
                 <marker date="1458299227942" expanded="true" signature="1047:1184" placeholder="..." />
                 <marker date="1458299227942" expanded="true" signature="1068:1169" placeholder="SELECT * FRO... Temperature" />
                 <marker date="1458299227942" expanded="true" signature="1431:1501" placeholder="..." />
-                <marker date="1458299227942" expanded="true" signature="1593:1759" placeholder=" ..." />
-                <marker date="1458299227942" expanded="true" signature="1824:2201" placeholder="{...}" />
                 <marker date="1458299227942" expanded="true" signature="1942:2014" placeholder="SELECT * FRO... Temperature" />
               </folding>
             </state>
@@ -90,7 +84,7 @@
       <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/partial/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4404946">
+            <state vertical-scroll-proportion="0.48816568">
               <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#!!top" expanded="true" />
@@ -122,8 +116,6 @@
               <caret line="12" column="71" selection-start-line="12" selection-start-column="71" selection-end-line="12" selection-end-column="71" />
               <folding>
                 <element signature="n#!!doc;n#twoDigits#0" expanded="false" />
-                <marker date="1458299227436" expanded="true" signature="64:206" placeholder="{...}" />
-                <marker date="1458299227436" expanded="true" signature="208:441" placeholder="/** …and then create the method to output the date string as desired. ...*/" />
                 <marker date="1458299227436" expanded="true" signature="508:654" placeholder="{...}" />
               </folding>
             </state>
@@ -257,6 +249,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -408,7 +401,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -526,16 +518,21 @@
       <option name="project" value="LOCAL" />
       <updated>1458302355488</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Aggiunta connessione SQL">
+      <created>1458306162824</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1458306162824</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="43" y="24" width="1237" height="1000" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21018593" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21018593" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32829374" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21166307" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -543,6 +540,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295099" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32829374" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -767,7 +765,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.09977827">
           <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -845,9 +842,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.72477067">
           <caret line="258" column="9" selection-start-line="258" selection-start-column="9" selection-end-line="258" selection-end-column="9" />
-          <folding>
-            <marker date="1457528820515" expanded="true" signature="7051:7092" placeholder="INSERT INTO `${$this-&gt;pre}`... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -855,7 +849,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.25802752">
           <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -863,7 +856,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -871,7 +863,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.5">
           <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -879,7 +870,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.0">
           <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -911,8 +901,6 @@
           <caret line="12" column="71" selection-start-line="12" selection-start-column="71" selection-end-line="12" selection-end-column="71" />
           <folding>
             <element signature="n#!!doc;n#twoDigits#0" expanded="false" />
-            <marker date="1458299227436" expanded="true" signature="64:206" placeholder="{...}" />
-            <marker date="1458299227436" expanded="true" signature="208:441" placeholder="/** …and then create the method to output the date string as desired. ...*/" />
             <marker date="1458299227436" expanded="true" signature="508:654" placeholder="{...}" />
           </folding>
         </state>
@@ -923,15 +911,10 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding>
-            <marker date="1458299227942" expanded="true" signature="30:109" placeholder="..." />
-            <marker date="1458299227942" expanded="true" signature="122:334" placeholder=" The obligitory Hello World example ..." />
-            <marker date="1458299227942" expanded="true" signature="381:853" placeholder=" Use this method to handle GET HTTP requests. ..." />
-            <marker date="1458299227942" expanded="true" signature="893:1584" placeholder="{...}" />
+            <element signature="e#26#39#0#PHP" expanded="true" />
             <marker date="1458299227942" expanded="true" signature="1047:1184" placeholder="..." />
             <marker date="1458299227942" expanded="true" signature="1068:1169" placeholder="SELECT * FRO... Temperature" />
             <marker date="1458299227942" expanded="true" signature="1431:1501" placeholder="..." />
-            <marker date="1458299227942" expanded="true" signature="1593:1759" placeholder=" ..." />
-            <marker date="1458299227942" expanded="true" signature="1824:2201" placeholder="{...}" />
             <marker date="1458299227942" expanded="true" signature="1942:2014" placeholder="SELECT * FRO... Temperature" />
           </folding>
         </state>
@@ -970,7 +953,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/partial/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4404946">
+        <state vertical-scroll-proportion="0.48816568">
           <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#!!top" expanded="true" />
