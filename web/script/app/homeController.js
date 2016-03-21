@@ -5,7 +5,9 @@ appRoot.controller('homeController', ['$scope', '$interval', 'apiService',
             tempInt: 0,
             tempExt1: 0,
             tempExt2: 0,
-            tempExt3: 0
+            tempExt3: 0,
+            timeSlot: 0,
+            riscON: 0
         };
 
         $scope.intvalue = 0;

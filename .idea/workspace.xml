@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="cbcc08c1-045e-47fb-a9d4-f24bc74def7e" name="Default" comment="Aggiunta connessione SQL">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Thermo.sql" afterPath="$PROJECT_DIR$/src/Thermo.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Thermo/Temperature.php" afterPath="$PROJECT_DIR$/src/Thermo/Temperature.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/partial/home.html" afterPath="$PROJECT_DIR$/web/partial/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/script/app/homeController.js" afterPath="$PROJECT_DIR$/web/script/app/homeController.js" />
     </list>
     <ignored path="ThermoTonic.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,25 +42,16 @@
       <file leaf-file-name="Temperature.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Thermo/Temperature.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+            <state vertical-scroll-proportion="-9.416667">
+              <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
               <folding>
                 <element signature="e#26#39#0#PHP" expanded="true" />
-                <marker date="1458299227942" expanded="true" signature="1047:1184" placeholder="..." />
-                <marker date="1458299227942" expanded="true" signature="1068:1169" placeholder="SELECT * FRO... Temperature" />
-                <marker date="1458299227942" expanded="true" signature="1431:1501" placeholder="..." />
-                <marker date="1458299227942" expanded="true" signature="1942:2014" placeholder="SELECT * FRO... Temperature" />
+                <marker date="1458469440218" expanded="true" signature="1047:1184" placeholder="..." />
+                <marker date="1458469440218" expanded="true" signature="1068:1169" placeholder="SELECT * FRO... Temperature" />
+                <marker date="1458469440218" expanded="true" signature="1310:1346" placeholder="SELECT * FRO... CurrentTemp" />
+                <marker date="1458469440218" expanded="true" signature="1399:1469" placeholder="..." />
+                <marker date="1458469440218" expanded="true" signature="1910:1982" placeholder="SELECT * FRO... Temperature" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Myhome.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/partial/Myhome.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -65,8 +60,40 @@
         <entry file="file://$PROJECT_DIR$/web/script/app/homeController.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="62" column="27" selection-start-line="62" selection-start-column="27" selection-end-line="62" selection-end-column="27" />
+              <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Thermo.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Thermo.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.7758621">
+              <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="apiService.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/script/service/apiService.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Database.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Thermo/Database.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.666667">
+              <caret line="258" column="9" selection-start-line="258" selection-start-column="9" selection-end-line="258" selection-end-column="9" />
+              <folding>
+                <marker date="1457528820515" expanded="true" signature="7051:7092" placeholder="INSERT INTO `${$this-&gt;pre}`... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -84,8 +111,8 @@
       <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/partial/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.48816568">
-              <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.45045045">
+              <caret line="20" column="92" selection-start-line="20" selection-start-column="92" selection-end-line="20" selection-end-column="92" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#2;n#div#0;n#div#1;n#!!top" expanded="true" />
@@ -95,16 +122,6 @@
                 <element signature="n#style#0;n#div#1;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#div#1;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Thermo.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Thermo.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -156,8 +173,8 @@
         <option value="$PROJECT_DIR$/web/script/service/apiService.js" />
         <option value="$PROJECT_DIR$/web/script/src/dateUtil.js" />
         <option value="$PROJECT_DIR$/web/index.html" />
-        <option value="$PROJECT_DIR$/src/Thermo/Temperature.php" />
         <option value="$PROJECT_DIR$/web/script/app/homeController.js" />
+        <option value="$PROJECT_DIR$/src/Thermo/Temperature.php" />
         <option value="$PROJECT_DIR$/web/partial/home.html" />
       </list>
     </option>
@@ -219,10 +236,10 @@
   </component>
   <component name="PhpXdebugProxy" ide_key="15149" host="localhost" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="43" />
-    <option name="y" value="24" />
-    <option name="width" value="1237" />
-    <option name="height" value="1000" />
+    <option name="x" value="51" />
+    <option name="y" value="69" />
+    <option name="width" value="1299" />
+    <option name="height" value="1001" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -249,6 +266,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -400,7 +418,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -528,14 +545,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="43" y="24" width="1237" height="1000" extended-state="6" />
+    <frame x="51" y="69" width="1299" height="1001" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21018593" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30331025" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21166307" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22330096" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295099" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -838,24 +855,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Thermo/Database.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.72477067">
-          <caret line="258" column="9" selection-start-line="258" selection-start-column="9" selection-end-line="258" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Thermo/config.inc.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.25802752">
           <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/script/service/apiService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -873,14 +876,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Thermo.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Thermo/Welcome.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.22362386">
@@ -892,31 +887,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.758929">
           <caret line="12" column="26" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/script/src/dateUtil.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="71" selection-start-line="12" selection-start-column="71" selection-end-line="12" selection-end-column="71" />
-          <folding>
-            <element signature="n#!!doc;n#twoDigits#0" expanded="false" />
-            <marker date="1458299227436" expanded="true" signature="508:654" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Thermo/Temperature.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding>
-            <element signature="e#26#39#0#PHP" expanded="true" />
-            <marker date="1458299227942" expanded="true" signature="1047:1184" placeholder="..." />
-            <marker date="1458299227942" expanded="true" signature="1068:1169" placeholder="SELECT * FRO... Temperature" />
-            <marker date="1458299227942" expanded="true" signature="1431:1501" placeholder="..." />
-            <marker date="1458299227942" expanded="true" signature="1942:2014" placeholder="SELECT * FRO... Temperature" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -935,11 +905,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/script/app/homeController.js">
+    <entry file="file://$PROJECT_DIR$/web/script/src/dateUtil.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="62" column="27" selection-start-line="62" selection-start-column="27" selection-end-line="62" selection-end-column="27" />
-          <folding />
+          <caret line="12" column="71" selection-start-line="12" selection-start-column="71" selection-end-line="12" selection-end-column="71" />
+          <folding>
+            <element signature="n#!!doc;n#twoDigits#0" expanded="false" />
+            <marker date="1458299227436" expanded="true" signature="508:654" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -951,10 +924,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Thermo.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.7758621">
+          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/script/app/homeController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/script/service/apiService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Thermo/Database.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.666667">
+          <caret line="258" column="9" selection-start-line="258" selection-start-column="9" selection-end-line="258" selection-end-column="9" />
+          <folding>
+            <marker date="1457528820515" expanded="true" signature="7051:7092" placeholder="INSERT INTO `${$this-&gt;pre}`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Thermo/Temperature.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.416667">
+          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding>
+            <element signature="e#26#39#0#PHP" expanded="true" />
+            <marker date="1458469440218" expanded="true" signature="1047:1184" placeholder="..." />
+            <marker date="1458469440218" expanded="true" signature="1068:1169" placeholder="SELECT * FRO... Temperature" />
+            <marker date="1458469440218" expanded="true" signature="1310:1346" placeholder="SELECT * FRO... CurrentTemp" />
+            <marker date="1458469440218" expanded="true" signature="1399:1469" placeholder="..." />
+            <marker date="1458469440218" expanded="true" signature="1910:1982" placeholder="SELECT * FRO... Temperature" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/partial/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48816568">
-          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.45045045">
+          <caret line="20" column="92" selection-start-line="20" selection-start-column="92" selection-end-line="20" selection-end-column="92" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#2;n#div#0;n#div#1;n#!!top" expanded="true" />
