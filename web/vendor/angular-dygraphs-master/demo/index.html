@@ -19,7 +19,8 @@
         <div class="col-md-4">
             <h3>dygraphs - AngularJS Directive</h3>
 
-            <p>This directive adds functionality to the dygraphs library by adding an interactive legend below the graph,
+            <p>This directive adds functionality to the dygraphs library by adding an interactive legend below the
+                graph,
                 and a popover tooltip that follows the mouse.</p>
             <p>To remove a series from the chart, click on the label.</p>
             <p>It also resizes the chart to the size of its parent.</p>
@@ -30,7 +31,7 @@
                          data="graph.data"
                          options="graph.options"
                          legend="graph.legend"
-                    >
+            >
             </ng-dygraphs>
         </div>
     </div>
@@ -43,8 +44,7 @@
 
     demoApp.controller('DemoCtrl', function ($scope) {
         $scope.graph = {
-            data: [
-            ],
+            data: [],
             options: {
                 labels: ["x", "A", "B"]
             },
@@ -64,9 +64,9 @@
         var base_time = Date.parse("2008/07/01");
         var num = 24 * 0.25 * 365;
         for (var i = 0; i < num; i++) {
-            $scope.graph.data.push([ new Date(base_time + i * 3600 * 1000),
-                        i + 50 * (i % 60),        // line
-                        i * (num - i) * 4.0 / num  // parabola
+            $scope.graph.data.push([new Date(base_time + i * 3600 * 1000),
+                i + 50 * (i % 60),        // line
+                i * (num - i) * 4.0 / num  // parabola
             ]);
         }
 

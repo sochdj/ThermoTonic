@@ -6,8 +6,8 @@
  * License: MIT
  */
 angular.module("angular-dygraphs", [
-    'ngSanitize'
-])
+        'ngSanitize'
+    ])
     .directive('ngDygraphs', ['$window', '$sce', function ($window, $sce) {
         return {
             restrict: 'E',
@@ -17,19 +17,19 @@ angular.module("angular-dygraphs", [
                 legend: '=?'
             },
             template: '<div class="ng-dygraphs">' +                     // Outer div to hold the whole directive
-                '<div class="graph"></div>' +                           // Div for graph
-                '<div class="legend" ng-if="LegendEnabled">' +          // Div for legend
-                '<div class="series-container">' +                      // Div for series
-                '<div ng-repeat="series in legendSeries" class="series">' +
-                '<a ng-click="selectSeries(series)">' +
-                '<span ng-bind-html="seriesLine(series)"></span>' +
-                '<span ng-style="seriesStyle(series)">{{series.label}}</span>' +
-                '</a>' +
-                '</div>' +                                              // Repeat
-                '</div>' +                                              // Series Div
-                '</div>' +                                              // Legend Div
-                '<div class="dypopover"></div>' +
-                '</div>',                                               // Outer div
+            '<div class="graph"></div>' +                           // Div for graph
+            '<div class="legend" ng-if="LegendEnabled">' +          // Div for legend
+            '<div class="series-container">' +                      // Div for series
+            '<div ng-repeat="series in legendSeries" class="series">' +
+            '<a ng-click="selectSeries(series)">' +
+            '<span ng-bind-html="seriesLine(series)"></span>' +
+            '<span ng-style="seriesStyle(series)">{{series.label}}</span>' +
+            '</a>' +
+            '</div>' +                                              // Repeat
+            '</div>' +                                              // Series Div
+            '</div>' +                                              // Legend Div
+            '<div class="dypopover"></div>' +
+            '</div>',                                               // Outer div
             link: function (scope, element, attrs) {
                 scope.LegendEnabled = true;
 
@@ -53,7 +53,7 @@ angular.module("angular-dygraphs", [
                     options.file = scope.data;
                     options.highlightCallback = scope.highlightCallback;
                     options.unhighlightCallback = scope.unhighlightCallback;
-                    if(options.showPopover === undefined)
+                    if (options.showPopover === undefined)
                         options.showPopover = true;
 
                     if (scope.legend !== undefined) {
@@ -93,14 +93,14 @@ angular.module("angular-dygraphs", [
 
                     resize();
                 });
-                
-                scope.$watch("options", function(newOptions){
+
+                scope.$watch("options", function (newOptions) {
                     graph.updateOptions(newOptions);
                     resize();
                 }, true);
 
                 scope.highlightCallback = function (event, x, points, row) {
-                    if(!scope.options.showPopover)
+                    if (!scope.options.showPopover)
                         return;
                     console.log(event, x, points, row);
                     var html = "<table><tr><th colspan='2'>";
@@ -119,7 +119,7 @@ angular.module("angular-dygraphs", [
                         if (scope.legendSeries[point.name] !== undefined) {
                             label = scope.legendSeries[point.name].label;
                             color = "style='color:" + scope.legendSeries[point.name].color + ";'";
-                            if(scope.legendSeries[point.name].format) {
+                            if (scope.legendSeries[point.name].format) {
                                 value = point.yval.toFixed(scope.legendSeries[point.name].format);
                             }
                             else {
@@ -161,14 +161,14 @@ angular.module("angular-dygraphs", [
                 };
 
                 scope.unhighlightCallback = function (event, a, b) {
-                    if(!scope.options.showPopover){
+                    if (!scope.options.showPopover) {
                         popover.hide();
                         return;
                     }
                     // Check if the cursor is still within the chart area
                     // If so, ignore this event.
                     // This stops flickering if we get an even when the mouse covers the popover
-                    if(event.pageX > chartArea.left && event.pageX < chartArea.right && event.pageY > chartArea.top && event.pageY < chartArea.bottom) {
+                    if (event.pageX > chartArea.left && event.pageX < chartArea.right && event.pageY > chartArea.top && event.pageY < chartArea.bottom) {
                         var x;
                         if (popoverPos == true) {
                             x = event.pageX - popoverWidth - 20;
@@ -226,7 +226,7 @@ angular.module("angular-dygraphs", [
                     chartArea = $(chartDiv).offset();
                     chartArea.bottom = chartArea.top + parent.height() - legendHeight;
                     chartArea.right = chartArea.left + parent.width();
-                    console.log("Position",chartArea);
+                    console.log("Position", chartArea);
                 }
             }
         };

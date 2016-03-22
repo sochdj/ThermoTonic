@@ -59,6 +59,41 @@ appRoot.controller('homeController', ['$scope', '$interval', 'apiService',
             [],
             []
         ];
+
+
+        $scope.graph = {
+            data: [],
+            options: {
+                labels: ["x", "A", "B"]
+            },
+            legend: {
+                series: {
+                    A: {
+                        label: "Series A"
+                    },
+                    B: {
+                        label: "Series B",
+                        format: 3
+                    }
+                }
+            }
+        };
+
+
+        var base_time = Date.parse("2008/07/01");
+        var num = 24 * 0.25 * 365;
+        for (var i = 0; i < num; i++) {
+            $scope.graph.data.push([new Date(base_time + i * 3600 * 1000),
+                i + 50 * (i % 60),        // line
+                i * (num - i) * 4.0 / num  // parabola
+            ]);
+        }
+
+
+
+
+
+
         $scope.selezione = "Oggi";
 
 
@@ -127,8 +162,15 @@ appRoot.controller('homeController', ['$scope', '$interval', 'apiService',
                             //$scope.labels.push(temp.dateTime);
                             $scope.data[0].push(temp.tempInt);
                             $scope.data[1].push(temp.tempExt1);
-                        })
 
+                            $scope.graph.data.push(new Date(temp.dateTime), temp.tempInt, temp.tempExt1);
+                        })
+                        /*$scope.graph.data.push({
+                         xValueFormatter: Dygraph.dateString_,
+
+                         xTicker: Dygraph.dateTicker
+                         })
+                         */
                     }, function (reasons) {
 
                     });
