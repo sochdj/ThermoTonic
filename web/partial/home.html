@@ -16,14 +16,17 @@
 		<div class="cell colspan3">
 			<div class="cell">
 				<div class="align-center" style="margin-top:10%"><h3>{{latestTemperature.dateTime}}</h3></div>
-				<div align="center" style="margin-top:10%">Stato Riscaldamento</div>
+				<div align="center" style="margin-top:5%">Stato Riscaldamento</div>
 				<img src="../images/LedGreenOff.png" data-ng-show="latestTemperature.riscON == 0"
-					 style="width:25%; margin-left:35%; margin-top:5%"/>
+					 style="width:25%; margin-left:37%; margin-top:5%"/>
 				<img src="../images/LedGreenOn.png" data-ng-show="latestTemperature.riscON == 1"
-					 style="width:25%; margin-left:35%; margin-top:5%"/>
-				<div align="center" style="margin-top:10%">Fascia Oraria</div>
-				<div style="margin-top:5%"><h1 class="align-center">{{latestTemperature.timeSlot}}</h1></div>
-
+					 style="width:25%; margin-left:37%; margin-top:5%"/>
+				<div align="center" style="margin-top:5%">Fascia Oraria</div>
+				<div style="margin-top:5%"><h1 style="margin-left:30%">{{latestTemperature.timeSlot}}
+					<a ng-href="#/setup" title="Impostazione Fasce Orarie"><img src="../images/GestFasce.png"
+																				style="width:40%; margin-left:10%"/></a>
+				</h1>
+				</div>
 			</div>
 		</div>
 		<div class="cell colspan3">
