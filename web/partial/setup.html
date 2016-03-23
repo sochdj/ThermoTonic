@@ -1,1 +1,77 @@
-<h1>Ciao alberto siamo nel setup</h1>
+<div class="grid">
+    <div class="row cells9">
+        <div class="cell">
+        </div>
+        <div class="cell">
+            <img src="../images/GestFasce.png" style="width:100%"/>
+        </div>
+        <div class="cell colspan5">
+            <div><h3 class="align-center" style="margin-top:5%">Thermo Controller - Impostazione Fasce Orarie</h3></div>
+        </div>
+    </div>
+</div>
+
+<div class="grid">
+    <div class="row cells11">
+        <div class="cell">
+        </div>
+        <div class="cell colspan2">
+            <h5>Seleziona Giorno</h5>
+        </div>
+        <div class="cell colspan2">
+            <select name="Giorno" align="center" style="margin-top:5%" title="Seleziona il giorno da impostare"
+                    ng-model="giorno" ng-change="chsel()">
+                <option value="Lunedi" selected>Lunedì</option>
+                <option value="Martedi">Martedì</option>
+                <option value="Mercoledi">Mercoledì</option>
+                <option value="Giovedi">Giovedì</option>
+                <option value="Venerdi">Venerdì</option>
+                <option value="Sabato">Sabato</option>
+                <option value="Domenica">Domenica</option>
+            </select>
+        </div>
+    </div>
+</div>
+
+<div class="grid">
+    <div class="row cells11">
+        <div class="cell">
+        </div>
+        <div class="cell colspan2">
+            <h4>Fascia</h4>
+        </div>
+        <div class="cell colspan2">
+            <h4>Ora inizio</h4>
+        </div>
+        <div class="cell colspan2">
+            <h4>Ora fine</h4>
+        </div>
+        <div class="cell colspan2">
+            <h4>Temperatura</h4>
+        </div>
+        <div class="cell colspan2">
+            <h4>Isteresi</h4>
+        </div>
+    </div>
+    <div class="row cells11" ng-repeat="r in ranges">
+        <div class="cell">
+        </div>
+        <div class="cell colspan2">
+            <label>{{r.fascia}}</label>
+        </div>
+        <div class="cell colspan2">
+
+            <input type="number" ng>
+
+        </div>
+        <div class="cell colspan2">
+            Ora fine
+        </div>
+        <div class="cell colspan2">
+            Temperatura
+        </div>
+        <div class="cell colspan2">
+            Isteresi
+        </div>
+    </div>
+</div>

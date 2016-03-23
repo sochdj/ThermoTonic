@@ -90,10 +90,6 @@ appRoot.controller('homeController', ['$scope', '$interval', 'apiService',
         }
 
 
-
-
-
-
         $scope.selezione = "Oggi";
 
 
