@@ -16,19 +16,21 @@
         <div class="cell">
         </div>
         <div class="cell colspan2">
-            <h5>Seleziona Giorno</h5>
+            <h4>Seleziona Giorno</h4>
         </div>
         <div class="cell colspan2">
-            <select name="Giorno" align="center" style="margin-top:5%" title="Seleziona il giorno da impostare"
-                    ng-model="giorno" ng-change="chsel()">
-                <option value="Lunedi" selected>Lunedì</option>
-                <option value="Martedi">Martedì</option>
-                <option value="Mercoledi">Mercoledì</option>
-                <option value="Giovedi">Giovedì</option>
-                <option value="Venerdi">Venerdì</option>
-                <option value="Sabato">Sabato</option>
-                <option value="Domenica">Domenica</option>
-            </select>
+            <div class="input-control select">
+                <select name="Giorno" align="center" title="Seleziona il giorno da impostare"
+                        ng-model="giorno" ng-change="chsel()">
+                    <option value="Lunedi" selected>Lunedì</option>
+                    <option value="Martedi">Martedì</option>
+                    <option value="Mercoledi">Mercoledì</option>
+                    <option value="Giovedi">Giovedì</option>
+                    <option value="Venerdi">Venerdì</option>
+                    <option value="Sabato">Sabato</option>
+                    <option value="Domenica">Domenica</option>
+                </select>
+            </div>
         </div>
     </div>
 </div>
@@ -60,18 +62,18 @@
             <label>{{r.fascia}}</label>
         </div>
         <div class="cell colspan2">
-
-            <input type="number" ng>
-
+            <div class="input-control text" style="width: 22%">
+                <input type="number" name="oraInizio">
+            </div>
         </div>
         <div class="cell colspan2">
-            Ora fine
+            <input type="time" name="oraFine">
         </div>
         <div class="cell colspan2">
-            Temperatura
+            <input type="number" name="temp">
         </div>
         <div class="cell colspan2">
-            Isteresi
+            <input type="number" name="isteresi">
         </div>
     </div>
 </div>
