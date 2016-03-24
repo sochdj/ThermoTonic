@@ -1,7 +1,7 @@
-var appRoot = angular.module('thermoApp', ['ngRoute', 'ngResource', 'ngRadialGauge', 'chart.js']);
+var appRoot = angular.module('thermoApp', ['ngRoute', 'ngResource', 'ngRadialGauge', 'angular-dygraphs']);
 
 appRoot
-	.config(['$routeProvider', 'ChartJsProvider', function ($routeProvider, ChartJsProvider) {
+	.config(['$routeProvider', function ($routeProvider) {
     	 $routeProvider
 			 .when('/',
 				 {templateUrl: '/partial/home.html', controller: 'homeController'})
@@ -9,5 +9,5 @@ appRoot
 				 {templateUrl: '/partial/setup.html', controller: 'setupController'})
             .otherwise({ redirectTo: '/' });
 
-		ChartJsProvider.setOptions('Line', {animation: true, showTooltips: true});
-    }]);
+
+	}]);

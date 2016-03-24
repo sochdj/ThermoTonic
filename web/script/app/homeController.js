@@ -64,30 +64,33 @@ appRoot.controller('homeController', ['$scope', '$interval', 'apiService',
         $scope.graph = {
             data: [],
             options: {
-                labels: ["x", "A", "B"]
+                title: 'Temperature rilevate',
+                labels: ["Data", "Interna", "Esterna"],
+                valueRange: [-5, 30],
+                ylabel: 'Temperature (C)',
+                /*                labelsDivStyles: {
+                 'text-align': 'right',
+                 'background': 'none'
+                 },
+                 */
+                strokeWidth: 1.5,
+
             },
-            legend: {
+            /*            legend: {
                 series: {
                     A: {
-                        label: "Series A"
+             label: "Interna"
                     },
                     B: {
-                        label: "Series B",
-                        format: 3
+             label: "Esterna"
                     }
                 }
             }
+             */
         };
 
 
-        var base_time = Date.parse("2008/07/01");
-        var num = 24 * 0.25 * 365;
-        for (var i = 0; i < num; i++) {
-            $scope.graph.data.push([new Date(base_time + i * 3600 * 1000),
-                i + 50 * (i % 60),        // line
-                i * (num - i) * 4.0 / num  // parabola
-            ]);
-        }
+
 
 
         $scope.selezione = "Oggi";
@@ -96,20 +99,18 @@ appRoot.controller('homeController', ['$scope', '$interval', 'apiService',
         $scope.$watch('selezione', function (newValue) {
             switch (newValue) {
                 case "Oggi":
-                    $scope.labels.length = 0;
-                    $scope.data[0].length = 0;
-                    $scope.data[1].length = 0;
+
                     var today = new Date();
 
                     var start = toMysqlFormat(today.getFullYear(), today.getMonth() + 1, today.getDate(), 00, 00, 00);
                     var stop = toMysqlFormat(today.getFullYear(), today.getMonth() + 1, today.getDate(), 23, 59, 59);
                     apiService.getRangeTemperatures(start, stop).then(function (data) {
+                        $scope.graph.data.length = 0;
 
                         angular.forEach(data.temperatures, function (temp) {
-                            $scope.labels.push("");
-                            //$scope.labels.push(temp.dateTime);
-                            $scope.data[0].push(temp.tempInt);
-                            $scope.data[1].push(temp.tempExt1);
+                            var t = temp.dateTime.split(/[- :]/);
+                            var d = new Date(t[0], t[1] - 1, t[2], t[3], t[4], t[5]);
+                            $scope.graph.data.push([d, temp.tempInt, temp.tempExt1]);
                         })
 
                     }, function (reasons) {
@@ -118,9 +119,7 @@ appRoot.controller('homeController', ['$scope', '$interval', 'apiService',
 
                     break;
                 case "Ieri":
-                    $scope.labels.length = 0;
-                    $scope.data[0].length = 0;
-                    $scope.data[1].length = 0;
+                    ;
                     var yesterday = new Date();
 
                     yesterday.setDate(yesterday.getDate() - 1);
@@ -128,12 +127,12 @@ appRoot.controller('homeController', ['$scope', '$interval', 'apiService',
                     var start = toMysqlFormat(yesterday.getFullYear(), yesterday.getMonth() + 1, yesterday.getDate(), 00, 00, 00);
                     var stop = toMysqlFormat(yesterday.getFullYear(), yesterday.getMonth() + 1, yesterday.getDate(), 23, 59, 59);
                     apiService.getRangeTemperatures(start, stop).then(function (data) {
+                        $scope.graph.data.length = 0;
 
                         angular.forEach(data.temperatures, function (temp) {
-                            $scope.labels.push("");
-                            //$scope.labels.push(temp.dateTime);
-                            $scope.data[0].push(temp.tempInt);
-                            $scope.data[1].push(temp.tempExt1);
+                            var t = temp.dateTime.split(/[- :]/);
+                            var d = new Date(t[0], t[1] - 1, t[2], t[3], t[4], t[5]);
+                            $scope.graph.data.push([d, temp.tempInt, temp.tempExt1]);
                         })
 
                     }, function (reasons) {
@@ -141,9 +140,7 @@ appRoot.controller('homeController', ['$scope', '$interval', 'apiService',
                     });
                     break;
                 case "UltimaSettimana":
-                    $scope.labels.length = 0;
-                    $scope.data[0].length = 0;
-                    $scope.data[1].length = 0;
+
                     var today = new Date();
                     var yesterday = new Date();
 
@@ -152,29 +149,19 @@ appRoot.controller('homeController', ['$scope', '$interval', 'apiService',
                     var start = toMysqlFormat(yesterday.getFullYear(), yesterday.getMonth() + 1, yesterday.getDate(), 00, 00, 00);
                     var stop = toMysqlFormat(today.getFullYear(), today.getMonth() + 1, today.getDate(), 23, 59, 59);
                     apiService.getRangeTemperatures(start, stop).then(function (data) {
-
+                        $scope.graph.data.length = 0;
                         angular.forEach(data.temperatures, function (temp) {
-                            $scope.labels.push("");
-                            //$scope.labels.push(temp.dateTime);
-                            $scope.data[0].push(temp.tempInt);
-                            $scope.data[1].push(temp.tempExt1);
 
-                            $scope.graph.data.push(new Date(temp.dateTime), temp.tempInt, temp.tempExt1);
+                            var t = temp.dateTime.split(/[- :]/);
+                            var d = new Date(t[0], t[1] - 1, t[2], t[3], t[4], t[5]);
+                            $scope.graph.data.push([d, temp.tempInt, temp.tempExt1]);
                         })
-                        /*$scope.graph.data.push({
-                         xValueFormatter: Dygraph.dateString_,
 
-                         xTicker: Dygraph.dateTicker
-                         })
-                         */
                     }, function (reasons) {
 
                     });
                     break;
                 case "UltimoMese":
-                    $scope.labels.length = 0;
-                    $scope.data[0].length = 0;
-                    $scope.data[1].length = 0;
 
 
                     var today = new Date();
@@ -185,12 +172,12 @@ appRoot.controller('homeController', ['$scope', '$interval', 'apiService',
                     var start = toMysqlFormat(lastMonth.getFullYear(), lastMonth.getMonth() + 1, lastMonth.getDate(), 00, 00, 00);
                     var stop = toMysqlFormat(today.getFullYear(), today.getMonth() + 1, today.getDate(), 23, 59, 59);
                     apiService.getRangeTemperatures(start, stop).then(function (data) {
+                        $scope.graph.data.length = 0;
 
                         angular.forEach(data.temperatures, function (temp) {
-                            $scope.labels.push("");
-                            //$scope.labels.push(temp.dateTime);
-                            $scope.data[0].push(temp.tempInt);
-                            $scope.data[1].push(temp.tempExt1);
+                            var t = temp.dateTime.split(/[- :]/);
+                            var d = new Date(t[0], t[1] - 1, t[2], t[3], t[4], t[5]);
+                            $scope.graph.data.push([d, temp.tempInt, temp.tempExt1]);
                         })
 
                     }, function (reasons) {
