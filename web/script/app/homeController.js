@@ -77,15 +77,15 @@ appRoot.controller('homeController', ['$scope', '$interval', 'apiService',
 
             },
             /*            legend: {
-                series: {
-                    A: {
+             series: {
+             A: {
              label: "Interna"
-                    },
-                    B: {
+             },
+             B: {
              label: "Esterna"
-                    }
-                }
-            }
+             }
+             }
+             }
              */
         };
 
