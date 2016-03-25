@@ -1,1 +1,91 @@
-<h1>Ciao alberto siamo nel setup</h1>
+<div class="grid">
+    <div class="row cells9">
+        <div class="cell">
+        </div>
+        <div class="cell">
+            <img src="../images/GestFasce.png" style="width:100%"/>
+        </div>
+        <div class="cell colspan5">
+            <div><h3 class="align-center" style="margin-top:5%">Thermo Controller - Impostazione Fasce Orarie</h3></div>
+        </div>
+    </div>
+</div>
+
+<div class="grid">
+    <div class="row cells11">
+        <div class="cell">
+        </div>
+        <div class="cell colspan2">
+            <h4>Seleziona Giorno</h4>
+        </div>
+        <div class="cell colspan2">
+            <div class="input-control select">
+                <select name="Giorno" align="center" title="Seleziona il giorno da impostare"
+                        ng-model="giorno" ng-change="chsel()">
+                    <option value="Lunedi" selected>Lunedì</option>
+                    <option value="Martedi">Martedì</option>
+                    <option value="Mercoledi">Mercoledì</option>
+                    <option value="Giovedi">Giovedì</option>
+                    <option value="Venerdi">Venerdì</option>
+                    <option value="Sabato">Sabato</option>
+                    <option value="Domenica">Domenica</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="grid">
+    <div class="row cells11">
+        <div class="cell">
+        </div>
+        <div class="cell colspan2">
+            <h4>Fascia</h4>
+        </div>
+        <div class="cell colspan2">
+            <h4>Ora inizio</h4>
+        </div>
+        <div class="cell colspan2">
+            <h4>Ora fine</h4>
+        </div>
+        <div class="cell colspan2">
+            <h4>Temperatura</h4>
+        </div>
+        <div class="cell colspan2">
+            <h4>Isteresi</h4>
+        </div>
+    </div>
+    <div class="row cells11" ng-repeat="r in ranges">
+        <div class="cell">
+        </div>
+        <div class="cell colspan2">
+            <label>{{r.fascia}}</label>
+        </div>
+        <div class="cell">
+            <div class="input-control text" style="width: 45px">
+                <input type="number" name="oraInizio">
+            </div>
+        </div>
+        <div class="cell">
+            <div class="input-control text" style="width: 45px; margin-left:-70%">
+                <input type="number" name="minInizio">
+            </div>
+        </div>
+        <div class="cell">
+            <div class="input-control text" style="width: 45px">
+                <input type="number" name="oraFine">
+            </div>
+        </div>
+        <div class="cell">
+            <div class="input-control text" style="width: 45px; margin-left:-70%">
+                <input type="number" name="minFine">
+            </div>
+        </div>
+        <div class="cell colspan2">
+            <input type="number" name="temp">
+        </div>
+        <div class="cell colspan2">
+            <input type="number" name="isteresi">
+        </div>
+    </div>
+</div>
