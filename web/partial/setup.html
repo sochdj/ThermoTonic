@@ -1,21 +1,21 @@
-<div class="grid">
-    <div class="row cells9">
+<div class="grid" style="width:760px">
+    <div class="row cells12">
         <div class="cell">
         </div>
-        <div class="cell">
+        <div class="cell colspan2">
             <img src="../images/GestFasce.png" style="width:100%"/>
         </div>
-        <div class="cell colspan5">
-            <div><h3 class="align-center" style="margin-top:5%">Thermo Controller - Impostazione Fasce Orarie</h3></div>
+        <div class="cell colspan8">
+            <div><h3 class="align-center" style="margin-top:7%">Impostazione Fasce Orarie</h3></div>
         </div>
     </div>
 </div>
 
-<div class="grid">
-    <div class="row cells11">
+<div class="grid" style="width:760px">
+    <div class="row cells12">
         <div class="cell">
         </div>
-        <div class="cell colspan2">
+        <div class="cell colspan3">
             <h4>Seleziona Giorno</h4>
         </div>
         <div class="cell colspan2">
@@ -34,58 +34,119 @@
         </div>
     </div>
 </div>
-
-<div class="grid">
-    <div class="row cells11">
+<div class="grid" style="width:760px">
+    <div class="row cells2">
         <div class="cell">
+            <div class="grid">
+                <div class="row cells7">
+                    <div class="cell">
+                    </div>
+                    <div class="cell">
+                        <h5>Fascia</h5>
+                    </div>
+                    <div class="cell">
+                    </div>
+                    <div class="cell colspan2">
+                        <h5>Ora inizio</h5>
+                    </div>
+                    <div class="cell colspan2">
+                        <h5>Ora fine</h5>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="cell colspan2">
-            <h4>Fascia</h4>
-        </div>
-        <div class="cell colspan2">
-            <h4>Ora inizio</h4>
-        </div>
-        <div class="cell colspan2">
-            <h4>Ora fine</h4>
-        </div>
-        <div class="cell colspan2">
-            <h4>Temperatura</h4>
-        </div>
-        <div class="cell colspan2">
-            <h4>Isteresi</h4>
+        <div class="cell">
+            <div class="grid">
+                <div class="row cells8">
+                    <div class="cell colspan2">
+                        <h5>Temperatura</h5>
+                    </div>
+                    <div class="cell">
+                    </div>
+                    <div class="cell colspan2">
+                        <h5>Isteresi</h5>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="row cells11" ng-repeat="r in ranges">
+    <div class="row cells2" ng-repeat="r in ranges">
         <div class="cell">
+            <div class="grid">
+                <div class="row cells7">
+                    <div class="cell">
+                    </div>
+                    <div class="cell">
+                        <label class=><h5 class="align-center">{{r.fascia}}</h5></label>
+                    </div>
+                    <div class="cell">
+                    </div>
+                    <div class="cell">
+                        <div class="input-control text">
+                            <input type="number" name="oraInizio" style="width:45px">
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="input-control text">
+                            <input type="number" name="minInizio" style="width:45px; left:-10px">
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="input-control text">
+                            <input type="number" name="oraFine" style="width:45px">
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="input-control text">
+                            <input type="number" name="minFine" style="width:45px; left:-10px">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        <div class="cell">
+            <div class="grid">
+                <div class="row cells12">
+                    <div class="cell">
+                    </div>
+                    <div class="cell">
+                        <div class="input-control text">
+                            <input type="number" name="Temperatura" style="width:45px; left:-10px"> °C
+                        </div>
+                    </div>
+                    <div class="cell colspan3">
+                    </div>
+                    <div class="cell">
+                        <div class="input-control text">
+                            <input type="number" name="Isteresi" style="width:45px; left:-10px">%
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <div class="grid">
+        <div class="row cells2">
+            <div class="cell"></div>
+        </div>
+        <div class="row cells2">
+            <div class="cell"></div>
+        </div>
+    </div>
+</div>
+<div class="grid" style="width:760px">
+    <div class="row cells10">
         <div class="cell colspan2">
-            <label>{{r.fascia}}</label>
         </div>
         <div class="cell">
-            <div class="input-control text" style="width: 45px">
-                <input type="number" name="oraInizio">
-            </div>
+            <button name="save" style="width:80px"><h4>Salva</h4></button>
         </div>
         <div class="cell">
-            <div class="input-control text" style="width: 45px; margin-left:-70%">
-                <input type="number" name="minInizio">
-            </div>
         </div>
         <div class="cell">
-            <div class="input-control text" style="width: 45px">
-                <input type="number" name="oraFine">
-            </div>
-        </div>
-        <div class="cell">
-            <div class="input-control text" style="width: 45px; margin-left:-70%">
-                <input type="number" name="minFine">
-            </div>
-        </div>
-        <div class="cell colspan2">
-            <input type="number" name="temp">
-        </div>
-        <div class="cell colspan2">
-            <input type="number" name="isteresi">
+            <button name="exit" style="width:80px"><h4>Esci</h4></button>
         </div>
     </div>
 </div>
