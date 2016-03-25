@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cbcc08c1-045e-47fb-a9d4-f24bc74def7e" name="Default" comment="Aggiunta connessione SQL">
+    <list default="true" id="cbcc08c1-045e-47fb-a9d4-f24bc74def7e" name="Default" comment="Collegati Stato riscaldamento e Fascia oraria al database.&#10;Cambiata query di lettura dati ultima temperatura prendendola dalla tabella CurrentTemp.">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Thermo.sql" afterPath="$PROJECT_DIR$/src/Thermo.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Thermo/Temperature.php" afterPath="$PROJECT_DIR$/src/Thermo/Temperature.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/partial/home.html" afterPath="$PROJECT_DIR$/web/partial/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/script/app/homeController.js" afterPath="$PROJECT_DIR$/web/script/app/homeController.js" />
     </list>
     <ignored path="ThermoTonic.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,7 +38,7 @@
       <file leaf-file-name="Temperature.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Thermo/Temperature.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.416667">
+            <state vertical-scroll-proportion="0.0">
               <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
               <folding>
                 <element signature="e#26#39#0#PHP" expanded="true" />
@@ -69,7 +65,7 @@
       <file leaf-file-name="Thermo.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Thermo.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.7758621">
+            <state vertical-scroll-proportion="0.0">
               <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
               <folding />
             </state>
@@ -89,7 +85,7 @@
       <file leaf-file-name="Database.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Thermo/Database.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.666667">
+            <state vertical-scroll-proportion="0.0">
               <caret line="258" column="9" selection-start-line="258" selection-start-column="9" selection-end-line="258" selection-end-column="9" />
               <folding>
                 <marker date="1457528820515" expanded="true" signature="7051:7092" placeholder="INSERT INTO `${$this-&gt;pre}`... " />
@@ -236,8 +232,8 @@
   </component>
   <component name="PhpXdebugProxy" ide_key="15149" host="localhost" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="51" />
-    <option name="y" value="69" />
+    <option name="x" value="53" />
+    <option name="y" value="79" />
     <option name="width" value="1299" />
     <option name="height" value="1001" />
   </component>
@@ -266,8 +262,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -418,6 +412,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -541,14 +537,20 @@
       <option name="project" value="LOCAL" />
       <updated>1458306162824</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Collegati Stato riscaldamento e Fascia oraria al database.&#10;Cambiata query di lettura dati ultima temperatura prendendola dalla tabella CurrentTemp.">
+      <created>1458476492538</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1458476492538</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="51" y="69" width="1299" height="1001" extended-state="0" />
+    <frame x="53" y="79" width="1299" height="1001" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30331025" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30331025" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -583,7 +585,8 @@
     <MESSAGE value="Aggiunto Graficuzzo" />
     <MESSAGE value="Aggiunta connessione SQLf" />
     <MESSAGE value="Aggiunta connessione SQL" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aggiunta connessione SQL" />
+    <MESSAGE value="Collegati Stato riscaldamento e Fascia oraria al database.&#10;Cambiata query di lettura dati ultima temperatura prendendola dalla tabella CurrentTemp." />
+    <option name="LAST_COMMIT_MESSAGE" value="Collegati Stato riscaldamento e Fascia oraria al database.&#10;Cambiata query di lettura dati ultima temperatura prendendola dalla tabella CurrentTemp." />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -901,7 +904,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -926,7 +928,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Thermo.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.7758621">
+        <state vertical-scroll-proportion="0.0">
           <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
           <folding />
         </state>
@@ -950,7 +952,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Thermo/Database.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.666667">
+        <state vertical-scroll-proportion="0.0">
           <caret line="258" column="9" selection-start-line="258" selection-start-column="9" selection-end-line="258" selection-end-column="9" />
           <folding>
             <marker date="1457528820515" expanded="true" signature="7051:7092" placeholder="INSERT INTO `${$this-&gt;pre}`... " />
@@ -960,7 +962,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Thermo/Temperature.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.416667">
+        <state vertical-scroll-proportion="0.0">
           <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding>
             <element signature="e#26#39#0#PHP" expanded="true" />
