@@ -41,21 +41,13 @@ class Temperature extends Resource
             $sql = "SELECT * FROM Temperature where DateTime BETWEEN '" . $_GET['start'] . "' and '" . $_GET['stop'] . "'";
             $rows = $db->fetch_all_array($sql);
             $ret = array("temperatures" => $rows);
-
         } else {
-
             $sql = "SELECT * FROM CurrentTemp where id=1";
-
             $rows = $db->fetch_all_array($sql);
-
-
             $ret = array('latestTemperature' => $rows[0]);
-
-
         }
         $db->close();
         return new Response(200, json_encode($ret));
-
     }
 
     /**
@@ -72,15 +64,30 @@ class Temperature extends Resource
     {
         $db = new Database(DB_SERVER, DB_USER, DB_PASS, DB_DATABASE);
         $db->connect();
-
         $sql = "SELECT * FROM Temperature where DateTime BETWEEN " . $startDate . " and " . $endDate;
-
         $rows = $db->fetch_all_array($sql);
-
         $db->close();
-
         $ret = array('temperature' => $rows);
         return new Response(200, json_encode($ret));
     }
 
+    /**
+     *
+     * @method GET
+     * @params str $dayOfWeek
+     * @provides application/json
+     * @json
+     * @return Tonic\Reponse
+     */
+
+    public function getTimeRanges($dayOfWeek)
+    {
+        $db = new Database(DB_SERVER, DB_USER, DB_PASS, DB_DATABASE);
+        $db->connect();
+        $sql = "SELECT * FROM TimeRanges where dayOfWeek=" . $dayOfWeek;
+        $rows = $db->fetch_all_array($sql);
+        $db->close();
+        $ret = array('ranges' => $rows);
+        return new Response(200, json_encode($ret));
+    }
 }

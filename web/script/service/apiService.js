@@ -31,10 +31,9 @@ appRoot.factory('apiService', ['$http', '$q',
             );
             return p.promise;
         }
-
-        var getRangeTemperatures = function (start, stop) {
+        var getTimeRanges = function (dayOfWeek) {
             var p = $q.defer();
-            $http.get('/temperature?start=' + start + '&stop=' + stop).then(
+            $http.get('/temperature?dayOfWeek=' + dayOfWeek).then(
                 function (response) {
 
                     p.resolve(response.data);
@@ -46,9 +45,9 @@ appRoot.factory('apiService', ['$http', '$q',
             return p.promise;
         }
 
-
         return {
             getLatestTemperatures: getLatestTemperatures,
-            getRangeTemperatures: getRangeTemperatures
+            getRangeTemperatures: getRangeTemperatures,
+            getTimeRanges: getTimeRanges
         }
     }]);

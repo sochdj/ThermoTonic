@@ -6,7 +6,7 @@
             <img src="../images/GestFasce.png" style="width:100%"/>
         </div>
         <div class="cell colspan8">
-            <div><h3 class="align-center" style="margin-top:7%">Impostazione Fasce Orarie</h3></div>
+            <div><h3 class="align-center" style="margin-top:7%; margin-left:-100px">Impostazione Fasce Orarie</h3></div>
         </div>
     </div>
 </div>
@@ -22,13 +22,13 @@
             <div class="input-control select">
                 <select name="Giorno" align="center" title="Seleziona il giorno da impostare"
                         ng-model="giorno" ng-change="chsel()">
-                    <option value="Lunedi" selected>Lunedì</option>
-                    <option value="Martedi">Martedì</option>
-                    <option value="Mercoledi">Mercoledì</option>
-                    <option value="Giovedi">Giovedì</option>
-                    <option value="Venerdi">Venerdì</option>
-                    <option value="Sabato">Sabato</option>
-                    <option value="Domenica">Domenica</option>
+                    <option value="1" selected>Lunedì</option>
+                    <option value="2">Martedì</option>
+                    <option value="3">Mercoledì</option>
+                    <option value="4">Giovedì</option>
+                    <option value="5">Venerdì</option>
+                    <option value="6">Sabato</option>
+                    <option value="7">Domenica</option>
                 </select>
             </div>
         </div>
@@ -111,14 +111,16 @@
                     </div>
                     <div class="cell">
                         <div class="input-control text">
-                            <input type="number" name="Temperatura" style="width:45px; left:-10px"> °C
+                            <input type="number" name="Temperatura" value={{r.setPoint}} min="10" max="25"
+                                   style="width:45px; left:-10px"> °C
                         </div>
                     </div>
                     <div class="cell colspan3">
                     </div>
                     <div class="cell">
                         <div class="input-control text">
-                            <input type="number" name="Isteresi" style="width:45px; left:-10px">%
+                            <input type="number" name="Isteresi" value={{r.hysteresis}} min="0.1" max="2.0" step="0.1"
+                                   style="width:45px; left:-10px">%
                         </div>
                     </div>
                 </div>
@@ -141,12 +143,12 @@
         <div class="cell colspan2">
         </div>
         <div class="cell">
-            <button name="save" style="width:80px"><h4>Salva</h4></button>
+            <button class="button success" name="save" style="width:80px;">Salva</button>
         </div>
         <div class="cell">
         </div>
         <div class="cell">
-            <button name="exit" style="width:80px"><h4>Esci</h4></button>
+            <button class="button primary" name="exit" style="width:80px">Esci</button>
         </div>
     </div>
 </div>

@@ -1,21 +1,20 @@
-appRoot.controller('setupController', function ($scope){
+appRoot.controller('setupController', ['$scope', 'apiService',
+    function ($scope, apiService) {
+        $scope.ranges = {
+            dayOfWeek: 0,
+            fascia: 0,
+            timeStart: "",
+            timeEnd: "",
+            setPoint: 0,
+            hystersis: 0,
+        };
 
-    $scope.giorno = "Lunedi";
+        $scope.giorno = "1";
 
-    $scope.ranges = [{
-        dayOfWeek: '1',
-        fascia: '1',
-        timeStart: "10:00:00",
-        timeEnd: "11:00:00",
-        setPoint: "22",
-        hysteresis: "0.5"
-    }, {
-        dayOfWeek: '1',
-        fascia: '2',
-        timeStart: "11:00:00",
-        timeEnd: "17:00:00",
-        setPoint: "26",
-        hysteresis: "0.5"
-    }];
-
-});
+        $scope.$watch('giorno', function (newValue) {
+            apiService.getTimeRanges(newValue).then(function (data) {
+                $scope.ranges = data.ranges;
+            }, function (reason) {
+            });
+        });
+    }]);

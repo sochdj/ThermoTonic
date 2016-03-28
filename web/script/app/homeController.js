@@ -66,15 +66,14 @@ appRoot.controller('homeController', ['$scope', '$interval', 'apiService',
             options: {
                 title: 'Temperature rilevate',
                 labels: ["Data", "Interna", "Esterna"],
-                valueRange: [-5, 30],
                 ylabel: 'Temperature (C)',
-                /*                labelsDivStyles: {
+                legend: 'always',
+                labelsDivStyles: {
                  'text-align': 'right',
                  'background': 'none'
-                 },
-                 */
-                strokeWidth: 1.5,
-
+                },
+                strokeWidth: 2.0,
+                digitsAfterDecimal: 1,
             },
             /*            legend: {
              series: {
@@ -89,18 +88,14 @@ appRoot.controller('homeController', ['$scope', '$interval', 'apiService',
              */
         };
 
-
-
-
-
         $scope.selezione = "Oggi";
-
 
         $scope.$watch('selezione', function (newValue) {
             switch (newValue) {
                 case "Oggi":
-
                     var today = new Date();
+                    var maxTemp = 0;
+                    var minTemp = 100;
 
                     var start = toMysqlFormat(today.getFullYear(), today.getMonth() + 1, today.getDate(), 00, 00, 00);
                     var stop = toMysqlFormat(today.getFullYear(), today.getMonth() + 1, today.getDate(), 23, 59, 59);
@@ -110,8 +105,13 @@ appRoot.controller('homeController', ['$scope', '$interval', 'apiService',
                         angular.forEach(data.temperatures, function (temp) {
                             var t = temp.dateTime.split(/[- :]/);
                             var d = new Date(t[0], t[1] - 1, t[2], t[3], t[4], t[5]);
+                            if (maxTemp < parseFloat(temp.tempInt))  maxTemp = parseFloat(temp.tempInt);
+                            if (maxTemp < parseFloat(temp.tempExt1)) maxTemp = parseFloat(temp.tempExt1);
+                            if (minTemp > parseFloat(temp.tempInt))  minTemp = parseFloat(temp.tempInt);
+                            if (minTemp > parseFloat(temp.tempExt1)) minTemp = parseFloat(temp.tempExt1);
                             $scope.graph.data.push([d, temp.tempInt, temp.tempExt1]);
                         })
+                        $scope.graph.options.valueRange = [(minTemp - 5), (maxTemp + 5)];
 
                     }, function (reasons) {
 
@@ -119,8 +119,9 @@ appRoot.controller('homeController', ['$scope', '$interval', 'apiService',
 
                     break;
                 case "Ieri":
-                    ;
                     var yesterday = new Date();
+                    var maxTemp = 0;
+                    var minTemp = 100;
 
                     yesterday.setDate(yesterday.getDate() - 1);
 
@@ -132,17 +133,24 @@ appRoot.controller('homeController', ['$scope', '$interval', 'apiService',
                         angular.forEach(data.temperatures, function (temp) {
                             var t = temp.dateTime.split(/[- :]/);
                             var d = new Date(t[0], t[1] - 1, t[2], t[3], t[4], t[5]);
+                            if (maxTemp < parseFloat(temp.tempInt))  maxTemp = parseFloat(temp.tempInt);
+                            if (maxTemp < parseFloat(temp.tempExt1)) maxTemp = parseFloat(temp.tempExt1);
+                            if (minTemp > parseFloat(temp.tempInt))  minTemp = parseFloat(temp.tempInt);
+                            if (minTemp > parseFloat(temp.tempExt1)) minTemp = parseFloat(temp.tempExt1);
                             $scope.graph.data.push([d, temp.tempInt, temp.tempExt1]);
                         })
+                        $scope.graph.options.valueRange = [(minTemp - 5), (maxTemp + 5)];
 
                     }, function (reasons) {
 
                     });
                     break;
-                case "UltimaSettimana":
 
+                case "UltimaSettimana":
                     var today = new Date();
                     var yesterday = new Date();
+                    var maxTemp = 0;
+                    var minTemp = 100;
 
                     yesterday.setDate(yesterday.getDate() - 7);
 
@@ -154,18 +162,24 @@ appRoot.controller('homeController', ['$scope', '$interval', 'apiService',
 
                             var t = temp.dateTime.split(/[- :]/);
                             var d = new Date(t[0], t[1] - 1, t[2], t[3], t[4], t[5]);
+                            if (maxTemp < parseFloat(temp.tempInt))  maxTemp = parseFloat(temp.tempInt);
+                            if (maxTemp < parseFloat(temp.tempExt1)) maxTemp = parseFloat(temp.tempExt1);
+                            if (minTemp > parseFloat(temp.tempInt))  minTemp = parseFloat(temp.tempInt);
+                            if (minTemp > parseFloat(temp.tempExt1)) minTemp = parseFloat(temp.tempExt1);
                             $scope.graph.data.push([d, temp.tempInt, temp.tempExt1]);
                         })
+                        $scope.graph.options.valueRange = [(minTemp - 5), (maxTemp + 5)];
 
                     }, function (reasons) {
 
                     });
                     break;
+
                 case "UltimoMese":
-
-
                     var today = new Date();
                     var lastMonth = new Date();
+                    var maxTemp = 0;
+                    var minTemp = 100;
 
                     lastMonth.setMonth(lastMonth.getMonth() - 1);
 
@@ -177,8 +191,13 @@ appRoot.controller('homeController', ['$scope', '$interval', 'apiService',
                         angular.forEach(data.temperatures, function (temp) {
                             var t = temp.dateTime.split(/[- :]/);
                             var d = new Date(t[0], t[1] - 1, t[2], t[3], t[4], t[5]);
+                            if (maxTemp < parseFloat(temp.tempInt))  maxTemp = parseFloat(temp.tempInt);
+                            if (maxTemp < parseFloat(temp.tempExt1)) maxTemp = parseFloat(temp.tempExt1);
+                            if (minTemp > parseFloat(temp.tempInt))  minTemp = parseFloat(temp.tempInt);
+                            if (minTemp > parseFloat(temp.tempExt1)) minTemp = parseFloat(temp.tempExt1);
                             $scope.graph.data.push([d, temp.tempInt, temp.tempExt1]);
                         })
+                        $scope.graph.options.valueRange = [(minTemp - 5), (maxTemp + 5)];
 
                     }, function (reasons) {
 
