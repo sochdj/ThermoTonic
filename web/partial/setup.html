@@ -70,6 +70,8 @@
             </div>
         </div>
     </div>
+
+
     <div class="row cells2" ng-repeat="r in ranges">
         <div class="cell">
             <div class="grid">
@@ -77,28 +79,32 @@
                     <div class="cell">
                     </div>
                     <div class="cell">
-                        <label class=><h5 class="align-center">{{r.fascia}}</h5></label>
+                        <label class=><h5 class="align-center">{{r.id}}</h5></label>
                     </div>
                     <div class="cell">
                     </div>
                     <div class="cell">
                         <div class="input-control text">
-                            <input type="number" name="oraInizio" style="width:45px">
+                            <input type="number" name="oraInizio" data-ng-model="r.initHour"
+                                   data-ng-change="updateInit(r)" style="width:45px">
                         </div>
                     </div>
                     <div class="cell">
                         <div class="input-control text">
-                            <input type="number" name="minInizio" style="width:45px; left:-10px">
+                            <input type="number" name="minInizio" data-ng-model="r.initMinute"
+                                   data-ng-change="updateInit(r)" style="width:45px; left:-10px">
                         </div>
                     </div>
                     <div class="cell">
                         <div class="input-control text">
-                            <input type="number" name="oraFine" style="width:45px">
+                            <input type="number" name="oraFine" data-ng-model="r.endHour" data-ng-change="updateEnd(r)"
+                                   style="width:45px">
                         </div>
                     </div>
                     <div class="cell">
                         <div class="input-control text">
-                            <input type="number" name="minFine" style="width:45px; left:-10px">
+                            <input type="number" name="minFine" data-ng-model="r.endMinute"
+                                   data-ng-change="updateEnd(r)" style="width:45px; left:-10px">
                         </div>
                     </div>
                 </div>
@@ -111,7 +117,8 @@
                     </div>
                     <div class="cell">
                         <div class="input-control text">
-                            <input type="number" name="Temperatura" value={{r.setPoint}} min="10" max="25" step="0.1"
+                            <input type="number" name="Temperatura" data-ng-model="r.setPoint" min="10" max="25"
+                                   step="0.1"
                                    style="width:55px; left:-10px"> °C
                         </div>
                     </div>
@@ -119,9 +126,13 @@
                     </div>
                     <div class="cell">
                         <div class="input-control text">
-                            <input type="number" name="Isteresi" value={{r.hysteresis}} min="0.1" max="2.0" step="0.1"
+                            <input type="number" name="Isteresi" data-ng-model="r.hysteresis" min="0.1" max="2.0"
+                                   step="0.1"
                                    style="width:45px; left:-10px">%
                         </div>
+                    </div>
+                    <div class="cell">
+                        <button class="button success"></button>
                     </div>
                 </div>
             </div>
