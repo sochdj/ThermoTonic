@@ -116,8 +116,8 @@ appRoot.controller('homeController', ['$scope', '$interval', 'apiService',
                     }, function (reasons) {
 
                     });
-
                     break;
+
                 case "Ieri":
                     var yesterday = new Date();
                     var maxTemp = 0;
