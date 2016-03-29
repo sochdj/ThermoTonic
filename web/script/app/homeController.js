@@ -1,7 +1,7 @@
 appRoot.controller('homeController', ['$scope', '$interval', 'apiService',
     function ($scope, $interval, apiService) {
         $scope.latestTemperature = {
-            dateTime: "",
+            dateTime: ".",
             tempInt: 0,
             tempExt1: 0,
             tempExt2: 0,
@@ -14,7 +14,11 @@ appRoot.controller('homeController', ['$scope', '$interval', 'apiService',
 
         $interval(function () {
             apiService.getLatestTemperatures().then(function (data) {
+                var t = data.latestTemperature.dateTime.split(/[- :]/);
+                var d = new Date(t[0], t[1] - 1, t[2], t[3], t[4], t[5]);
                 $scope.latestTemperature = data.latestTemperature;
+                $scope.latestTemperature.dateTime = t[2] + '-' + t[1] + '-' + t[0] + ' ' + t[3] + ':' + t[4] + ':' + t[5];
+
             }, function (reason) {
 
             })
