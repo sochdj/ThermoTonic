@@ -32,6 +32,15 @@ appRoot.controller('setupController', ['$scope', 'apiService',
             });
         });
 
+        $scope.saveRanges = function () {
+            apiService.saveRanges($scope.ranges).then(function (data) {
+
+            }, function (reasons) {
+
+            })
+        }
+
+
 
         $scope.updateInit = function (init) {
             init.timeStart = twoDigits(init.initHour) + ":" + twoDigits(init.initMinute) + ":00";
