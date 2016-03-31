@@ -38,19 +38,17 @@
     <div class="row cells2">
         <div class="cell">
             <div class="grid">
-                <div class="row cells7">
+                <div class="row cells6">
                     <div class="cell">
                     </div>
                     <div class="cell">
                         <h5>Fascia</h5>
                     </div>
-                    <div class="cell">
+                    <div class="cell colspan2 ">
+                        <h5 style="margin-left:15px">Ora inizio</h5>
                     </div>
                     <div class="cell colspan2">
-                        <h5>Ora inizio</h5>
-                    </div>
-                    <div class="cell colspan2">
-                        <h5>Ora fine</h5>
+                        <h5 style="margin-left:15px">Ora fine</h5>
                     </div>
                 </div>
             </div>
@@ -64,7 +62,7 @@
                     <div class="cell">
                     </div>
                     <div class="cell colspan2">
-                        <h5>Isteresi</h5>
+                        <h5 style="margin-left:-10px">Isteresi</h5>
                     </div>
                 </div>
             </div>
@@ -72,39 +70,37 @@
     </div>
 
 
-    <div class="row cells2" ng-repeat="r in ranges">
+    <div class="row cells2 no-margin-bottom no-margin-top" ng-repeat="r in ranges">
         <div class="cell">
             <div class="grid">
-                <div class="row cells7">
+                <div class="row cells6">
                     <div class="cell">
                     </div>
                     <div class="cell">
                         <label class=><h5 class="align-center">{{r.id}}</h5></label>
                     </div>
                     <div class="cell">
-                    </div>
-                    <div class="cell">
                         <div class="input-control text">
                             <input type="number" name="oraInizio" data-ng-model="r.initHour"
-                                   data-ng-change="updateInit(r)" style="width:45px">
+                                   data-ng-change="updateInit(r)" style="width:45px; text-align:right">
                         </div>
                     </div>
                     <div class="cell">
                         <div class="input-control text">
                             <input type="number" name="minInizio" data-ng-model="r.initMinute"
-                                   data-ng-change="updateInit(r)" style="width:45px; left:-10px">
+                                   data-ng-change="updateInit(r)" style="width:45px; text-align:right; left:-18px">
                         </div>
                     </div>
                     <div class="cell">
                         <div class="input-control text">
                             <input type="number" name="oraFine" data-ng-model="r.endHour" data-ng-change="updateEnd(r)"
-                                   style="width:45px">
+                                   style="width:45px; text-align:right">
                         </div>
                     </div>
                     <div class="cell">
                         <div class="input-control text">
                             <input type="number" name="minFine" data-ng-model="r.endMinute"
-                                   data-ng-change="updateEnd(r)" style="width:45px; left:-10px">
+                                   data-ng-change="updateEnd(r)" style="width:45px; text-align:right; left:-18px">
                         </div>
                     </div>
                 </div>
@@ -112,14 +108,14 @@
         </div>
         <div class="cell">
             <div class="grid">
-                <div class="row cells12">
+                <div class="row cells12 no-margin-bottom no-margin-top">
                     <div class="cell">
                     </div>
                     <div class="cell">
                         <div class="input-control text">
                             <input type="number" name="Temperatura" data-ng-model="r.setPoint" min="10" max="25"
                                    step="0.1"
-                                   style="width:55px; left:-10px"> °C
+                                   style="width:55px; text-align:right; left:-20px">°C
                         </div>
                     </div>
                     <div class="cell colspan3">
@@ -128,11 +124,13 @@
                         <div class="input-control text">
                             <input type="number" name="Isteresi" data-ng-model="r.hysteresis" min="0.1" max="2.0"
                                    step="0.1"
-                                   style="width:45px; left:-10px">%
+                                   style="width:45px; text-align:right; left:-20px">%
                         </div>
                     </div>
+                    <div class="cell colspan2">
+                    </div>
                     <div class="cell">
-                        <button class="button success"></button>
+                        <button class="button cycle-button danger"><span class="mif-minus"></span></button>
                     </div>
                 </div>
             </div>
