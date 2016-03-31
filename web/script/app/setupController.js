@@ -24,7 +24,8 @@ appRoot.controller('setupController', ['$scope', 'apiService',
                     range.initMinute = parseInt(initSplit[1]);
                     range.endHour = parseInt(endSplit[0]);
                     range.endMinute = parseInt(endSplit[1]);
-
+                    range.setPoint = parseFloat(range.setPoint);
+                    range.hysteresis = parseFloat(range.hysteresis);
                     $scope.ranges.push(range);
                 })
 
