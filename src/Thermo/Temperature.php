@@ -53,4 +53,22 @@ class Temperature extends Resource
         $db->close();
         return new Response(200, json_encode($ret));
     }
+
+
+    /**
+     * All HTTP methods are supported. The @accepts annotation makes method only match if the
+     * request body content-type matches.
+     *
+     * curl -i -H "Content-Type: application/json" -X POST -d '{"hello": "computer"}' http://localhost/www/tonic/web/hello.json
+     *
+     * @method POST
+     * @accepts application/json
+     * @provides application/json
+     * @json
+     * @return Response
+     */
+    public function saveRanges()
+    {
+        return new Response(200, $this->request->getData());
+    }
 }

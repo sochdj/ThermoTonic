@@ -45,6 +45,20 @@ appRoot.factory('apiService', ['$http', '$q',
             return p.promise;
         }
 
+        var saveRanges = function (ranges) {
+            var p = $q.defer();
+            $http.post('/api/temperature', ranges).then(
+                function (response) {
+
+                    p.resolve(response.data);
+                },
+                function (reason) {
+                    p.reject(reason);
+                }
+            );
+            return p.promise;
+        }
+
         return {
             getLatestTemperatures: getLatestTemperatures,
             getRangeTemperatures: getRangeTemperatures,
