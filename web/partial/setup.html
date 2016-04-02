@@ -130,7 +130,12 @@
                     <div class="cell colspan2">
                     </div>
                     <div class="cell">
-                        <button class="button cycle-button danger"><span class="mif-minus"></span></button>
+                        <button class="button cycle-button danger" data-ng-click="removeRange($index)"><span
+                                class="mif-minus"></span></button>
+                    </div>
+                    <div class="cell">
+                        <button class="button cycle-button success" data-ng-click="addRange($index)"><span
+                                class="mif-plus"></span></button>
                     </div>
                 </div>
             </div>

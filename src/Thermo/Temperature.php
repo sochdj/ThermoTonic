@@ -69,6 +69,27 @@ class Temperature extends Resource
      */
     public function saveRanges()
     {
-        return new Response(200, $this->request->getData());
+        $ranges = json_decode($this->request->getData(), true);
+
+        $dayOfWeek = $ranges[0]["dayOfWeek"];
+
+        $db = new Database(DB_SERVER, DB_USER, DB_PASS, DB_DATABASE);
+        $db->connect();
+
+
+        $sql = "DELETE FROM TimeRanges  where dayOfWeek=" . $dayOfWeek;
+
+        $db->query($sql);
+        foreach ($ranges as $range) {
+            unset($range["initHour"]);
+            unset($range["initMinute"]);
+            unset($range["endHour"]);
+            unset($range["endMinute"]);
+
+            $db->query_insert("TimeRanges", $range);
+        }
+
+
+        return new Response(200);
     }
 }

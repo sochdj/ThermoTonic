@@ -1,12 +1,12 @@
 appRoot.controller('setupController', ['$scope', 'apiService',
     function ($scope, apiService) {
         /* $scope.ranges = {
-            dayOfWeek: 0,
-            fascia: 0,
-            timeStart: "",
-            timeEnd: "",
-            setPoint: 0,
-            hystersis: 0,
+         dayOfWeek: 0,
+         fascia: 0,
+         timeStart: "",
+         timeEnd: "",
+         setPoint: 0,
+         hystersis: 0,
          };*/
 
         $scope.giorno = "1";
@@ -41,7 +41,24 @@ appRoot.controller('setupController', ['$scope', 'apiService',
             })
         }
 
+        $scope.addRange = function ($index) {
+            var newElement = angular.copy($scope.ranges[$index]);
 
+            newElement.id = "-1";
+
+            $scope.ranges.splice($index + 1, 0, newElement);
+
+            for (var i = 0; i < $scope.ranges.length; i++) {
+                $scope.ranges[i].id = (i + 1).toString();
+            }
+
+        }
+        $scope.removeRange = function ($index) {
+            $scope.ranges.splice($index, 1);
+            for (var i = 0; i < $scope.ranges.length; i++) {
+                $scope.ranges[i].id = (i + 1).toString();
+            }
+        }
 
         $scope.updateInit = function (init) {
             init.timeStart = twoDigits(init.initHour) + ":" + twoDigits(init.initMinute) + ":00";
