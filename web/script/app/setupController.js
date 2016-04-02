@@ -34,7 +34,7 @@ appRoot.controller('setupController', ['$scope', 'apiService',
         });
 
         $scope.saveRanges = function () {
-            apiService.saveRanges($scope.ranges).then(function (data) {
+            apiService.saveRanges({dayOfWeek: $scope.giorno, ranges: $scope.ranges}).then(function (data) {
 
             }, function (reasons) {
 
