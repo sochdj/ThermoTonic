@@ -60,6 +60,21 @@ appRoot.controller('setupController', ['$scope', 'apiService',
             }
         }
 
+        $scope.addNewRange = function ($index) {
+            $scope.ranges.push({
+                dayOfWeek: $scope.giorno,
+                id: 0,
+                timeStart: "",
+                timeEnd: "",
+                setPoint: 0,
+                hystersis: 0,
+                initHour: 0,
+                initMinute: 0,
+                endHour: 0,
+                endMinute: 0
+            })
+        }
+
         $scope.updateInit = function (init) {
             init.timeStart = twoDigits(init.initHour) + ":" + twoDigits(init.initMinute) + ":00";
         }
