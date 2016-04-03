@@ -82,4 +82,8 @@ appRoot.controller('setupController', ['$scope', 'apiService',
             end.timeEnd = twoDigits(end.endHour) + ":" + twoDigits(end.endMinute) + ":00";
         }
 
+        $scope.showMyDialog = function (id) {
+            var dialog = $(id).data('dialog');
+            dialog.open();
+        }
     }]);

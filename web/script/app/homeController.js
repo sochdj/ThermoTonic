@@ -2,7 +2,7 @@ appRoot.controller('homeController', ['$scope', '$interval', 'apiService',
     function ($scope, $interval, apiService) {
         $scope.latestTemperature = {
             dateTime: ".",
-            tempInt: 0,
+            tempInt: 10,
             tempExt1: 0,
             tempExt2: 0,
             tempExt3: 0,
@@ -24,37 +24,66 @@ appRoot.controller('homeController', ['$scope', '$interval', 'apiService',
             })
         }, 2000);
 
+        $scope.lowerLimitIn = 10.0;
+        $scope.upperLimitIn = 30.0;
+        $scope.lowerLimitOut = -5.0;
+        $scope.upperLimitOut = 40.0;
+        $scope.unit = "°C";
+        $scope.precision = 2;
+        $scope.rangesIn = [
+            {
+                min: 10.0,
+                max: 18,
+                color: '#7FFFD4'
+            },
+            {
+                min: 18,
+                max: 23,
+                color: '#00FF00'
+            },
+            {
+                min: 23,
+                max: 30,
+                color: '#F4A460'
+            },
+        ];
 
-        $scope.upperLimit = 50;
-        $scope.lowerLimit = 0;
-        $scope.unit = "C";
-        $scope.precision = 1;
-        $scope.ranges = [
+        $scope.rangesOut = [
+            {
+                min: -5,
+                max: 0,
+                color: '#0000FF'
+            },
             {
                 min: 0,
-                max: 10,
-                color: '#DEDEDE'
+                max: 5,
+                color: '#00BFFF'
             },
             {
-                min: 10,
-                max: 20,
-                color: '#8DCA2F'
+                min: 5,
+                max: 11,
+                color: '#00FFFF'
             },
             {
-                min: 20,
+                min: 11,
+                max: 18,
+                color: '#7FFFD4'
+            },
+            {
+                min: 18,
+                max: 22,
+                color: '#00FF00'
+            },
+            {
+                min: 22,
                 max: 30,
-                color: '#FDC702'
+                color: '#F4A460'
             },
             {
                 min: 30,
                 max: 40,
-                color: '#FF7700'
+                color: '#FF0000'
             },
-            {
-                min: 40,
-                max: 50,
-                color: '#C50200'
-            }
         ];
 
         $scope.labels = [];
