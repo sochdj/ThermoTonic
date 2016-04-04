@@ -82,25 +82,27 @@
                     <div class="cell">
                         <div class="input-control text">
                             <input type="number" name="oraInizio" data-ng-model="r.initHour"
-                                   data-ng-change="updateInit(r)" style="width:45px; text-align:right">
+                                   title="Ora" data-ng-change="updateInit(r)" style="width:45px; text-align:right">
                         </div>
                     </div>
                     <div class="cell">
                         <div class="input-control text">
                             <input type="number" name="minInizio" data-ng-model="r.initMinute"
-                                   data-ng-change="updateInit(r)" style="width:45px; text-align:right; left:-18px">
+                                   title="Minuti" data-ng-change="updateInit(r)"
+                                   style="width:45px; text-align:right; left:-18px">
                         </div>
                     </div>
                     <div class="cell">
                         <div class="input-control text">
                             <input type="number" name="oraFine" data-ng-model="r.endHour" data-ng-change="updateEnd(r)"
-                                   style="width:45px; text-align:right">
+                                   title="Ora" style="width:45px; text-align:right">
                         </div>
                     </div>
                     <div class="cell">
                         <div class="input-control text">
                             <input type="number" name="minFine" data-ng-model="r.endMinute"
-                                   data-ng-change="updateEnd(r)" style="width:45px; text-align:right; left:-18px">
+                                   title="Minuti" data-ng-change="updateEnd(r)"
+                                   style="width:45px; text-align:right; left:-18px">
                         </div>
                     </div>
                 </div>
@@ -124,13 +126,22 @@
                         <div class="input-control text">
                             <input type="number" name="Isteresi" data-ng-model="r.hysteresis" min="0.1" max="2.0"
                                    step="0.1"
-                                   style="width:45px; text-align:right; left:-20px">%
+                                   style="width:50px; text-align:right; left:-20px">%
                         </div>
                     </div>
                     <div class="cell colspan2">
                     </div>
                     <div class="cell">
-                        <button class="button cycle-button danger"><span class="mif-minus"></span></button>
+                        <button class="button cycle-button danger"
+                                title="Elimina questa fascia" style="margin-left:-20px">
+                            <span class="mif-minus"></span>
+                        </button>
+                    </div>
+                    <div class="cell">
+                        <button class="button cycle-button success"
+                                title="Aggiungi una fascia dopo questa" style="margin-left:-15px">
+                            <span class="mif-plus"></span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -149,10 +160,12 @@
 </div>
 <div class="grid" style="width:760px">
     <div class="row cells10">
-        <div class="cell colspan2">
+        <div class="cell colspan3">
         </div>
         <div class="cell">
-            <button class="button success" name="save" style="width:80px;" data-ng-click="saveRanges()">Salva</button>
+            <button class="button success" name="save" style="width:80px; margin-left:40px"
+                    data-ng-click="saveRanges()">Salva
+            </button>
         </div>
         <div class="cell">
         </div>
