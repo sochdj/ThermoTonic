@@ -41,7 +41,12 @@
         </div>
         <div class="cell">
             <button class="button success" data-ng-click="copyRange()"
-                    data-ng-disabled="ranges.length>0">Copia
+                    data-ng-disabled="ranges.length==0">Copia
+            </button>
+        </div>
+        <div class="cell">
+            <button class="button success" data-ng-click="pasteRange()" style="margin-left:35px"
+                    data-ng-disabled="rangesCp.length==0">Incolla
             </button>
         </div>
     </div>

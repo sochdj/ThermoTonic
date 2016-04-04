@@ -10,8 +10,8 @@ appRoot.controller('setupController', ['$scope', 'apiService',
          };*/
 
         $scope.giorno = "1";
-
         $scope.ranges = [];
+        $scope.rangesCp = [];
 
         $scope.$watch('giorno', function (newValue) {
             apiService.getTimeRanges(newValue).then(function (data) {
@@ -72,6 +72,19 @@ appRoot.controller('setupController', ['$scope', 'apiService',
                 initMinute: 0,
                 endHour: 0,
                 endMinute: 0
+            })
+        }
+
+        $scope.copyRange = function () {
+            $scope.rangesCp = angular.copy($scope.ranges);
+
+
+        }
+
+        $scope.pasteRange = function () {
+            $scope.ranges = angular.copy($scope.rangesCp);
+            angular.forEach($scope.ranges, function (range) {
+                range.dayOfWeek = $scope.giorno;
             })
         }
 
