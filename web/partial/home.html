@@ -8,11 +8,10 @@
 			</div>
 			<div class="cell colspan3">
 				<div align="center">Temperatura Interna</div>
-				<div ng-radial-gauge ranges="ranges" value="latestTemperature.tempInt" value-unit="unit"
-					 precision="precision"
-					 lower-limit="lowerLimit" upper-limit="upperLimit"></div>
+				<div ng-radial-gauge ranges="rangesIn" value="latestTemperature.tempInt" value-unit="unit"
+					 precision="precision" lower-limit="lowerLimitIn" upper-limit="upperLimitIn"></div>
 				<div align="center">
-					<label id="internal">{{latestTemperature.tempInt}}</label>
+					<label id="internal">{{latestTemperature.tempInt}}°C</label>
 				</div>
 			</div>
 			<div class="cell colspan3">
@@ -33,11 +32,11 @@
 			</div>
 			<div class="cell colspan3">
 				<div align="center">Temperatura Esterna</div>
-				<div ng-radial-gauge ranges="ranges" value="latestTemperature.tempExt1" value-unit="unit"
+				<div ng-radial-gauge ranges="rangesOut" value="latestTemperature.tempExt1" value-unit="unit"
 					 precision="precision"
-					 lower-limit="lowerLimit" upper-limit="upperLimit"></div>
+					 lower-limit="lowerLimitOut" upper-limit="upperLimitOut"></div>
 				<div align="center">
-					<label id="external">{{latestTemperature.tempExt1}}</label>
+					<label id="external">{{latestTemperature.tempExt1}}°C</label>
 				</div>
 			</div>
 		</div>

@@ -1,12 +1,12 @@
 appRoot.controller('setupController', ['$scope', 'apiService',
     function ($scope, apiService) {
         /* $scope.ranges = {
-            dayOfWeek: 0,
-            fascia: 0,
-            timeStart: "",
-            timeEnd: "",
-            setPoint: 0,
-            hystersis: 0,
+         dayOfWeek: 0,
+         fascia: 0,
+         timeStart: "",
+         timeEnd: "",
+         setPoint: 0,
+         hystersis: 0,
          };*/
 
         $scope.giorno = "1";
@@ -34,14 +34,46 @@ appRoot.controller('setupController', ['$scope', 'apiService',
         });
 
         $scope.saveRanges = function () {
-            apiService.saveRanges($scope.ranges).then(function (data) {
+            apiService.saveRanges({dayOfWeek: $scope.giorno, ranges: $scope.ranges}).then(function (data) {
 
             }, function (reasons) {
 
             })
         }
 
+        $scope.addRange = function ($index) {
+            var newElement = angular.copy($scope.ranges[$index]);
 
+            newElement.id = "-1";
+
+            $scope.ranges.splice($index + 1, 0, newElement);
+
+            for (var i = 0; i < $scope.ranges.length; i++) {
+                $scope.ranges[i].id = (i + 1).toString();
+            }
+
+        }
+        $scope.removeRange = function ($index) {
+            $scope.ranges.splice($index, 1);
+            for (var i = 0; i < $scope.ranges.length; i++) {
+                $scope.ranges[i].id = (i + 1).toString();
+            }
+        }
+
+        $scope.addNewRange = function ($index) {
+            $scope.ranges.push({
+                dayOfWeek: $scope.giorno,
+                id: "1",
+                timeStart: "00:00:00",
+                timeEnd: "00:00:00",
+                setPoint: 20,
+                hysteresis: 0.5,
+                initHour: 0,
+                initMinute: 0,
+                endHour: 0,
+                endMinute: 0
+            })
+        }
 
         $scope.updateInit = function (init) {
             init.timeStart = twoDigits(init.initHour) + ":" + twoDigits(init.initMinute) + ":00";
@@ -50,4 +82,8 @@ appRoot.controller('setupController', ['$scope', 'apiService',
             end.timeEnd = twoDigits(end.endHour) + ":" + twoDigits(end.endMinute) + ":00";
         }
 
+        $scope.showMyDialog = function (id) {
+            var dialog = $(id).data('dialog');
+            dialog.open();
+        }
     }]);

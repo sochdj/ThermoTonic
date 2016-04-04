@@ -32,10 +32,22 @@
                 </select>
             </div>
         </div>
+        <div class="cell">
+        </div>
+        <div class="cell">
+            <button class="button cycle-button success" data-ng-click="addNewRange(0)"
+                    data-ng-disabled="ranges.length>0"><span
+                    class="mif-plus"></span></button>
+        </div>
+        <div class="cell">
+            <button class="button success" data-ng-click="copyRange()"
+                    data-ng-disabled="ranges.length>0">Copia
+            </button>
+        </div>
     </div>
 </div>
-<div class="grid" style="width:760px">
-    <div class="row cells2">
+<div class="grid no-margin-bottom no-margin-top" style="width:760px">
+    <div class="row cells2 no-margin-bottom no-margin-top">
         <div class="cell">
             <div class="grid">
                 <div class="row cells6">
@@ -70,7 +82,7 @@
     </div>
 
 
-    <div class="row cells2 no-margin-bottom no-margin-top" ng-repeat="r in ranges">
+    <div class="row cells2 no-margin-bottom" ng-repeat="r in ranges">
         <div class="cell">
             <div class="grid">
                 <div class="row cells6">
@@ -81,28 +93,26 @@
                     </div>
                     <div class="cell">
                         <div class="input-control text">
-                            <input type="number" name="oraInizio" data-ng-model="r.initHour"
-                                   title="Ora" data-ng-change="updateInit(r)" style="width:45px; text-align:right">
+                            <input type="number" name="oraInizio" data-ng-model="r.initHour" title="Ora inizio"
+                                   data-ng-change="updateInit(r)" style="width:45px; text-align:right">
                         </div>
                     </div>
                     <div class="cell">
                         <div class="input-control text">
-                            <input type="number" name="minInizio" data-ng-model="r.initMinute"
-                                   title="Minuti" data-ng-change="updateInit(r)"
-                                   style="width:45px; text-align:right; left:-18px">
+                            <input type="number" name="minInizio" data-ng-model="r.initMinute" title="Minnuti inizio"
+                                   data-ng-change="updateInit(r)" style="width:45px; text-align:right; left:-18px">
                         </div>
                     </div>
                     <div class="cell">
                         <div class="input-control text">
                             <input type="number" name="oraFine" data-ng-model="r.endHour" data-ng-change="updateEnd(r)"
-                                   title="Ora" style="width:45px; text-align:right">
+                                   title="Ora fine" style="width:45px; text-align:right">
                         </div>
                     </div>
                     <div class="cell">
                         <div class="input-control text">
-                            <input type="number" name="minFine" data-ng-model="r.endMinute"
-                                   title="Minuti" data-ng-change="updateEnd(r)"
-                                   style="width:45px; text-align:right; left:-18px">
+                            <input type="number" name="minFine" data-ng-model="r.endMinute" title="Minuti fine"
+                                   data-ng-change="updateEnd(r)" style="width:45px; text-align:right; left:-18px">
                         </div>
                     </div>
                 </div>
@@ -115,8 +125,9 @@
                     </div>
                     <div class="cell">
                         <div class="input-control text">
-                            <input type="number" name="Temperatura" data-ng-model="r.setPoint" min="10" max="25"
-                                   step="0.1"
+                            <input type="number" name="Temperatura" data-ng-model="r.setPoint"
+                                   title="Temperatura (10..25°C)"
+                                   min="10" max="25" step="0.1"
                                    style="width:55px; text-align:right; left:-20px">°C
                         </div>
                     </div>
@@ -124,22 +135,22 @@
                     </div>
                     <div class="cell">
                         <div class="input-control text">
-                            <input type="number" name="Isteresi" data-ng-model="r.hysteresis" min="0.1" max="2.0"
-                                   step="0.1"
-                                   style="width:50px; text-align:right; left:-20px">%
+                            <input type="number" name="Isteresi" data-ng-model="r.hysteresis"
+                                   title="Isteresi (0.1..2.0 °C)"
+                                   min="0.1" max="2.0" step="0.1" style="width:45px; text-align:right; left:-20px">%
                         </div>
                     </div>
                     <div class="cell colspan2">
                     </div>
                     <div class="cell">
-                        <button class="button cycle-button danger"
-                                title="Elimina questa fascia" style="margin-left:-20px">
+                        <button class="button cycle-button danger" data-ng-click="removeRange($index)"
+                                title="Rimuovi questa fascia" style="left:-20px">
                             <span class="mif-minus"></span>
                         </button>
                     </div>
                     <div class="cell">
-                        <button class="button cycle-button success"
-                                title="Aggiungi una fascia dopo questa" style="margin-left:-15px">
+                        <button class="button cycle-button success" data-ng-click="addRange($index)"
+                                title="Aggiungi una fascia dopo questa" style="left:-10px">
                             <span class="mif-plus"></span>
                         </button>
                     </div>
@@ -163,14 +174,26 @@
         <div class="cell colspan3">
         </div>
         <div class="cell">
-            <button class="button success" name="save" style="width:80px; margin-left:40px"
-                    data-ng-click="saveRanges()">Salva
+            <button class="button success" name="save" style="width:80px; left:50px" title="Salva questo giorno"
+                    data-ng-click="saveRanges()">
+                Salva
             </button>
         </div>
         <div class="cell">
         </div>
         <div class="cell">
-            <button class="button primary" name="exit" style="width:80px">Esci</button>
+            <button class="button primary" name="exit" style="width:80px; left:20px"
+                    title="Torna alla pagina precedente"
+                    onClick="history.go(-1)">
+                Esci
+            </button>
         </div>
     </div>
 </div>
+
+<script>
+    function showDialog(id) {
+        var dialog = $(id).data('dialog');
+        dialog.open();
+    }
+</script>
