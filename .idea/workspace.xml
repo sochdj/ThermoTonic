@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cbcc08c1-045e-47fb-a9d4-f24bc74def7e" name="Default" comment="Aggiustamenti vari">
+    <list default="true" id="cbcc08c1-045e-47fb-a9d4-f24bc74def7e" name="Default" comment="Aggiunti pulsanti &quot;Copia&quot; e &quot;Incolla&quot;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Thermo/Temperature.php" afterPath="$PROJECT_DIR$/src/Thermo/Temperature.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/partial/setup.html" afterPath="$PROJECT_DIR$/web/partial/setup.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/script/app/homeController.js" afterPath="$PROJECT_DIR$/web/script/app/homeController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/script/app/setupController.js" afterPath="$PROJECT_DIR$/web/script/app/setupController.js" />
     </list>
     <ignored path="ThermoTonic.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -660,7 +656,13 @@
       <option name="project" value="LOCAL" />
       <updated>1459754142983</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Aggiunti pulsanti &quot;Copia&quot; e &quot;Incolla&quot;">
+      <created>1459775001728</created>
+      <option name="number" value="00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1459775001728</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -709,7 +711,8 @@
     <MESSAGE value="Non capisco cosa sto sbagliando...Azz" />
     <MESSAGE value="Corretta funzione di lettura fasce orarie" />
     <MESSAGE value="Aggiustamenti vari" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aggiustamenti vari" />
+    <MESSAGE value="Aggiunti pulsanti &quot;Copia&quot; e &quot;Incolla&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aggiunti pulsanti &quot;Copia&quot; e &quot;Incolla&quot;" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
