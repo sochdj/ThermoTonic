@@ -28,7 +28,7 @@ appRoot.controller('homeController', ['$scope', '$interval', 'apiService',
         $scope.upperLimitIn = 30.0;
         $scope.lowerLimitOut = -10.0;
         $scope.upperLimitOut = 40.0;
-        $scope.unit = "°C";
+        $scope.unit = "\u00B0" + "C";
         $scope.precision = 2;
         $scope.rangesIn = [
             {

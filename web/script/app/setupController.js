@@ -9,7 +9,7 @@ appRoot.controller('setupController', ['$scope', 'apiService',
          hystersis: 0,
          };*/
 
-        $scope.giorno = "1";
+        $scope.giorno = "0";
         $scope.ranges = [];
         $scope.rangesCp = [];
 
