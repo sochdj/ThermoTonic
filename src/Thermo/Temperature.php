@@ -71,7 +71,7 @@ class Temperature extends Resource
     {
         $data = json_decode($this->request->getData(), true);
 
-        $dayOfWeek = $data[dayOfWeek]["dayOfWeek"];
+        $dayOfWeek = $data["dayOfWeek"];
 
         $db = new Database(DB_SERVER, DB_USER, DB_PASS, DB_DATABASE);
         $db->connect();
