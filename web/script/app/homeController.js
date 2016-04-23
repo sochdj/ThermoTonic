@@ -28,16 +28,21 @@ appRoot.controller('homeController', ['$scope', '$interval', 'apiService',
         $scope.upperLimitIn = 30.0;
         $scope.lowerLimitOut = -10.0;
         $scope.upperLimitOut = 40.0;
-        $scope.unit = "°C";
+        $scope.unit = "\u00B0" + "C";
         $scope.precision = 2;
         $scope.rangesIn = [
             {
-                min: 10.0,
-                max: 18,
+                min: 10,
+                max: 15,
+                color: '#00BFFF'
+            },
+            {
+                min: 15,
+                max: 19,
                 color: '#7FFFD4'
             },
             {
-                min: 18,
+                min: 19,
                 max: 23,
                 color: '#00FF00'
             },
@@ -71,16 +76,16 @@ appRoot.controller('homeController', ['$scope', '$interval', 'apiService',
             },
             {
                 min: 18,
-                max: 22,
+                max: 25,
                 color: '#00FF00'
             },
             {
-                min: 22,
-                max: 30,
+                min: 25,
+                max: 32,
                 color: '#F4A460'
             },
             {
-                min: 30,
+                min: 32,
                 max: 40,
                 color: '#FF0000'
             },
