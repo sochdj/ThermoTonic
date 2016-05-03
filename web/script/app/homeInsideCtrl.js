@@ -1,4 +1,4 @@
-appRoot.controller('homeController', ['$scope', '$interval', 'apiService',
+appRoot.controller('homeInsideCtrl', ['$scope', '$interval', 'apiService',
     function ($scope, $interval, apiService) {
         $scope.latestTemperature = {
             dateTime: ".",
@@ -109,8 +109,8 @@ appRoot.controller('homeController', ['$scope', '$interval', 'apiService',
                 ylabel: 'Temperature (C)',
                 legend: 'always',
                 labelsDivStyles: {
-                 'text-align': 'right',
-                 'background': 'none'
+                    'text-align': 'right',
+                    'background': 'none'
                 },
                 strokeWidth: 2.0,
                 digitsAfterDecimal: 1,

@@ -1,0 +1,63 @@
+<div class="grid no-margin" style="width: 450px">
+    <div class="row cells1 no-margin">
+        <div align="center"><h3>Thermo Controller - Stato Attuale</h3></div>
+        <div class="align-center" style="margin-top:-10px"><h4 class="no-margin">{{latestTemperature.dateTime}}</h4>
+        </div>
+    </div>
+    <div class="grid" style="width: 450px">
+        <div class="row cells5">
+            <div class="cell colspan3">
+                <div ng-show="!internal">
+                    <div align="center">Temperatura Interna</div>
+                    <div ng-radial-gauge ranges="rangesIn" value="latestTemperature.tempInt" value-unit="unit"
+                         precision="precision" lower-limit="lowerLimitIn" upper-limit="upperLimitIn"></div>
+                    <div align="center">
+                        <label>{{latestTemperature.tempInt}}°C</label>
+                    </div>
+                </div>
+                <div ng-show="internal">
+                    <div align="center">Temperatura Esterna</div>
+                    <div ng-radial-gauge ranges="rangesOut" value="latestTemperature.tempExt1" value-unit="unit"
+                         precision="precision" lower-limit="lowerLimitOut" upper-limit="upperLimitOut"></div>
+                    <div align="center">
+                        <label>{{latestTemperature.tempExt1}}°C</label>
+                    </div>
+                </div>
+            </div>
+            <div class="cell colspan2">
+                <div class="grid">
+                    <div class="row">
+                        <div align="center">Comando caldaia</div>
+                        <img src="../images/LedGreenOff.png" data-ng-show="latestTemperature.riscON == 0"
+                             style="width:27%; margin-left:37%; margin-top:5%"/>
+                        <img src="../images/LedGreenOn.png" data-ng-show="latestTemperature.riscON == 1"
+                             style="width:27%; margin-left:37%; margin-top:5%"/>
+                    </div>
+                    <div class="row cells2">
+                        <div class="cell">
+                            <div align="center" style="margin-top:5%">Fascia Oraria</div>
+                            <div align="center" style="margin-top:5%"><h1>{{latestTemperature.timeSlot}}</h1>
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <a ng-href="#/setup" title="Impostazione Fasce Orarie"><img src="../images/GestFasce.png"
+                                                                                        style="width:80%; margin-left:10%; margin-top:10%"/></a>
+                        </div>
+                    </div>
+                    <div class="row cells2">
+                        <div class="cell">
+                            <div ng-show="!internal">
+                                <a ng-click="internal=!internal"><img src="../images/TermExt.png"
+                                                                      style="width:80%; margin-left:10%"/></a>
+                            </div>
+                            <div ng-show="internal">
+                                <a ng-click="internal=!internal"><img src="../images/TermInt.png"
+                                                                      style="width:80%; margin-left:10%"/></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
