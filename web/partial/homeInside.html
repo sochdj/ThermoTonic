@@ -8,24 +8,26 @@
         <div class="row cells5">
             <div class="cell colspan3">
                 <div ng-show="!internal">
-                    <div align="center">Temperatura Interna</div>
+                    <div style="margin-left:85px">Temperatura Interna</div>
                     <div ng-radial-gauge ranges="rangesIn" value="latestTemperature.tempInt" value-unit="unit"
-                         precision="precision" lower-limit="lowerLimitIn" upper-limit="upperLimitIn"></div>
-                    <div align="center">
+                         precision="precision" lower-limit="lowerLimitIn" upper-limit="upperLimitIn"
+                         style="margin-left:30px; margin-top:10px"></div>
+                    <div style="margin-left:130px; margin-top:5px">
                         <label>{{latestTemperature.tempInt}}°C</label>
                     </div>
                 </div>
                 <div ng-show="internal">
-                    <div align="center">Temperatura Esterna</div>
+                    <div style="margin-left:85px">Temperatura Esterna</div>
                     <div ng-radial-gauge ranges="rangesOut" value="latestTemperature.tempExt1" value-unit="unit"
-                         precision="precision" lower-limit="lowerLimitOut" upper-limit="upperLimitOut"></div>
-                    <div align="center">
+                         precision="precision" lower-limit="lowerLimitOut" upper-limit="upperLimitOut"
+                         style="margin-left:30px; margin-top:10px"></div>
+                    <div style="margin-left:130px; margin-top:5px">
                         <label>{{latestTemperature.tempExt1}}°C</label>
                     </div>
                 </div>
             </div>
             <div class="cell colspan2">
-                <div class="grid">
+                <div class="grid no-margin">
                     <div class="row">
                         <div align="center">Comando caldaia</div>
                         <img src="../images/LedGreenOff.png" data-ng-show="latestTemperature.riscON == 0"
@@ -47,13 +49,19 @@
                     <div class="row cells2">
                         <div class="cell">
                             <div ng-show="!internal">
-                                <a ng-click="internal=!internal"><img src="../images/TermExt.png"
-                                                                      style="width:80%; margin-left:10%"/></a>
+                                <a ng-click="internal=!internal" title="Visualizza la temperatura esterna"><img
+                                        src="../images/TermExt.png"
+                                        style="width:80%; margin-left:10%"/></a>
                             </div>
                             <div ng-show="internal">
-                                <a ng-click="internal=!internal"><img src="../images/TermInt.png"
-                                                                      style="width:80%; margin-left:10%"/></a>
+                                <a ng-click="internal=!internal" title="Visualizza la temperatura interna"><img
+                                        src="../images/TermInt.png"
+                                        style="width:80%; margin-left:10%"/></a>
                             </div>
+                        </div>
+                        <div class="cell">
+                            <a ng-href="#/setup" title="Impostazione Manuale"><img src="../images/Manuale.png"
+                                                                                   style="width:80%; margin-left:10%"/></a>
                         </div>
                     </div>
                 </div>
