@@ -103,6 +103,12 @@
                        data-ng-change="updateEnd(r)" style="width:45px; text-align:right; left:-18px">
             </div>
         </div>
+        <div class="cell" style="margin-top:-15px">
+            <button class="button cycle-button danger" data-ng-click="removeRange($index)"
+                    title="Rimuovi questa fascia" style="left:60px">
+                <span class="mif-minus"></span>
+            </button>
+        </div>
     </div>
 </div>
 
@@ -118,9 +124,11 @@
 </div>
 
 <div class="grid no-margin-bottom" style="width:400px">
-    <div class="row cells2 no-margin-bottom">
+    <div class="row cells9 no-margin-bottom">
         <div class="cell">
-            <div class="input-control text" style="margin-left: 90px; margin-top: -20px;">
+        </div>
+        <div class="cell">
+            <div class="input-control text" style="margin-left: 35px; margin-top: -20px;">
                 <input type="number" name="Temperatura" data-ng-model="r.setPoint"
                        title="Temperatura (10..25°C)"
                        min="10" max="25" step="0.1"
@@ -128,11 +136,25 @@
             </div>
         </div>
         <div class="cell">
-            <div class="input-control text" style="margin-left: 15px; margin-top: -20px;">
+        </div>
+        <div class="cell">
+        </div>
+        <div class="cell">
+            <div class="input-control text" style="margin-left: 35px; margin-top: -20px;">
                 <input type="number" name="Isteresi" data-ng-model="r.hysteresis"
                        title="Isteresi (0.1..2.0 °C)"
                        min="0.1" max="2.0" step="0.1" style="width:55px; text-align:right">%
             </div>
+        </div>
+        <div class="cell">
+        </div>
+        <div class="cell">
+        </div>
+        <div class="cell">
+            <button class="button cycle-button success" data-ng-click="addRange($index)"
+                    title="Aggiungi una fascia dopo questa" style="left:15px; margin-top: -20px">
+                <span class="mif-plus"></span>
+            </button>
         </div>
     </div>
 </div>
