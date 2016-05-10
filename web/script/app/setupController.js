@@ -12,6 +12,8 @@ appRoot.controller('setupController', ['$scope', 'apiService',
         $scope.giorno = "0";
         $scope.ranges = [];
         $scope.rangesCp = [];
+        $scope.selectedRange = {};
+        $scope.r = {};
 
         $scope.$watch('giorno', function (newValue) {
             apiService.getTimeRanges(newValue).then(function (data) {
@@ -29,8 +31,22 @@ appRoot.controller('setupController', ['$scope', 'apiService',
                     $scope.ranges.push(range);
                 })
 
+                if ($scope.ranges.length > 0) {
+                    $scope.selectedRange = $scope.ranges[0];
+                }
+
             }, function (reason) {
             });
+        });
+
+        $scope.$watch('selectedRange.id', function () {
+            $scope.r.initHour = $scope.selectedRange.initHour;
+            $scope.r.initMinute = $scope.selectedRange.initMinute;
+            $scope.r.endHour = $scope.selectedRange.endHour;
+            $scope.r.endMinute = $scope.selectedRange.endMinute;
+            $scope.r.setPoint = $scope.selectedRange.setPoint;
+            $scope.r.hysteresis = $scope.selectedRange.hysteresis;
+            $scope.r.push(r);
         });
 
         $scope.saveRanges = function () {

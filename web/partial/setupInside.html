@@ -1,21 +1,21 @@
-<div class="grid no-margin-bottom" style="width:450px">
+<div class="grid no-margin-bottom" style="width:400px">
     <div class="row cells4">
         <div class="cell">
             <img src="../images/GestFasce.png" style="width:50%; margin-left:15px"/>
         </div>
         <div class="cell colspan3">
-            <div><h3 class="align-center" style="margin-left:-100px">Impostazione Fasce Orarie</h3></div>
+            <div><h3 class="align-center" style="margin-left:-50px">Impostazione Fasce Orarie</h3></div>
         </div>
     </div>
 </div>
 
-<div class="grid no-margin" style="width:450px">
+<div class="grid no-margin" style="width:400px">
     <div class="row cells7" style="margin-top:-8px">
         <div class="cell colspan2" style="margin-left:15px">
-            <h5>Seleziona Giorno</h5>
+            <h5>Giorno</h5>
         </div>
         <div class="cell">
-            <div class="input-control select no-margin-top" style="margin-left:-15px; width:90px">
+            <div class="input-control select no-margin-top" style="margin-left:-60px; width:90px">
                 <select name="Giorno" align="center" title="Seleziona il giorno da impostare"
                         ng-model="giorno" ng-change="chsel()">
                     <option value="0" selected>Lunedì</option>
@@ -30,12 +30,12 @@
         </div>
         <div class="cell">
             <button class="button cycle-button success" data-ng-click="addNewRange(0)"
-                    data-ng-disabled="ranges.length>0" style="margin-left:15px; margin-top:0px"><span
+                    data-ng-disabled="ranges.length>0" style="margin-left:-20px; margin-top:0px"><span
                     class="mif-plus"></span></button>
         </div>
         <div class="cell">
             <button class="button success" data-ng-click="copyRange()"
-                    data-ng-disabled="ranges.length==0" style="margin-top:0px; margin-left:-10px; width:70px">Copia
+                    data-ng-disabled="ranges.length==0" style="margin-top:0px; margin-left:-20px; width:70px">Copia
             </button>
         </div>
         <div class="cell">
@@ -47,25 +47,21 @@
     </div>
 </div>
 
-<div class="grid no-margin-bottom no-margin-top" style="width:450px">
+<div class="grid no-margin-bottom no-margin-top" style="width:400px">
     <div class="row cells4 no-margin-bottom">
         <div class="cell" style="margin-left: 15px; margin-top:-8px">
             <h5>Fascia</h5>
         </div>
         <div class="cell">
             <select name="Fascia" align="center" title="Seleziona la fascia oraria"
-                    ng-model="fascia" ng-change="chsel()" style="width:60px; margin-top:0px;">
-                <option value="0" selected>1</option>
-                <option value="1">2</option>
-                <option value="2">3</option>
-                <option value="3">4</option>
-                <option value="4">5</option>
+                    ng-model="selectedRange" style="width:60px; margin-top:0px"
+                    ng-options="f.id for f in ranges">
             </select>
         </div>
     </div>
 </div>
 
-<div class="grid no-margin-bottom no-margin-top" style="width:450px">
+<div class="grid no-margin-bottom no-margin-top" style="width:400px">
     <div class="row cells9 no-margin-bottom">
         <div class="cell">
         </div>
@@ -110,7 +106,7 @@
     </div>
 </div>
 
-<div class="grid no-margin-bottom no-margin-top" style="width:450px">
+<div class="grid no-margin-bottom no-margin-top" style="width:400px">
     <div class="row cells2 no-margin-bottom">
         <div class="cell" style=" margin-top:-5px">
             <h5 style="margin-left:75px">Temperatura</h5>
@@ -121,7 +117,7 @@
     </div>
 </div>
 
-<div class="grid no-margin-bottom" style="width:450px">
+<div class="grid no-margin-bottom" style="width:400px">
     <div class="row cells2 no-margin-bottom">
         <div class="cell">
             <div class="input-control text" style="margin-left: 90px; margin-top: -20px;">
@@ -141,69 +137,7 @@
     </div>
 </div>
 
-<!--
-<div class="row cells2 no-margin-bottom" ng-repeat="r in ranges">
-    <div class="cell">
-        <div class="grid">
-            <div class="row cells6">
-                <div class="cell">
-                </div>
-                <div class="cell">
-                    <label class=><h5 class="align-center">{{r.id}}</h5></label>
-                </div>
-                <div class="cell">
-                </div>
-                <div class="cell">
-                </div>
-                <div class="cell">
-                </div>
-                <div class="cell">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="cell">
-        <div class="grid">
-            <div class="row cells12 no-margin-bottom no-margin-top">
-                <div class="cell">
-                </div>
-                <div class="cell">
-                    <div class="input-control text">
-                        <input type="number" name="Temperatura" data-ng-model="r.setPoint"
-                               title="Temperatura (10..25°C)"
-                               min="10" max="25" step="0.1"
-                               style="width:55px; text-align:right; left:-20px">°C
-                    </div>
-                </div>
-                <div class="cell colspan3">
-                </div>
-                <div class="cell">
-                    <div class="input-control text">
-                        <input type="number" name="Isteresi" data-ng-model="r.hysteresis"
-                               title="Isteresi (0.1..2.0 °C)"
-                               min="0.1" max="2.0" step="0.1" style="width:55px; text-align:right; left:-20px">%
-                    </div>
-                </div>
-                <div class="cell colspan2">
-                </div>
-                <div class="cell">
-                    <button class="button cycle-button danger" data-ng-click="removeRange($index)"
-                            title="Rimuovi questa fascia" style="left:-20px">
-                        <span class="mif-minus"></span>
-                    </button>
-                </div>
-                <div class="cell">
-                    <button class="button cycle-button success" data-ng-click="addRange($index)"
-                            title="Aggiungi una fascia dopo questa" style="left:-10px">
-                        <span class="mif-plus"></span>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-!-->
-<div class="grid no-margin-bottom" style="width:450px">
+<div class="grid no-margin-bottom" style="width:400px">
     <div class="row cells5">
         <div class="cell">
         </div>
