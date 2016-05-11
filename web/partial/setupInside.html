@@ -79,13 +79,13 @@
         </div>
         <div class="cell">
             <div class="input-control text" style="margin-left:20px; margin-top: -10px;">
-                <input type="number" name="oraInizio" data-ng-model="r.initHour" title="Ora inizio"
+                <input type="number" name="oraInizio" data-ng-model="selectedRange.initHour" title="Ora inizio"
                        data-ng-change="updateInit(r)" style="width:45px; text-align:right">
             </div>
         </div>
         <div class="cell">
             <div class="input-control text" style="margin-left:35px;; margin-top: -10px;">
-                <input type="number" name="minInizio" data-ng-model="r.initMinute" title="Minuti inizio"
+                <input type="number" name="minInizio" data-ng-model="selectedRange.initMinute" title="Minuti inizio"
                        data-ng-change="updateInit(r)" style="width:45px; text-align:right; left:-18px">
             </div>
         </div>
@@ -93,18 +93,18 @@
         </div>
         <div class="cell">
             <div class="input-control text" style="margin-left:20px; margin-top: -10px;">
-                <input type="number" name="oraFine" data-ng-model="r.endHour" data-ng-change="updateEnd(r)"
+                <input type="number" name="oraFine" data-ng-model="selectedRange.endHour" data-ng-change="updateEnd(r)"
                        title="Ora fine" style="width:45px; text-align:right">
             </div>
         </div>
         <div class="cell">
             <div class="input-control text" style="margin-left:35px; margin-top: -10px;">
-                <input type="number" name="minFine" data-ng-model="r.endMinute" title="Minuti fine"
+                <input type="number" name="minFine" data-ng-model="selectedRange.endMinute" title="Minuti fine"
                        data-ng-change="updateEnd(r)" style="width:45px; text-align:right; left:-18px">
             </div>
         </div>
         <div class="cell" style="margin-top:-15px">
-            <button class="button cycle-button danger" data-ng-click="removeRange($index)"
+            <button class="button cycle-button danger" data-ng-click="removeRange(selectedRange.id-1)"
                     title="Rimuovi questa fascia" style="left:60px">
                 <span class="mif-minus"></span>
             </button>
@@ -129,7 +129,7 @@
         </div>
         <div class="cell">
             <div class="input-control text" style="margin-left: 35px; margin-top: -20px;">
-                <input type="number" name="Temperatura" data-ng-model="r.setPoint"
+                <input type="number" name="Temperatura" data-ng-model="selectedRange.setPoint"
                        title="Temperatura (10..25°C)"
                        min="10" max="25" step="0.1"
                        style="width:55px; text-align:right">°C
@@ -141,7 +141,7 @@
         </div>
         <div class="cell">
             <div class="input-control text" style="margin-left: 35px; margin-top: -20px;">
-                <input type="number" name="Isteresi" data-ng-model="r.hysteresis"
+                <input type="number" name="Isteresi" data-ng-model="selectedRange.hysteresis"
                        title="Isteresi (0.1..2.0 °C)"
                        min="0.1" max="2.0" step="0.1" style="width:55px; text-align:right">%
             </div>
@@ -151,7 +151,7 @@
         <div class="cell">
         </div>
         <div class="cell">
-            <button class="button cycle-button success" data-ng-click="addRange($index)"
+            <button class="button cycle-button success" data-ng-click="addRange(selectedRange.id-1)"
                     title="Aggiungi una fascia dopo questa" style="left:15px; margin-top: -20px">
                 <span class="mif-plus"></span>
             </button>

@@ -39,16 +39,6 @@ appRoot.controller('setupController', ['$scope', 'apiService',
             });
         });
 
-        $scope.$watch('selectedRange.id', function () {
-            $scope.r.initHour = $scope.selectedRange.initHour;
-            $scope.r.initMinute = $scope.selectedRange.initMinute;
-            $scope.r.endHour = $scope.selectedRange.endHour;
-            $scope.r.endMinute = $scope.selectedRange.endMinute;
-            $scope.r.setPoint = $scope.selectedRange.setPoint;
-            $scope.r.hysteresis = $scope.selectedRange.hysteresis;
-            $scope.r.push(r);
-        });
-
         $scope.saveRanges = function () {
             apiService.saveRanges({dayOfWeek: $scope.giorno, ranges: $scope.ranges}).then(function (data) {
 
@@ -73,6 +63,9 @@ appRoot.controller('setupController', ['$scope', 'apiService',
             $scope.ranges.splice($index, 1);
             for (var i = 0; i < $scope.ranges.length; i++) {
                 $scope.ranges[i].id = (i + 1).toString();
+            }
+            if ($scope.ranges.length > 0) {
+                $scope.selectedRange = $scope.ranges[$index - 1];
             }
         }
 
