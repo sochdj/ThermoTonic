@@ -80,27 +80,27 @@
         <div class="cell">
             <div class="input-control text" style="margin-left:20px; margin-top: -10px;">
                 <input type="number" name="oraInizio" data-ng-model="selectedRange.initHour" title="Ora inizio"
-                       data-ng-change="updateInit(r)" style="width:45px; text-align:right">
+                       data-ng-change="updateInit(selectedRange)" style="width:45px; text-align:right">
             </div>
         </div>
         <div class="cell">
             <div class="input-control text" style="margin-left:35px;; margin-top: -10px;">
                 <input type="number" name="minInizio" data-ng-model="selectedRange.initMinute" title="Minuti inizio"
-                       data-ng-change="updateInit(r)" style="width:45px; text-align:right; left:-18px">
+                       data-ng-change="updateInit(selectedRange)" style="width:45px; text-align:right; left:-18px">
             </div>
         </div>
         <div class="cell">
         </div>
         <div class="cell">
             <div class="input-control text" style="margin-left:20px; margin-top: -10px;">
-                <input type="number" name="oraFine" data-ng-model="selectedRange.endHour" data-ng-change="updateEnd(r)"
-                       title="Ora fine" style="width:45px; text-align:right">
+                <input type="number" name="oraFine" data-ng-model="selectedRange.endHour" title="Ora inizio"
+                       data-ng-change="updateEnd(selectedRange)" style="width:45px; text-align:right">
             </div>
         </div>
         <div class="cell">
             <div class="input-control text" style="margin-left:35px; margin-top: -10px;">
                 <input type="number" name="minFine" data-ng-model="selectedRange.endMinute" title="Minuti fine"
-                       data-ng-change="updateEnd(r)" style="width:45px; text-align:right; left:-18px">
+                       data-ng-change="updateEnd(selectedRange)" style="width:45px; text-align:right; left:-18px">
             </div>
         </div>
         <div class="cell" style="margin-top:-15px">
