@@ -4,13 +4,14 @@ appRoot.controller('homeController', ['$scope', '$interval', 'apiService',
             dateTime: ".",
             tempInt: 10,
             tempExt1: 0,
-            tempExt2: 0,
+            tempExt2: 10,
             tempExt3: 0,
             timeSlot: 0,
             riscON: 0
         };
 
         $scope.intvalue = 0;
+        $scope.visTemp = 0;
 
         $interval(function () {
             apiService.getLatestTemperatures().then(function (data) {
@@ -30,6 +31,9 @@ appRoot.controller('homeController', ['$scope', '$interval', 'apiService',
         $scope.upperLimitIn = 30.0;
         $scope.lowerLimitOut = -10.0;
         $scope.upperLimitOut = 40.0;
+        $scope.lowerLimitTermo = 10;
+        $scope.upperLimitTermo = 90;
+
         $scope.unit = "\u00B0" + "C";
         $scope.precision = 2;
         $scope.rangesIn = [
@@ -89,6 +93,39 @@ appRoot.controller('homeController', ['$scope', '$interval', 'apiService',
             {
                 min: 32,
                 max: 40,
+                color: '#FF0000'
+            },
+        ];
+
+        $scope.rangesTermo = [
+            {
+                min: 10,
+                max: 25,
+                color: '#00BFFF'
+            },
+            {
+                min: 25,
+                max: 35,
+                color: '#F4FA58'
+            },
+            {
+                min: 35,
+                max: 45,
+                color: '#FACC2E'
+            },
+            {
+                min: 45,
+                max: 60,
+                color: '#FF8000'
+            },
+            {
+                min: 60,
+                max: 75,
+                color: '#FF4000'
+            },
+            {
+                min: 75,
+                max: 90,
                 color: '#FF0000'
             },
         ];
