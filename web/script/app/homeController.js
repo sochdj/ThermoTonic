@@ -13,6 +13,40 @@ appRoot.controller('homeController', ['$scope', '$interval', 'apiService',
         $scope.intvalue = 0;
         $scope.visTemp = 0;
 
+        $(document).ready(function () {
+            var date = new Date();
+            var td = date.toString();
+            var today = td.split(" ");
+            td = today[2] + " " + today[1] + " " + today[3];
+            $("#dataInizio").datepicker().datepicker().val(td);
+            $("#dataFine").datepicker().datepicker().val(td);
+
+            var maxTemp = 0;
+            var minTemp = 100;
+
+            var stDate = new Date($('#dataInizio').val())
+            var enDate = new Date($('#dataFine').val())
+            var start = toMysqlFormat(stDate.getFullYear(), stDate.getMonth() + 1, stDate.getDate(), 00, 00, 00);
+            var stop = toMysqlFormat(enDate.getFullYear(), enDate.getMonth() + 1, enDate.getDate(), 23, 59, 59);
+            apiService.getRangeTemperatures(start, stop).then(function (data) {
+                $scope.graph.data.length = 0;
+                angular.forEach(data.temperatures, function (temp) {
+                    var t = temp.dateTime.split(/[- :]/);
+                    var d = new Date(t[0], t[1] - 1, t[2], t[3], t[4], t[5]);
+                    if (maxTemp < parseFloat(temp.tempInt))  maxTemp = parseFloat(temp.tempInt);
+                    if (maxTemp < parseFloat(temp.tempExt1)) maxTemp = parseFloat(temp.tempExt1);
+                    if (minTemp > parseFloat(temp.tempInt))  minTemp = parseFloat(temp.tempInt);
+                    if (minTemp > parseFloat(temp.tempExt1)) minTemp = parseFloat(temp.tempExt1);
+                    $scope.graph.data.push([d, temp.tempInt, temp.tempExt1]);
+                })
+                $scope.graph.options.valueRange = [(minTemp - 5), (maxTemp + 5)];
+
+            }, function (reasons) {
+
+            });
+        });
+
+
         $interval(function () {
             apiService.getLatestTemperatures().then(function (data) {
                 var t = data.latestTemperature.dateTime.split(/[- :]/);
@@ -20,6 +54,7 @@ appRoot.controller('homeController', ['$scope', '$interval', 'apiService',
                 $scope.latestTemperature = data.latestTemperature;
                 $scope.latestTemperature.tempInt = parseFloat($scope.latestTemperature.tempInt).toFixed(1);
                 $scope.latestTemperature.tempExt1 = parseFloat($scope.latestTemperature.tempExt1).toFixed(1);
+                $scope.latestTemperature.tempExt2 = parseFloat($scope.latestTemperature.tempExt2).toFixed(1);
                 $scope.latestTemperature.dateTime = t[2] + '-' + t[1] + '-' + t[0] + ' ' + t[3] + ':' + t[4] + ':' + t[5];
 
             }, function (reason) {
@@ -28,9 +63,9 @@ appRoot.controller('homeController', ['$scope', '$interval', 'apiService',
         }, 2000);
 
         $scope.lowerLimitIn = 10.0;
-        $scope.upperLimitIn = 30.0;
-        $scope.lowerLimitOut = -10.0;
-        $scope.upperLimitOut = 40.0;
+        $scope.upperLimitIn = 40.0;
+        $scope.lowerLimitOut = -20.0;
+        $scope.upperLimitOut = 45.0;
         $scope.lowerLimitTermo = 10;
         $scope.upperLimitTermo = 90;
 
@@ -44,26 +79,46 @@ appRoot.controller('homeController', ['$scope', '$interval', 'apiService',
             },
             {
                 min: 15,
-                max: 19,
+                max: 20,
                 color: '#7FFFD4'
             },
             {
-                min: 19,
-                max: 23,
+                min: 20,
+                max: 25,
                 color: '#00FF00'
             },
             {
-                min: 23,
+                min: 25,
                 max: 30,
+                color: '#F7FE2E'
+            },
+            {
+                min: 30,
+                max: 35,
                 color: '#F4A460'
+            },
+            {
+                min: 35,
+                max: 40,
+                color: '#FE642E'
             },
         ];
 
         $scope.rangesOut = [
             {
-                min: -10,
-                max: 0,
+                min: -20,
+                max: -10,
                 color: '#0000FF'
+            },
+            {
+                min: -10,
+                max: -5,
+                color: '#0040FF'
+            },
+            {
+                min: -5,
+                max: 0,
+                color: '#0080FF'
             },
             {
                 min: 0,
@@ -72,27 +127,37 @@ appRoot.controller('homeController', ['$scope', '$interval', 'apiService',
             },
             {
                 min: 5,
-                max: 11,
+                max: 10,
+                color: '#2ECCFA'
+            },
+            {
+                min: 10,
+                max: 15,
                 color: '#00FFFF'
             },
             {
-                min: 11,
-                max: 18,
-                color: '#7FFFD4'
+                min: 15,
+                max: 20,
+                color: '#00FFBF'
             },
             {
-                min: 18,
+                min: 20,
                 max: 25,
                 color: '#00FF00'
             },
             {
                 min: 25,
-                max: 32,
-                color: '#F4A460'
+                max: 30,
+                color: '#C8FE2E'
             },
             {
-                min: 32,
-                max: 40,
+                min: 30,
+                max: 35,
+                color: '#F7FE2E'
+            },
+            {
+                min: 35,
+                max: 45,
                 color: '#FF0000'
             },
         ];
@@ -105,23 +170,23 @@ appRoot.controller('homeController', ['$scope', '$interval', 'apiService',
             },
             {
                 min: 25,
-                max: 35,
-                color: '#F4FA58'
+                max: 40,
+                color: '#2EFE2E'
             },
             {
-                min: 35,
-                max: 45,
-                color: '#FACC2E'
+                min: 40,
+                max: 50,
+                color: '#FFFF00'
             },
             {
-                min: 45,
+                min: 50,
                 max: 60,
-                color: '#FF8000'
+                color: '#FFBF00'
             },
             {
                 min: 60,
                 max: 75,
-                color: '#FF4000'
+                color: '#FF8000'
             },
             {
                 min: 75,
@@ -284,5 +349,37 @@ appRoot.controller('homeController', ['$scope', '$interval', 'apiService',
             }
         })
 
+        $scope.visGraph = function () {
+            var maxTemp = 0;
+            var minTemp = 100;
 
+            var stDate = new Date($('#dataInizio').val())
+            var enDate = new Date($('#dataFine').val())
+            var tmpDate = new Date()
+
+            if (stDate > enDate) {
+                tmpDate = stDate;
+                stDate = enDate;
+                enDate = tmpDate;
+            }
+
+            var start = toMysqlFormat(stDate.getFullYear(), stDate.getMonth() + 1, stDate.getDate(), 00, 00, 00);
+            var stop = toMysqlFormat(enDate.getFullYear(), enDate.getMonth() + 1, enDate.getDate(), 23, 59, 59);
+            apiService.getRangeTemperatures(start, stop).then(function (data) {
+                $scope.graph.data.length = 0;
+                angular.forEach(data.temperatures, function (temp) {
+                    var t = temp.dateTime.split(/[- :]/);
+                    var d = new Date(t[0], t[1] - 1, t[2], t[3], t[4], t[5]);
+                    if (maxTemp < parseFloat(temp.tempInt))  maxTemp = parseFloat(temp.tempInt);
+                    if (maxTemp < parseFloat(temp.tempExt1)) maxTemp = parseFloat(temp.tempExt1);
+                    if (minTemp > parseFloat(temp.tempInt))  minTemp = parseFloat(temp.tempInt);
+                    if (minTemp > parseFloat(temp.tempExt1)) minTemp = parseFloat(temp.tempExt1);
+                    $scope.graph.data.push([d, temp.tempInt, temp.tempExt1]);
+                })
+                $scope.graph.options.valueRange = [(minTemp - 5), (maxTemp + 5)];
+
+            }, function (reasons) {
+
+            });
+        }
     }]);
