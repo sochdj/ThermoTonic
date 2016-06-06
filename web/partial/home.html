@@ -24,12 +24,8 @@
 						 style="width:25%; margin-left:37%; margin-top:5%"/>
 					<div align="center" style="margin-top:5%">Fascia Oraria</div>
 					<div style="margin-top:5%"><h1 style="margin-left:30%">{{latestTemperature.timeSlot}}
-						<!--						<a ng-href="#/setup" title="Impostazione Fasce Orarie"><img src="../images/GestFasce.png"
-                                                                                                            style="width:40%; margin-left:10%"/></a>
-                        !-->
-						<a ng-href="#/homeInside" title="Impostazione Fasce Orarie"><img src="../images/GestFasce.png"
-																						 style="width:40%; margin-left:10%"/></a>
-
+                        <a ng-href="#/homeInside" title="Impostazione Fasce Orarie"><img src="../images/GestFasce.png"
+                                                                                         style="width:40%; margin-left:10%"/></a>
 					</h1>
 					</div>
 				</div>
@@ -44,24 +40,41 @@
 				</div>
 			</div>
 		</div>
-		<div class="row cells6">
+        <div class="row cells9">
 			<div class="cell">
 			</div>
-			<div class="cell colspan2">
-				<div style="margin-left:10px">Seleziona Periodo</div>
-				<select name="Periodo" align="center" ng-model="selezione" ng-change="chsel()">
-					<option value="Oggi" selected>Oggi</option>
-					<option value="Ieri">Ieri</option>
-					<option value="UltimaSettimana">Ultima Settimana</option>
-					<option value="UltimoMese">Ultimo Mese</option>
-				</select>
+            <div class="cell colspan3">
+                <div style="margin-left:50px">Seleziona Periodo DAL</div>
+                <div class="input-control text" data-role="datepicker" data-format="dd mmm yyyy"
+                     style="margin-left:50px">
+                    <input id="dataInizio" type="text">
+                    <button class="button"><span class="mif-calendar"></span></button>
+                </div>
+            </div>
+            <div class="cell colspan3">
+                <div style="margin-left:10px">Seleziona Periodo AL</div>
+                <div class="input-control text" data-role="datepicker" data-format="dd mmm yyyy">
+                    <input id="dataFine" type="text">
+                    <button class="button"><span class="mif-calendar"></span></button>
+                </div>
+            </div>
+            <div class="cell">
+                <div class="button button success" style="margin-top:20px; margin-left:-40px"
+                     data-ng-click="visGraph()">Vai
+                </div>
+            </div>
+            <!--
+                            <select name="Periodo" align="center" ng-model="selezione" ng-change="chsel()">
+                                <option value="Oggi" selected>Oggi</option>
+                                <option value="Ieri">Ieri</option>
+                                <option value="UltimaSettimana">Ultima Settimana</option>
+                                <option value="UltimoMese">Ultimo Mese</option>
+                            </select>
+            !-->
 			</div>
 		</div>
 		<div class="row cells7">
-			<div class="cell">
-			</div>
-
-			<div class="cell colspan5">
+            <div class="cell colspan5" style="margin-left:80px">
 				<ng-dygraphs style="height:450px;"
 							 data="graph.data"
 							 options="graph.options"
