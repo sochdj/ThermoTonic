@@ -7,7 +7,7 @@
     <div class="grid" style="width: 480px">
         <div class="row cells6">
             <div class="cell colspan3">
-                <div ng-show="internal">
+                <div ng-show="tempVis==1">
                     <div style="margin-top:5px; margin-left:55px">Temperatura Interna</div>
                     <div ng-radial-gauge ranges="rangesIn" value="latestTemperature.tempInt" value-unit="unit"
                          precision="precision" lower-limit="lowerLimitIn" upper-limit="upperLimitIn"
@@ -16,7 +16,7 @@
                         <label>{{latestTemperature.tempInt}}°C</label>
                     </div>
                 </div>
-                <div ng-show="!internal">
+                <div ng-show="tempVis==0">
                     <div style="margin-top:5px; margin-left:55px">Temperatura Esterna</div>
                     <div ng-radial-gauge ranges="rangesOut" value="latestTemperature.tempExt1" value-unit="unit"
                          precision="precision" lower-limit="lowerLimitOut" upper-limit="upperLimitOut"
@@ -37,16 +37,16 @@
                     </div>
                     <div class="row cells3">
                         <div class="cell">
-                            <a ng-click="internal=1" title="Visualizza la temperatura interna"><img
+                            <a ng-click="tempVis=0" title="Visualizza la temperatura interna"><img
                                     src="../images/TermInt.png"
                                     style="width:80%; margin-left:10%; margin-top:10px"/></a>
                         </div>
                         <div class="cell">
-                            <a ng-click="internal=0" title="Visualizza la temperatura esterna"><img
+                            <a ng-click="tempVis=1" title="Visualizza la temperatura esterna"><img
                                     src="../images/TermExt.png" style="width:80%; margin-left:0%; margin-top:10px"/></a>
                         </div>
                         <div class="cell">
-                            <a ng-click="internal=2" title="Visualizza la temperatura esterna"><img
+                            <a ng-click="tempVis=2" title="Visualizza la temperatura esterna"><img
                                     src="../images/TermExt.png"
                                     style="width:80%; margin-left:-10%; margin-top:10px"/></a>
                         </div>

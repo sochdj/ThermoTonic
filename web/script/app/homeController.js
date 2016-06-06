@@ -11,6 +11,7 @@ appRoot.controller('homeController', ['$scope', '$interval', 'apiService',
         };
 
         $scope.intvalue = 0;
+        $scope.tempVis = 0;
 
         $interval(function () {
             apiService.getLatestTemperatures().then(function (data) {
