@@ -25,7 +25,7 @@
 					<div align="center" style="margin-top:5%">Fascia Oraria</div>
 					<div style="margin-top:5%"><h1 style="margin-left:30%">{{latestTemperature.timeSlot}}
                         <a ng-href="#/setup" title="Impostazione Fasce Orarie"><img src="../images/GestFasce.png"
-                                                                                    style="width:40%; margin-left:10%"/></a>
+																					style="width:40%; margin-left:10%"/></a>
 					</h1>
 					</div>
 				</div>
@@ -40,6 +40,17 @@
 				</div>
 			</div>
 		</div>
+		<div class="row cells12">
+			<div class="cell colspan6" style="margin-top:-50px">
+				<img src="../images/Termosifone.png" style="width:20%; margin-top:-0px; margin-left:100px"/>
+				<label id="Termosifone"
+					   style="margin-left:10px; margin-top:100px">{{latestTemperature.tempExt2}}°C</label>
+			</div>
+			<div class="cell colspan6" style="margin-top:-50px">
+				<img src="../images/Goccia.png" style="width:12%; margin-top:-0px; margin-left:150px"/>
+				<label id="Humidity" style="margin-left:20px">{{latestTemperature.tempExt3}}%</label>
+			</div>
+		</div>
         <div class="row cells9">
 			<div class="cell">
 			</div>
@@ -47,14 +58,14 @@
                 <div style="margin-left:50px">Seleziona Periodo DAL</div>
                 <div class="input-control text" data-role="datepicker" data-format="dd mmm yyyy"
                      style="margin-left:50px">
-					<input id="dataInizio" type="text" data-ng-model="dInizio">
+					<input id="dataInizio" type="text">
                     <button class="button"><span class="mif-calendar"></span></button>
                 </div>
             </div>
             <div class="cell colspan3">
                 <div style="margin-left:10px">Seleziona Periodo AL</div>
                 <div class="input-control text" data-role="datepicker" data-format="dd mmm yyyy">
-					<input id="dataFine" type="text" data-ng-model="dFine">
+					<input id="dataFine" type="text">
                     <button class="button"><span class="mif-calendar"></span></button>
                 </div>
             </div>
@@ -71,10 +82,11 @@
                                 <option value="UltimoMese">Ultimo Mese</option>
                             </select>
             !-->
-			</div>
+
 		</div>
-		<div class="row cells7">
-            <div class="cell colspan5" style="margin-left:80px">
+		<div class="row cells8">
+
+			<div class="cell colspan6" style="margin-left:80px">
 				<ng-dygraphs style="height:450px;"
 							 data="graph.data"
 							 options="graph.options"
@@ -87,5 +99,6 @@
 				</canvas>
 			</div>-->
 		</div>
+	</div>
 	</div>
 </div>

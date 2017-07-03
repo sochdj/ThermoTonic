@@ -1,208 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cbcc08c1-045e-47fb-a9d4-f24bc74def7e" name="Default" comment="Completata pagina setup locale">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/LedGreen.png" afterPath="$PROJECT_DIR$/web/images/LedGreen.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/LedGreenOff.png" afterPath="$PROJECT_DIR$/web/images/LedGreenOff.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/LedGreenOn.png" afterPath="$PROJECT_DIR$/web/images/LedGreenOn.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/LedOff.png" afterPath="$PROJECT_DIR$/web/images/LedOff.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/LedRed.png" afterPath="$PROJECT_DIR$/web/images/LedRed.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/Manuale.png" afterPath="$PROJECT_DIR$/web/images/Manuale.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/TermExt.png" afterPath="$PROJECT_DIR$/web/images/TermExt.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/TermInt.png" afterPath="$PROJECT_DIR$/web/images/TermInt.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/fire.png" afterPath="$PROJECT_DIR$/web/images/fire.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/dist/angular-chart.js.tar.gz" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/dist/angular-chart.js.tar.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/29-tabs.png" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/29-tabs.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/51-pie-update-colours.png" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/51-pie-update-colours.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/54-not-enough-colours.png" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/54-not-enough-colours.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/57-hex-colours.png" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/57-hex-colours.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/charts.png" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/charts.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/configure-line-chart.png" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/configure-line-chart.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/custom-directive.png" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/custom-directive.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/metro/fonts/metro.eot" afterPath="$PROJECT_DIR$/web/vendor/metro/fonts/metro.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/metro/fonts/metro.ttf" afterPath="$PROJECT_DIR$/web/vendor/metro/fonts/metro.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/metro/fonts/metro.woff" afterPath="$PROJECT_DIR$/web/vendor/metro/fonts/metro.woff" />
+    <list default="true" id="cbcc08c1-045e-47fb-a9d4-f24bc74def7e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Thermo.sql" afterPath="$PROJECT_DIR$/src/Thermo.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Thermo/Database.class.php" afterPath="$PROJECT_DIR$/src/Thermo/Database.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Thermo/Hello.php" afterPath="$PROJECT_DIR$/src/Thermo/Hello.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Thermo/Temperature.php" afterPath="$PROJECT_DIR$/src/Thermo/Temperature.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Thermo/Welcome.php" afterPath="$PROJECT_DIR$/src/Thermo/Welcome.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Thermo/config.inc.php" afterPath="$PROJECT_DIR$/src/Thermo/config.inc.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tonic/Application.php" afterPath="$PROJECT_DIR$/src/Tonic/Application.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tonic/Autoloader.php" afterPath="$PROJECT_DIR$/src/Tonic/Autoloader.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tonic/ConditionException.php" afterPath="$PROJECT_DIR$/src/Tonic/ConditionException.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tonic/Exception.php" afterPath="$PROJECT_DIR$/src/Tonic/Exception.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tonic/MetadataCache.php" afterPath="$PROJECT_DIR$/src/Tonic/MetadataCache.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tonic/MetadataCacheAPC.php" afterPath="$PROJECT_DIR$/src/Tonic/MetadataCacheAPC.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tonic/MetadataCacheFile.php" afterPath="$PROJECT_DIR$/src/Tonic/MetadataCacheFile.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tonic/MethodMetadata.php" afterPath="$PROJECT_DIR$/src/Tonic/MethodMetadata.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tonic/MethodNotAllowedException.php" afterPath="$PROJECT_DIR$/src/Tonic/MethodNotAllowedException.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tonic/NotAcceptableException.php" afterPath="$PROJECT_DIR$/src/Tonic/NotAcceptableException.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tonic/NotFoundException.php" afterPath="$PROJECT_DIR$/src/Tonic/NotFoundException.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tonic/README.markdown" afterPath="$PROJECT_DIR$/src/Tonic/README.markdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tonic/Request.php" afterPath="$PROJECT_DIR$/src/Tonic/Request.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tonic/Resource.php" afterPath="$PROJECT_DIR$/src/Tonic/Resource.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tonic/ResourceMetadata.php" afterPath="$PROJECT_DIR$/src/Tonic/ResourceMetadata.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tonic/Response.php" afterPath="$PROJECT_DIR$/src/Tonic/Response.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tonic/UnauthorizedException.php" afterPath="$PROJECT_DIR$/src/Tonic/UnauthorizedException.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tonic/UnsupportedMediaTypeException.php" afterPath="$PROJECT_DIR$/src/Tonic/UnsupportedMediaTypeException.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tyrell/Everything.php" afterPath="$PROJECT_DIR$/src/Tyrell/Everything.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tyrell/Hello.php" afterPath="$PROJECT_DIR$/src/Tyrell/Hello.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tyrell/README.markdown" afterPath="$PROJECT_DIR$/src/Tyrell/README.markdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tyrell/Secret.php" afterPath="$PROJECT_DIR$/src/Tyrell/Secret.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tyrell/Welcome.php" afterPath="$PROJECT_DIR$/src/Tyrell/Welcome.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/dispatch.php" afterPath="$PROJECT_DIR$/web/dispatch.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index - Copia.html" afterPath="$PROJECT_DIR$/web/index - Copia.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.html" afterPath="$PROJECT_DIR$/web/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index___.html" afterPath="$PROJECT_DIR$/web/index___.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/partial/Myhome.html" afterPath="$PROJECT_DIR$/web/partial/Myhome.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/partial/home.html" afterPath="$PROJECT_DIR$/web/partial/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/partial/homeBBB.html" afterPath="$PROJECT_DIR$/web/partial/homeBBB.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/partial/homeRPI.html" afterPath="$PROJECT_DIR$/web/partial/homeRPI.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/partial/setup.html" afterPath="$PROJECT_DIR$/web/partial/setup.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/partial/setupBBB.html" afterPath="$PROJECT_DIR$/web/partial/setupBBB.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/partial/setupRPI.html" afterPath="$PROJECT_DIR$/web/partial/setupRPI.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/script/app/app.js" afterPath="$PROJECT_DIR$/web/script/app/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/script/app/homeController.js" afterPath="$PROJECT_DIR$/web/script/app/homeController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/script/app/setupController.js" afterPath="$PROJECT_DIR$/web/script/app/setupController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/script/service/apiService.js" afterPath="$PROJECT_DIR$/web/script/service/apiService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/script/src/dateUtil.js" afterPath="$PROJECT_DIR$/web/script/src/dateUtil.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/Chart.js-master/.gitignore" afterPath="$PROJECT_DIR$/web/vendor/Chart.js-master/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/Chart.js-master/.travis.yml" afterPath="$PROJECT_DIR$/web/vendor/Chart.js-master/.travis.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/Chart.js-master/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/web/vendor/Chart.js-master/CONTRIBUTING.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/Chart.js-master/Chart.js" afterPath="$PROJECT_DIR$/web/vendor/Chart.js-master/Chart.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/Chart.js-master/Chart.min.js" afterPath="$PROJECT_DIR$/web/vendor/Chart.js-master/Chart.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/Chart.js-master/LICENSE.md" afterPath="$PROJECT_DIR$/web/vendor/Chart.js-master/LICENSE.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/Chart.js-master/README.md" afterPath="$PROJECT_DIR$/web/vendor/Chart.js-master/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/Chart.js-master/bower.json" afterPath="$PROJECT_DIR$/web/vendor/Chart.js-master/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/Chart.js-master/composer.json" afterPath="$PROJECT_DIR$/web/vendor/Chart.js-master/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/Chart.js-master/docs/00-Getting-Started.md" afterPath="$PROJECT_DIR$/web/vendor/Chart.js-master/docs/00-Getting-Started.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/Chart.js-master/docs/01-Line-Chart.md" afterPath="$PROJECT_DIR$/web/vendor/Chart.js-master/docs/01-Line-Chart.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/Chart.js-master/docs/02-Bar-Chart.md" afterPath="$PROJECT_DIR$/web/vendor/Chart.js-master/docs/02-Bar-Chart.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/Chart.js-master/docs/03-Radar-Chart.md" afterPath="$PROJECT_DIR$/web/vendor/Chart.js-master/docs/03-Radar-Chart.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/Chart.js-master/docs/04-Polar-Area-Chart.md" afterPath="$PROJECT_DIR$/web/vendor/Chart.js-master/docs/04-Polar-Area-Chart.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/Chart.js-master/docs/05-Pie-Doughnut-Chart.md" afterPath="$PROJECT_DIR$/web/vendor/Chart.js-master/docs/05-Pie-Doughnut-Chart.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/Chart.js-master/docs/06-Advanced.md" afterPath="$PROJECT_DIR$/web/vendor/Chart.js-master/docs/06-Advanced.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/Chart.js-master/docs/07-Notes.md" afterPath="$PROJECT_DIR$/web/vendor/Chart.js-master/docs/07-Notes.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/Chart.js-master/gulpfile.js" afterPath="$PROJECT_DIR$/web/vendor/Chart.js-master/gulpfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/Chart.js-master/package.json" afterPath="$PROJECT_DIR$/web/vendor/Chart.js-master/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/Chart.js-master/samples/bar.html" afterPath="$PROJECT_DIR$/web/vendor/Chart.js-master/samples/bar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/Chart.js-master/samples/doughnut.color.html" afterPath="$PROJECT_DIR$/web/vendor/Chart.js-master/samples/doughnut.color.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/Chart.js-master/samples/doughnut.html" afterPath="$PROJECT_DIR$/web/vendor/Chart.js-master/samples/doughnut.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/Chart.js-master/samples/line-customTooltips.html" afterPath="$PROJECT_DIR$/web/vendor/Chart.js-master/samples/line-customTooltips.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/Chart.js-master/samples/line.html" afterPath="$PROJECT_DIR$/web/vendor/Chart.js-master/samples/line.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/Chart.js-master/samples/pie-customTooltips.html" afterPath="$PROJECT_DIR$/web/vendor/Chart.js-master/samples/pie-customTooltips.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/Chart.js-master/samples/pie.html" afterPath="$PROJECT_DIR$/web/vendor/Chart.js-master/samples/pie.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/Chart.js-master/samples/polar-area.html" afterPath="$PROJECT_DIR$/web/vendor/Chart.js-master/samples/polar-area.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/Chart.js-master/samples/radar.html" afterPath="$PROJECT_DIR$/web/vendor/Chart.js-master/samples/radar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/Chart.js-master/src/Chart.Bar.js" afterPath="$PROJECT_DIR$/web/vendor/Chart.js-master/src/Chart.Bar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/Chart.js-master/src/Chart.Doughnut.js" afterPath="$PROJECT_DIR$/web/vendor/Chart.js-master/src/Chart.Doughnut.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/Chart.js-master/src/Chart.Line.js" afterPath="$PROJECT_DIR$/web/vendor/Chart.js-master/src/Chart.Line.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/Chart.js-master/src/Chart.PolarArea.js" afterPath="$PROJECT_DIR$/web/vendor/Chart.js-master/src/Chart.PolarArea.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/Chart.js-master/src/Chart.Radar.js" afterPath="$PROJECT_DIR$/web/vendor/Chart.js-master/src/Chart.Radar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/.codeclimate.yml" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/.codeclimate.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/.editorconfig" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/.editorconfig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/.gitignore" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/.jscsrc" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/.jscsrc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/.jshintignore" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/.jshintignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/.jshintrc" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/.jshintrc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/.node-version" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/.node-version" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/.travis.yml" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/.travis.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/LICENSE" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/README.md" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/angular-chart.js" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/angular-chart.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/angular-chart.less" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/angular-chart.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/bower.json" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/dist/angular-chart.css" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/dist/angular-chart.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/dist/angular-chart.js" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/dist/angular-chart.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/dist/angular-chart.min.css" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/dist/angular-chart.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/dist/angular-chart.min.css.map" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/dist/angular-chart.min.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/dist/angular-chart.min.js" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/dist/angular-chart.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/dist/angular-chart.min.js.map" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/dist/angular-chart.min.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/examples/amd.html" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/examples/amd.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/examples/amd.js" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/examples/amd.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/examples/app.css" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/examples/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/examples/app.js" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/examples/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/examples/bootstrap.css" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/examples/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/examples/charts.html" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/examples/charts.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/examples/charts.template.html" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/examples/charts.template.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/examples/smoothscroll.min.js" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/examples/smoothscroll.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/examples/stacked-bars-directive.html" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/examples/stacked-bars-directive.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/examples/stacked-bars.html" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/examples/stacked-bars.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/examples/tables.html" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/examples/tables.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/examples/tabs.html" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/examples/tabs.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/examples/ticks.html" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/examples/ticks.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/examples/webpack.config.js" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/examples/webpack.config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/gulpfile.js" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/gulpfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/package.json" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/29-tabs.alt.html" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/29-tabs.alt.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/29-tabs.html" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/29-tabs.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/29-tabs.js" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/29-tabs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/51-pie-update-colours.alt.html" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/51-pie-update-colours.alt.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/51-pie-update-colours.html" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/51-pie-update-colours.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/51-pie-update-colours.js" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/51-pie-update-colours.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/54-not-enough-colours.alt.html" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/54-not-enough-colours.alt.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/54-not-enough-colours.html" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/54-not-enough-colours.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/54-not-enough-colours.js" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/54-not-enough-colours.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/57-hex-colours.alt.html" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/57-hex-colours.alt.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/57-hex-colours.html" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/57-hex-colours.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/57-hex-colours.js" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/57-hex-colours.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/charts.alt.html" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/charts.alt.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/charts.html" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/charts.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/charts.js" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/charts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/configure-line-chart.alt.html" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/configure-line-chart.alt.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/configure-line-chart.html" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/configure-line-chart.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/configure-line-chart.js" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/configure-line-chart.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/coverage.js" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/coverage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/custom-directive.alt.html" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/custom-directive.alt.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/custom-directive.html" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/custom-directive.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/custom-directive.js" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/fixtures/custom-directive.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/index.html" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/mocha.opts" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/mocha.opts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/support/setup.js" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/support/setup.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/test.integration.js" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/test.integration.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/test.unit.js" afterPath="$PROJECT_DIR$/web/vendor/angular-chart.js-master/test/test.unit.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-charts/angular-chart.css" afterPath="$PROJECT_DIR$/web/vendor/angular-charts/angular-chart.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-charts/angular-chart.js" afterPath="$PROJECT_DIR$/web/vendor/angular-charts/angular-chart.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-charts/angular-chart.min.css" afterPath="$PROJECT_DIR$/web/vendor/angular-charts/angular-chart.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-charts/angular-chart.min.css.map" afterPath="$PROJECT_DIR$/web/vendor/angular-charts/angular-chart.min.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-charts/angular-chart.min.js" afterPath="$PROJECT_DIR$/web/vendor/angular-charts/angular-chart.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-charts/angular-chart.min.js.map" afterPath="$PROJECT_DIR$/web/vendor/angular-charts/angular-chart.min.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-dygraphs-master/.gitignore" afterPath="$PROJECT_DIR$/web/vendor/angular-dygraphs-master/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-dygraphs-master/LICENSE" afterPath="$PROJECT_DIR$/web/vendor/angular-dygraphs-master/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-dygraphs-master/README.md" afterPath="$PROJECT_DIR$/web/vendor/angular-dygraphs-master/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-dygraphs-master/bower.json" afterPath="$PROJECT_DIR$/web/vendor/angular-dygraphs-master/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-dygraphs-master/demo/demo.css" afterPath="$PROJECT_DIR$/web/vendor/angular-dygraphs-master/demo/demo.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-dygraphs-master/demo/index.html" afterPath="$PROJECT_DIR$/web/vendor/angular-dygraphs-master/demo/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-dygraphs-master/demo/variables.less" afterPath="$PROJECT_DIR$/web/vendor/angular-dygraphs-master/demo/variables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-dygraphs-master/src/angular-dygraphs.js" afterPath="$PROJECT_DIR$/web/vendor/angular-dygraphs-master/src/angular-dygraphs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-dygraphs-master/src/angular-dygraphs.less" afterPath="$PROJECT_DIR$/web/vendor/angular-dygraphs-master/src/angular-dygraphs.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-dygraphs-master/src/dygraph-combined.js" afterPath="$PROJECT_DIR$/web/vendor/angular-dygraphs-master/src/dygraph-combined.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular-dygraphs-master/src/moment.js" afterPath="$PROJECT_DIR$/web/vendor/angular-dygraphs-master/src/moment.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular/angular-animate.js" afterPath="$PROJECT_DIR$/web/vendor/angular/angular-animate.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular/angular-resource.min.js" afterPath="$PROJECT_DIR$/web/vendor/angular/angular-resource.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular/angular-route.min.js" afterPath="$PROJECT_DIR$/web/vendor/angular/angular-route.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular/angular-sanitize.min.js" afterPath="$PROJECT_DIR$/web/vendor/angular/angular-sanitize.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular/angular.min.js" afterPath="$PROJECT_DIR$/web/vendor/angular/angular.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular/d3.v3.min.js" afterPath="$PROJECT_DIR$/web/vendor/angular/d3.v3.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/angular/ng-radial-gauge-dir.js" afterPath="$PROJECT_DIR$/web/vendor/angular/ng-radial-gauge-dir.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/jquery/jquery-2.1.4.min.js" afterPath="$PROJECT_DIR$/web/vendor/jquery/jquery-2.1.4.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/metro/css/metro-icons.css" afterPath="$PROJECT_DIR$/web/vendor/metro/css/metro-icons.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/metro/css/metro-icons.min.css" afterPath="$PROJECT_DIR$/web/vendor/metro/css/metro-icons.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/metro/css/metro-responsive.css" afterPath="$PROJECT_DIR$/web/vendor/metro/css/metro-responsive.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/metro/css/metro-responsive.min.css" afterPath="$PROJECT_DIR$/web/vendor/metro/css/metro-responsive.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/metro/css/metro-rtl.css" afterPath="$PROJECT_DIR$/web/vendor/metro/css/metro-rtl.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/metro/css/metro-rtl.min.css" afterPath="$PROJECT_DIR$/web/vendor/metro/css/metro-rtl.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/metro/css/metro-schemes.css" afterPath="$PROJECT_DIR$/web/vendor/metro/css/metro-schemes.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/metro/css/metro-schemes.min.css" afterPath="$PROJECT_DIR$/web/vendor/metro/css/metro-schemes.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/metro/css/metro.css" afterPath="$PROJECT_DIR$/web/vendor/metro/css/metro.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/metro/css/metro.min.css" afterPath="$PROJECT_DIR$/web/vendor/metro/css/metro.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/metro/fonts/metro.svg" afterPath="$PROJECT_DIR$/web/vendor/metro/fonts/metro.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/metro/fonts/selection.json" afterPath="$PROJECT_DIR$/web/vendor/metro/fonts/selection.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/metro/js/metro.js" afterPath="$PROJECT_DIR$/web/vendor/metro/js/metro.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendor/metro/js/metro.min.js" afterPath="$PROJECT_DIR$/web/vendor/metro/js/metro.min.js" />
     </list>
     <ignored path="ThermoTonic.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -241,10 +42,10 @@
               <caret line="35" column="20" lean-forward="false" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
               <folding>
                 <element signature="e#26#39#0#PHP" expanded="true" />
-                <marker date="1498568281075" expanded="true" signature="1068:1169" ph="SELECT * FRO... Temperature" />
-                <marker date="1498568281075" expanded="true" signature="1339:1380" ph="SELECT * FRO... TimeRanges" />
-                <marker date="1498568281075" expanded="true" signature="1534:1570" ph="SELECT * FRO... CurrentTemp" />
-                <marker date="1498568281075" expanded="true" signature="2450:2490" ph="DELETE FROM " />
+                <marker date="1499069726765" expanded="true" signature="1068:1169" ph="SELECT * FRO... Temperature" />
+                <marker date="1499069726765" expanded="true" signature="1339:1380" ph="SELECT * FRO... TimeRanges" />
+                <marker date="1499069726765" expanded="true" signature="1534:1570" ph="SELECT * FRO... CurrentTemp" />
+                <marker date="1499069726765" expanded="true" signature="2451:2491" ph="DELETE FROM " />
               </folding>
             </state>
           </provider>
@@ -728,7 +529,7 @@
       <workItem from="1497429547716" duration="2104000" />
       <workItem from="1497434677020" duration="489000" />
       <workItem from="1498567580362" duration="7826000" />
-      <workItem from="1499069480764" duration="200000" />
+      <workItem from="1499069480764" duration="886000" />
     </task>
     <task id="LOCAL-00001" summary="Aggiunto Graficuzzo">
       <created>1454504342578</created>
@@ -996,11 +797,18 @@
       <option name="project" value="LOCAL" />
       <updated>1465212354939</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Modificata homeBBB">
+      <created>1499069758096</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1499069758096</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10619000" />
+    <option name="totallyTimeSpent" value="11305000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1215" height="1028" extended-state="6" />
@@ -1040,6 +848,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="Aggiunto Graficuzzo" />
     <MESSAGE value="Aggiunta connessione SQLf" />
     <MESSAGE value="Aggiunta connessione SQL" />
@@ -1056,7 +865,8 @@
     <MESSAGE value="Creata pagina per visualizzazione locale" />
     <MESSAGE value="Completata pagina per visualizzazione locale" />
     <MESSAGE value="Completata pagina setup locale" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completata pagina setup locale" />
+    <MESSAGE value="Modificata homeBBB" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modificata homeBBB" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1322,6 +1132,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="34" column="40" lean-forward="false" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1336,6 +1147,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1818">
           <caret line="101" column="64" lean-forward="false" selection-start-line="101" selection-start-column="36" selection-end-line="101" selection-end-column="64" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1391,6 +1205,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1399,6 +1214,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="882">
           <caret line="49" column="25" lean-forward="false" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1408,10 +1224,10 @@
           <caret line="35" column="20" lean-forward="false" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
           <folding>
             <element signature="e#26#39#0#PHP" expanded="true" />
-            <marker date="1498568281075" expanded="true" signature="1068:1169" ph="SELECT * FRO... Temperature" />
-            <marker date="1498568281075" expanded="true" signature="1339:1380" ph="SELECT * FRO... TimeRanges" />
-            <marker date="1498568281075" expanded="true" signature="1534:1570" ph="SELECT * FRO... CurrentTemp" />
-            <marker date="1498568281075" expanded="true" signature="2450:2490" ph="DELETE FROM " />
+            <marker date="1499069726765" expanded="true" signature="1068:1169" ph="SELECT * FRO... Temperature" />
+            <marker date="1499069726765" expanded="true" signature="1339:1380" ph="SELECT * FRO... TimeRanges" />
+            <marker date="1499069726765" expanded="true" signature="1534:1570" ph="SELECT * FRO... CurrentTemp" />
+            <marker date="1499069726765" expanded="true" signature="2451:2491" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
