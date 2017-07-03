@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cbcc08c1-045e-47fb-a9d4-f24bc74def7e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/partial/home.html" afterPath="$PROJECT_DIR$/web/partial/home.html" />
     </list>
     <ignored path="ThermoTonic.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -529,7 +528,7 @@
       <workItem from="1497429547716" duration="2104000" />
       <workItem from="1497434677020" duration="489000" />
       <workItem from="1498567580362" duration="7826000" />
-      <workItem from="1499069480764" duration="886000" />
+      <workItem from="1499069480764" duration="927000" />
     </task>
     <task id="LOCAL-00001" summary="Aggiunto Graficuzzo">
       <created>1454504342578</created>
@@ -804,11 +803,18 @@
       <option name="project" value="LOCAL" />
       <updated>1499069758096</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Modificata home aggiungendo la temperatura termosifoni e umidità interna">
+      <created>1499074301208</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1499074301208</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11305000" />
+    <option name="totallyTimeSpent" value="11346000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1215" height="1028" extended-state="6" />
@@ -817,7 +823,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16972972" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16972972" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295099" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -866,7 +872,8 @@
     <MESSAGE value="Completata pagina per visualizzazione locale" />
     <MESSAGE value="Completata pagina setup locale" />
     <MESSAGE value="Modificata homeBBB" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modificata homeBBB" />
+    <MESSAGE value="Modificata home aggiungendo la temperatura termosifoni e umidità interna" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modificata home aggiungendo la temperatura termosifoni e umidità interna" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
