@@ -51,7 +51,7 @@ class Temperature extends Resource
             $ret = array('latestTemperature' => $rows[0]);
         }
         $db->close();
-        return new Response(200, json_encode($ret));
+        return new Response(200, json_encode($ret), er);
     }
 
 

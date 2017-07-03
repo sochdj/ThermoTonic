@@ -2,8 +2,8 @@ appRoot.controller('homeController', ['$scope', '$interval', 'apiService',
     function ($scope, $interval, apiService) {
         $scope.latestTemperature = {
             dateTime: ".",
-            tempInt: 10,
-            tempExt1: 0,
+            tempInt: 10.5,
+            tempExt1: 20.5,
             tempExt2: 10,
             tempExt3: 0,
             timeSlot: 0,
