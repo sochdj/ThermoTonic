@@ -450,7 +450,7 @@
       <workItem from="1498567580362" duration="7826000" />
       <workItem from="1499069480764" duration="1533000" />
       <workItem from="1499199823126" duration="102000" />
-      <workItem from="1499200272302" duration="156000" />
+      <workItem from="1499200272302" duration="164000" />
     </task>
     <task id="LOCAL-00001" summary="Aggiunto Graficuzzo">
       <created>1454504342578</created>
@@ -746,11 +746,18 @@
       <option name="project" value="LOCAL" />
       <updated>1499200418818</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Modificata home aggiungendo la temperatura termosifoni e umidità interna">
+      <created>1499200430713</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1499200430713</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12210000" />
+    <option name="totallyTimeSpent" value="12218000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1537" height="1212" extended-state="6" />
