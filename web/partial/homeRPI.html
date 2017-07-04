@@ -1,24 +1,26 @@
-<div class="grid no-margin" style="width: 470px">
+<div class="grid no-margin" style="width: 470px; background-color:#000000">
     <div class="row cells1 no-margin">
-        <div align="center"><h3>Thermo Controller - Stato Attuale</h3></div>
-        <div class="align-center" style="margin-top:-10px"><h4 class="no-margin">{{latestTemperature.dateTime}}</h4>
+        <div align="center"><h3 style="color:deepskyblue; font-weight: bold">Thermo Controller - Stato Attuale</h3>
+        </div>
+        <div class="align-center" style="margin-top:-10px"><h4 class="no-margin" style="color:white">
+            {{latestTemperature.dateTime}}</h4>
         </div>
     </div>
     <div class="grid" style="width: 450px">
         <div class="row cells5">
             <div class="cell colspan3">
                 <div style="margin-left:40px; margin-top:25px">
-                    <label style="font-size:40px">{{latestTemperature.tempExt1}}°C</label>
+                    <label style="font-size:40px; color:lawngreen; font-weight: bold">{{latestTemperature.tempExt1}}°C</label>
                 </div>
 
                 <div style="margin-left:40px; margin-top:50px">
-                    <label style="font-size:80px">{{latestTemperature.tempInt}}°C</label>
+                    <label style="font-size:80px; color:deepskyblue; font-weight: bold">{{latestTemperature.tempInt}}°C</label>
                 </div>
             </div>
             <div class="cell colspan2">
                 <div class="grid">
                     <div class="row">
-                        <div style="margin-left:27%">Comando caldaia</div>
+                        <div style="margin-left:30%; margin-top:-10px; color:white">Comando caldaia</div>
                         <img src="../images/LedGreenOff.png" data-ng-show="latestTemperature.riscON == 0"
                              style="width:27%; margin-left:50%; margin-top:1%"/>
                         <img src="../images/LedGreenOn.png" data-ng-show="latestTemperature.riscON == 1"
@@ -26,15 +28,16 @@
                     </div>
                     <div class="row cells2">
                         <div class="cell">
-                            <div style="margin-top:5%; margin-left:87px">Fascia Oraria</div>
-                            <div style="margin-top:5%; margin-left:95px"><h1>{{latestTemperature.timeSlot}}</h1>
+                            <div style="margin-top:15%; margin-left:90px; color:white">Fascia Oraria</div>
+                            <div style="margin-top:-15%; margin-left:100px; color:white"><h1>
+                                {{latestTemperature.timeSlot}}</h1>
                             </div>
                         </div>
                     </div>
                     <div class="row cells2">
                         <div class="cell">
-                            <a ng-href="#/setup" title="Impostazione Manuale"><img src="../images/Manuale.png"
-                                                                                   style="width:80%; margin-top:-20px; margin-left:70px"/></a>
+                            <a ng-href="#/setup" title="Impostazione Manuale"><img src="../images/ManualeT.png"
+                                                                                   style="width:80%; margin-top:0px; margin-bottom:-10px; margin-left:80px"/></a>
                         </div>
                     </div>
                 </div>
