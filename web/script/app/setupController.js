@@ -59,6 +59,7 @@ appRoot.controller('setupController', ['$scope', 'apiService',
             }
 
         }
+
         $scope.removeRange = function ($index) {
             $scope.ranges.splice($index, 1);
             for (var i = 0; i < $scope.ranges.length; i++) {
