@@ -1,46 +1,48 @@
-<div class="grid no-margin-bottom" style="width:400px; background-color:#000000">
+<div class="grid no-margin" style="width:480px; background-color:#000000">
     <div class="row cells4">
         <div class="cell">
-            <img src="../images/ManualeT.png" style="width:70%; margin-left:20px"/>
+            <img src="../images/ManualeT.png" style="width:70%; margin-left:20px; margin-top:20px"/>
         </div>
         <div class="cell colspan3">
-            <div><h3 class="align-center" style="color:deepskyblue; font-weight: bold">Attivazione Manuale</h3></div>
+            <div><h3 style="margin-top:30px; margin-left:10px; color:deepskyblue; font-weight:bold">Attivazione
+                Manuale</h3></div>
         </div>
     </div>
 </div>
 
-<div class="grid no-margin-bottom no-margin-top" style="width:400px; background-color:#000000">
+<div class="grid no-margin-bottom no-margin-top" style="width:480px; background-color:#000000">
     <div class="row cells2 no-margin-bottom">
-        <div class="cell" style=" margin-top:40px">
-            <h4 style="margin-left:130px; color:deepskyblue; font-weight: bold">Temperatura</h4>
+        <div class="cell" style=" margin-top:1px">
+            <h3 style="margin-left:150px; color:deepskyblue; font-weight: bold">Temperatura</h3>
         </div>
     </div>
     <div class="row cells9">
         <div class="cell">
         </div>
         <div class="cell">
-            <div class="input-control text" style="margin-left: 100px; margin-top: 0px">
-                <input type="number" name="Temperatura" data-ng-model="selectedRange.setPoint"
+            <div class="input-control text big-input" style="margin-left: 110px; margin-top: 20px">
+                <input type="number" name="Temperatura" data-ng-model="manualTemp"
                        title="Temperatura (10..25°C)"
                        min="10" max="25" step="0.1"
-                       style="width:90px; text-align:right; font-size:30px">°C
+                       style="width:120px; height: 60px; margin-top:-15px; text-align:right; font-size:40px">°C
             </div>
         </div>
     </div>
 </div>
 
-<div class="grid no-margin-bottom" style="width:400px; margin-top:0px; background-color:#000000">
+<div class="grid no-margin-bottom" style="width:480px; margin-top:0px; background-color:#000000">
     <div class="row cells5">
         <div class="cell">
         </div>
-        <div class="cell" style="margin-top:50px; margin-bottom:10px">
-            <button class="button success" name="OK" style="width:80px; left:20px" title="Imposta funzionamento manuale"
+        <div class="cell" style="margin-top:20px; margin-bottom:23px">
+            <button class="button success" name="Start" style="width:80px; left:30px"
+                    title="Imposta funzionamento manuale"
                     data-ng-click="">
-                Salva
+                OK
             </button>
         </div>
-        <div class="cell" style="margin-top:50px; margin-bottom:10px">
-            <button class="button primary" name="exit" style="width:80px; left:50px"
+        <div class="cell" style="margin-top:20px; margin-bottom:23px">
+            <button class="button primary" name="exit" style="width:80px; left:60px"
                     title="Torna alla pagina precedente"
                     onClick="history.go(-1)">
                 Esci
