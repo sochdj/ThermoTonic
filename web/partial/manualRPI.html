@@ -43,8 +43,8 @@
         <div class="cell" style="margin-top:39px; margin-bottom:23px">
             <button class="button success" name="Start" style="width:80px; left:30px"
                     title="Imposta funzionamento manuale"
-                    data-ng-click="">
-                OK
+                    data-ng-click="startStop()">
+                {{manButton}}
             </button>
         </div>
         <div class="cell" style="margin-top:39px; margin-bottom:23px">
@@ -56,10 +56,3 @@
         </div>
     </div>
 </div>
-
-<script>
-    function showDialog(id) {
-        var dialog = $(id).data('dialog');
-        dialog.open();
-    }
-</script>

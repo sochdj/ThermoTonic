@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cbcc08c1-045e-47fb-a9d4-f24bc74def7e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/script/app/manualController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.html" afterPath="$PROJECT_DIR$/web/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/partial/Myhome.html" afterPath="$PROJECT_DIR$/web/partial/Myhome.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/partial/manualRPI.html" afterPath="$PROJECT_DIR$/web/partial/manualRPI.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/script/app/app.js" afterPath="$PROJECT_DIR$/web/script/app/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/script/app/setupController.js" afterPath="$PROJECT_DIR$/web/script/app/setupController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/script/app/manualController.js" afterPath="$PROJECT_DIR$/web/script/app/manualController.js" />
     </list>
     <ignored path="ThermoTonic.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -88,8 +84,8 @@
       <file leaf-file-name="manualRPI.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/partial/manualRPI.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="40" column="46" lean-forward="false" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
+            <state relative-caret-position="534">
+              <caret line="47" column="21" lean-forward="true" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -101,6 +97,7 @@
                 <element signature="n#style#0;n#button#0;n#div#2;n#div#1;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#button#1;n#div#2;n#div#1;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#2;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#button#0;n#div#1;n#div#0;n#div#2;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#div#0;n#div#2;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#button#0;n#div#2;n#div#0;n#div#2;n#!!top" expanded="true" />
@@ -112,8 +109,8 @@
       <file leaf-file-name="manualController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/script/app/manualController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="38" lean-forward="false" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+            <state relative-caret-position="450">
+              <caret line="25" column="9" lean-forward="false" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -548,7 +545,7 @@
       <workItem from="1498567580362" duration="7826000" />
       <workItem from="1499069480764" duration="1533000" />
       <workItem from="1499153300046" duration="3566000" />
-      <workItem from="1499260328684" duration="7333000" />
+      <workItem from="1499260328684" duration="7910000" />
     </task>
     <task id="LOCAL-00001" summary="Aggiunto Graficuzzo">
       <created>1454504342578</created>
@@ -851,11 +848,18 @@
       <option name="project" value="LOCAL" />
       <updated>1499257552004</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Modifica alla homeRPI">
+      <created>1499267768953</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1499267768953</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28324000" />
+    <option name="totallyTimeSpent" value="28901000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1215" height="1000" extended-state="0" />
@@ -1303,16 +1307,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/script/app/manualController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="38" lean-forward="false" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+        <state relative-caret-position="450">
+          <caret line="25" column="9" lean-forward="false" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/partial/manualRPI.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="40" column="46" lean-forward="false" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
+        <state relative-caret-position="534">
+          <caret line="47" column="21" lean-forward="true" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -1324,6 +1328,7 @@
             <element signature="n#style#0;n#button#0;n#div#2;n#div#1;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#1;n#div#2;n#div#1;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#2;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#0;n#div#1;n#div#0;n#div#2;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#0;n#div#2;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#0;n#div#2;n#div#0;n#div#2;n#!!top" expanded="true" />
