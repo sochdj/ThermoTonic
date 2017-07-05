@@ -16,6 +16,6 @@ appRoot
 			 .when('/setupBBB',
 				 {templateUrl: '/partial/setupBBB.html', controller: 'setupController'})
              .when('/manualRPI',
-                 {templateUrl: '/partial/manualRPI.html', controller: 'setupController'})
+                 {templateUrl: '/partial/manualRPI.html', controller: 'manualController'})
 			 .otherwise({redirectTo: '/'});
 	}]);
