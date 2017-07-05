@@ -54,6 +54,31 @@ class Temperature extends Resource
         return new Response(200, json_encode($ret), er);
     }
 
+    /**
+     * Use this method to handle GET HTTP requests.
+     *
+     * The optional :name parameter in the URL available as the first parameter to the method
+     * or as a property of the resource as $this->name.
+     *
+     * Method can return a string response, an HTTP status code, an array of status code and
+     * response body, or a full Tonic\Response object.
+     *
+     * @method GET
+     * @provides application/json
+     * @json
+     * @return Tonic\Reponse
+     */
+    public function getManual()
+    {
+        $db = new Database(DB_SERVER, DB_USER, DB_PASS, DB_DATABASE);
+        $db->connect();
+        $sql = "SELECT * FROM ManualRun where id=1";
+        $rows = $db->fetch_all_array($sql);
+        $ret = array('manualData' => $rows[0]);
+        $db->close();
+        return new Response(200, json_encode($ret), er);
+    }
+
 
     /**
      * All HTTP methods are supported. The @accepts annotation makes method only match if the
