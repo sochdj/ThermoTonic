@@ -1,0 +1,58 @@
+<div class="grid no-margin" style="width:480px; background-color:#000000">
+    <div class="row cells4">
+        <div class="cell">
+            <img src="../images/ManualeT.png" style="width:70%; margin-left:20px; margin-top:20px"/>
+        </div>
+        <div class="cell colspan3">
+            <div><h3 style="margin-top:30px; margin-left:-10px; color:deepskyblue; font-weight:bold">Attivazione
+                Manuale</h3></div>
+        </div>
+    </div>
+</div>
+
+<div class="grid no-margin-bottom no-margin-top" style="width:480px; background-color:#000000">
+    <div class="row cells2 no-margin-bottom">
+        <div class="cell" style=" margin-top:1px">
+            <h3 style="margin-left:150px; color:deepskyblue; font-weight: bold">Temperatura</h3>
+        </div>
+    </div>
+    <div class="row cells9">
+        <div class="cell">
+        </div>
+        <div class="cell">
+            <div class=label" style="color:deepskyblue; margin-left:110px; margin-top:5px; font-size:50px">{{manTemp |
+                number:1}}
+            </div>
+        </div>
+        <div class="cell">
+            <button class="button cycle-button success" data-ng-click="increase()"
+                    data-ng-disabled="ranges.length>0" style="margin-left:180px; margin-top:0px"><span
+                    class="mif-plus"></span></button>
+            <button class="button cycle-button danger" data-ng-click="decrease()"
+                    data-ng-disabled="ranges.length>0" style="margin-left:180px; margin-top:0px"><span
+                    class="mif-minus"></span></button>
+        </div>
+        </div>
+    </div>
+</div>
+
+<div class="grid no-margin-bottom" style="width:480px; margin-top:0px; background-color:#000000">
+    <div class="row cells5">
+        <div class="cell">
+        </div>
+        <div class="cell" style="margin-top:39px; margin-bottom:23px">
+            <button class="button success" name="Start" style="width:80px; left:30px"
+                    title="Imposta funzionamento manuale"
+                    data-ng-click="startStop()">
+                {{manButton}}
+            </button>
+        </div>
+        <div class="cell" style="margin-top:39px; margin-bottom:23px">
+            <button class="button primary" name="exit" style="width:80px; left:60px"
+                    title="Torna alla pagina precedente"
+                    onClick="history.go(-1)">
+                Esci
+            </button>
+        </div>
+    </div>
+</div>

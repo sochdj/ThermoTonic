@@ -1,43 +1,59 @@
-<div class="grid no-margin" style="width: 470px; background-color:#000000">
-    <div class="row cells1 no-margin">
+<div class="grid no-margin" style="width: 480px; background-color:#000000">
+    <div class="row cells1" style="margin-top:5px">
         <div align="center"><h3 style="color:deepskyblue; font-weight: bold">Thermo Controller - Stato Attuale</h3>
         </div>
-        <div class="align-center" style="margin-top:-10px"><h4 class="no-margin" style="color:white">
+        <div class="align-center" style="margin-top:-10px"><h4 class="no-margin"
+                                                               style="color:deepskyblue; font-weight: bold">
             {{latestTemperature.dateTime}}</h4>
         </div>
     </div>
-    <div class="grid" style="width: 450px">
+    <div class="grid" style="width: 480px">
         <div class="row cells5">
             <div class="cell colspan3">
-                <div style="margin-left:40px; margin-top:25px">
-                    <label style="font-size:40px; color:lawngreen; font-weight: bold">{{latestTemperature.tempExt1}}°C</label>
+                <div style="margin-left:40px; margin-top:10px">
+                    <label style="color:white; font-weight: bold">Esterna</label>
+                </div>
+                <div style="margin-left:40px; margin-top:-5px">
+                    <label style="font-size:40px; color:deepskyblue; font-weight: bold"
+                           data-ng-show="tempExtColor == 1">{{latestTemperature.tempExt1}}°C</label>
+                    <label style="font-size:40px; color:lawngreen; font-weight: bold" data-ng-show="tempExtColor == 2">{{latestTemperature.tempExt1}}°C</label>
+                    <label style="font-size:40px; color:red; font-weight: bold" data-ng-show="tempExtColor == 3">{{latestTemperature.tempExt1}}°C</label>
                 </div>
 
-                <div style="margin-left:40px; margin-top:50px">
-                    <label style="font-size:80px; color:deepskyblue; font-weight: bold">{{latestTemperature.tempInt}}°C</label>
+                <div style="margin-left:40px; margin-top:40px">
+                    <label style="color:white; font-weight: bold">Interna</label>
+                </div>
+                <div style="margin-left:40px; margin-top:-10px">
+                    <label style="font-size:80px; color:deepskyblue; font-weight: bold"
+                           data-ng-show="tempIntColor == 1">{{latestTemperature.tempInt}}°C</label>
+                    <label style="font-size:80px; color:lawngreen; font-weight: bold" data-ng-show="tempIntColor == 2">{{latestTemperature.tempInt}}°C</label>
+                    <label style="font-size:80px; color:red; font-weight: bold" data-ng-show="tempExtColor == 3">{{latestTemperature.tempInt}}°C</label>
                 </div>
             </div>
             <div class="cell colspan2">
                 <div class="grid">
                     <div class="row">
-                        <div style="margin-left:30%; margin-top:-10px; color:white">Comando caldaia</div>
+                        <div style="margin-left:20%; margin-top:-10px; color:white; font-weight: bold">Comando caldaia
+                        </div>
                         <img src="../images/LedGreenOff.png" data-ng-show="latestTemperature.riscON == 0"
-                             style="width:27%; margin-left:50%; margin-top:1%"/>
+                             style="width:27%; margin-left:45%; margin-top:1%"/>
                         <img src="../images/LedGreenOn.png" data-ng-show="latestTemperature.riscON == 1"
-                             style="width:27%; margin-left:50%; margin-top:5%"/>
+                             style="width:27%; margin-left:45%; margin-top:1%"/>
                     </div>
                     <div class="row cells2">
                         <div class="cell">
-                            <div style="margin-top:15%; margin-left:90px; color:white">Fascia Oraria</div>
-                            <div style="margin-top:-15%; margin-left:100px; color:white"><h1>
+                            <div style="margin-top:15%; margin-left:80px; color:white; font-weight: bold">Fascia
+                                Oraria
+                            </div>
+                            <div style="margin-top:-15%; margin-left:90px; color:white"><h1>
                                 {{latestTemperature.timeSlot}}</h1>
                             </div>
                         </div>
                     </div>
                     <div class="row cells2">
                         <div class="cell">
-                            <a ng-href="#/setup" title="Impostazione Manuale"><img src="../images/ManualeT.png"
-                                                                                   style="width:80%; margin-top:0px; margin-bottom:-10px; margin-left:80px"/></a>
+                            <a ng-href="#/manualRPI" title="Impostazione Manuale"><img src="../images/ManualeT.png"
+                                                                                       style="width:80%; margin-top:0px; margin-bottom:-10px; margin-left:80px"/></a>
                         </div>
                     </div>
                 </div>

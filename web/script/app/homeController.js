@@ -1,7 +1,7 @@
 appRoot.controller('homeController', ['$scope', '$interval', 'apiService',
     function ($scope, $interval, apiService) {
         $scope.latestTemperature = {
-            dateTime: ".",
+            dateTime: "04-07-2017 11:40:35",
             tempInt: 10.5,
             tempExt1: 20.5,
             tempExt2: 10,
@@ -27,6 +27,14 @@ appRoot.controller('homeController', ['$scope', '$interval', 'apiService',
 
             })
         }, 2000);
+
+        if ($scope.latestTemperature.tempInt < 18.5) $scope.tempIntColor = 1;
+        else if ($scope.latestTemperature.tempInt < 22.0) $scope.tempIntColor = 2;
+        else $scope.tempIntColor = 3;
+
+        if ($scope.latestTemperature.tempExt1 < 15.0) $scope.tempExtColor = 1;
+        else if ($scope.latestTemperature.tempExt1 < 22.0) $scope.tempExtColor = 2;
+        else $scope.tempExtColor = 3;
 
         $scope.lowerLimitIn = 10.0;
         $scope.upperLimitIn = 40.0;

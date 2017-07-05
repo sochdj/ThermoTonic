@@ -14,6 +14,8 @@ appRoot.controller('setupController', ['$scope', 'apiService',
         $scope.rangesCp = [];
         $scope.selectedRange = {};
         $scope.r = {};
+        $scope.manTemp = 20.0;
+
 
         $scope.$watch('giorno', function (newValue) {
             apiService.getTimeRanges(newValue).then(function (data) {
@@ -59,6 +61,7 @@ appRoot.controller('setupController', ['$scope', 'apiService',
             }
 
         }
+
         $scope.removeRange = function ($index) {
             $scope.ranges.splice($index, 1);
             for (var i = 0; i < $scope.ranges.length; i++) {
