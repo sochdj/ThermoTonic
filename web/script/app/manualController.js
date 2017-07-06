@@ -1,5 +1,11 @@
 appRoot.controller('manualController', ['$scope', 'apiService',
     function ($scope, apiService) {
+        $scope.manualData = {
+            enabled: 0,
+            dateTime: "04-07-2017 11:40:35",
+            tempMan: 20.0,
+            hysteresis: 0.5,
+        };
 
         $scope.manTemp = 20.0;
         $scope.manButton = "OK";
@@ -11,7 +17,7 @@ appRoot.controller('manualController', ['$scope', 'apiService',
         }
 
         $scope.decrease = function () {
-            if ($scope.manTemp > 10) {
+            if ($scope.manTemp > 15) {
                 $scope.manTemp -= 0.1;
             }
         }
@@ -24,4 +30,18 @@ appRoot.controller('manualController', ['$scope', 'apiService',
                 $scope.manButton = "OK";
             }
         }
+
+        $scope.$on('$viewContentLoaded', function () {
+            apiService.getManualData().then(function (data) {
+                $scope.manualData = data.manualData;
+                $scope.manTemp = $scope.manualData.tempMan;
+                if ($scope.manualData.enabled == 0) {
+                    $scope.manButton = "OK";
+                }
+                else {
+                    $scope.manButton = "Stop";
+                }
+            }, function (reason) {
+            });
+        });
     }]);
