@@ -89,8 +89,6 @@ appRoot.controller('setupController', ['$scope', 'apiService',
 
         $scope.copyRange = function () {
             $scope.rangesCp = angular.copy($scope.ranges);
-
-
         }
 
         $scope.pasteRange = function () {

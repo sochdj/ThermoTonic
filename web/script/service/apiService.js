@@ -22,7 +22,6 @@ appRoot.factory('apiService', ['$http', '$q',
             var p = $q.defer();
             $http.get('/temperature?start=' + start + '&stop=' + stop).then(
                 function (response) {
-
                     p.resolve(response.data);
                 },
                 function (reason) {
@@ -36,7 +35,6 @@ appRoot.factory('apiService', ['$http', '$q',
             var p = $q.defer();
             $http.get('/temperature?dayOfWeek=' + dayOfWeek).then(
                 function (response) {
-
                     p.resolve(response.data);
                 },
                 function (reason) {
@@ -50,7 +48,6 @@ appRoot.factory('apiService', ['$http', '$q',
             var p = $q.defer();
             $http.post('/temperature', ranges).then(
                 function (response) {
-
                     p.resolve(response.data);
                 },
                 function (reason) {
