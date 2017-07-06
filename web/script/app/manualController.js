@@ -48,19 +48,18 @@ appRoot.controller('manualController', ['$scope', 'apiService',
                 $scope.manButton = "OK";
                 $scope.manualData.enabled = 0;
             }
-            $scope.manualData.dateTime = $scope.getNowDateTimeStr();
+            now = new Date();
+            nowStr = formatDate(now);
+            $scope.manualData.dateTime = nowStr;
             $scope.manualData.tempMan = $scope.manTemp;
             $scope.manualData.hysteresis = 0.5;
         }
 
-        $scope.getNowDateTimeStr = function () {
-            var now = new Date();
-            var hour = now.getHours() - (now.getHours() >= 12 ? 12 : 0);
-            return [[AddZero(now.getDate()), AddZero(now.getMonth() + 1), now.getFullYear()].join("/"), [AddZero(hour), AddZero(now.getMinutes())].join(":"), now.getHours() >= 12 ? "PM" : "AM"].join(" ");
-        }
-
-        //Pad given value to the left with "0"
-        $scope.AddZero = function (num) {
-            return (num >= 0 && num < 10) ? "0" + num : num + "";
+        var formatDate = function (jsDate) {
+            return (jsDate.getDate() < 10 ? ("0" + jsDate.getDate()) : jsDate.getDate()) + "-" +
+                ((jsDate.getMonth() + 1) < 10 ? ("0" + (jsDate.getMonth() + 1)) : (jsDate.getMonth() + 1)) + "-" +
+                jsDate.getFullYear() + " " + (jsDate.getHours() < 10 ? ("0" + jsDate.getHours()) : jsDate.getHours()) +
+                ":" + (jsDate.getMinutes() < 10 ? ("0" + jsDate.getMinutes()) : jsDate.getMinutes()) +
+                ":" + (jsDate.getSeconds() < 10 ? ("0" + jsDate.getSeconds()) : jsDate.getSeconds());
         }
     }]);
