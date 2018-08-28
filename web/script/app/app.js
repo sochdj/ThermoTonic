@@ -17,5 +17,11 @@ appRoot
 				 {templateUrl: '/partial/setupBBB.html', controller: 'setupController'})
              .when('/manualRPI',
                  {templateUrl: '/partial/manualRPI.html', controller: 'manualController'})
+             .when('/alarmRPI',
+                 {templateUrl: '/partial/homeAlarm.html', controller: 'homeController'})
+             .when('/alarmListRPI',
+                 {templateUrl: '/partial/listAlarm.html', controller: 'alarmController'})
+             .when('/alarmSetupRPI',
+                 {templateUrl: '/partial/setupAlarm.html', controller: 'alarmController'})
 			 .otherwise({redirectTo: '/'});
 	}]);

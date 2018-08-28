@@ -1,0 +1,47 @@
+<div class="grid no-margin" style="width: 480px; background-color:#000000">
+    <div class="row cells1" style="margin-top:5px">
+        <div class="cell">
+            <a href="#/alarmListRPI" title="Elenco sveglie"> <img src="../images/CampanellaM1.png"
+                                                                  style="width:10%; margin-left:410px; margin-top:10px"/>
+            </a>
+        </div>
+    </div>
+    <div class="row cells1">
+        <div class="cell" style="margin-left:400px; margin-top:-10px; font-size:20px; font-weight: bold; color:yellow">
+            {{nextAlarm}}
+        </div>
+    </div>
+    <div class="row cells1">
+        <div class="cell" style="margin-left: 130px; margin-top:10px; font-size:80px; font-weight: bold; color:cyan">
+            <b>#URL.Alarm#</b>
+        </div>
+    </div>
+    <div class="row cells1">
+        <div class="cell" style="margin-left:120px; margin-top:-10px; font-size:20px; font-weight: bold; color:cyan">
+            {{dateNow}}
+        </div>
+    </div>
+    <div class="row cells6" style="height:100px; margin-bottom:5px">
+        <div class="cell" style="width:130px">
+            <img src="../images/TermIntM1.png" style="width:100%; margin-top:-10px; margin-left:-20px"/>
+        </div>
+        <div class="cell"
+             style="width:60px; margin-left:-50px; margin-top:40px; font-size:20px; font-weight: bold; color:yellow">
+            {{latestTemperature.tempInt}}°C
+        </div>
+        <div class="cell" style="width:130px">
+            <img src="../images/GocciaM1.png" style="width:30%; margin-top:20px; margin-left:30px"/>
+        </div>
+        <div class="cell"
+             style="width:60px; margin-left:-50px; margin-top:40px; font-size:20px; font-weight: bold; color:yellow">
+            50%
+        </div>
+        <div class="cell" style="width:130px">
+            <img src="../images/TermExtM1.png" style="width:100%; margin-top:-5px; margin-left:-20px"/>
+        </div>
+        <div class="cell"
+             style="width:60px; margin-left:-50px; margin-top:40px; font-size:20px; font-weight: bold; color:yellow">
+            {{latestTemperature.tempExt1}}°C
+        </div>
+    </div>
+</div>

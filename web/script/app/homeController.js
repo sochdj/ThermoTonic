@@ -13,6 +13,11 @@ appRoot.controller('homeController', ['$scope', '$interval', 'apiService',
         $scope.intvalue = 0;
         $scope.visTemp = 0;
 
+        /* Variabili relative alla SVEGLIA */
+        $scope.nextAlarm = "06:32"
+        $scope.timeNow = "03:11"
+        $scope.dateNow = "Lunedi 23 maggio 2019"
+
         $interval(function () {
             apiService.getLatestTemperatures().then(function (data) {
                 var t = data.latestTemperature.dateTime.split(/[- :]/);
